@@ -1,0 +1,43 @@
+picotron cartridge // www.picotron.net
+version 2
+
+:: gfx/
+:: gfx/0.gfx
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
+MS0wMSAwMzozNTowOSIscmV2aXNpb249Nl1dbHo0AH4AAAASMQAA8yF7WzBdPXtibXA9cHh1AEMg
+EBAE8FYHEAfAF9AXwAcQB-BWLGZsYWdzPTAscGFuX3gIAMt5PTAsem9vbT04fSw_AB-wMQD-----
+-----------------------------------------------------------XUG09OH19
+:: gfx/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
+MS0wMSAwMzozNTowOSJdXQ==
+:: map/
+:: map/0.map
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
+MS0wMSAwMzozNTowOSIscmV2aXNpb249NV1dbHo0AGgAAABYEAAA8Ah7e2JtcD11c2VyZGF0YSgi
+aTE2IiwzMgMALyIwAQD--------------------78QgiKSxoaWRkZW49ZmFsc2UscGFuX3g9MAgA
+0nk9MCx0aWxlX2g9MTYKABB3CgCAem9vbT0xfX0=
+:: map/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
+MS0wMSAwMzozNTowOSJdXQ==
+:: sfx/
+:: sfx/0.sfx
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
+MS0wMSAwMzozNTowOSIscmV2aXNpb249Nl1dbHo0AKAAAAALCgAA-zBweHUAAygAAAQABA9AEAIO
+AAGgASACoA4ADxAADfDKAQIDQA8PkAQFBgdADJAICQoLQAyQDwwPDQ8ODEAM8P8BAOv-J6oBEAYP
+IBABIAEgAfAAAhACDhABIA8hIAEwD0Dwww8oD--wxg-4Cg--D4AP9w8NAfAJARAGDjAA------_9
+H-8BAKzPyA9AAA8QQP--sPD-AQD-6lD-----KQ==
+:: sfx/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
+MS0wMSAwMzozNTowOSJdXQ==
+:: main.lua
+--[[pod_format="raw",created="2024-12-30 18:09:39",modified="2025-01-01 03:35:09",revision=6]]
+cd("/appdata/cartridges/tac-tech")
+include("loop.lua")
+include("entity.lua")
+:: .info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
+MS0wMSAwMzozNTowOSIscnVudGltZT0xMix3b3Jrc3BhY2VzPXt7bG9jYXRpb249Im1haW4ubHVh
+IzEiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249ImdmeC8wLmdmeCIsd29ya3NwYWNlX2lu
+ZGV4PTJ9LHtsb2NhdGlvbj0ibWFwLzAubWFwIix3b3Jrc3BhY2VfaW5kZXg9M30se2xvY2F0aW9u
+PSJzZngvMC5zZngiLHdvcmtzcGFjZV9pbmRleD00fX1dXQ==
+:: [eoc]

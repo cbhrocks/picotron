@@ -1,0 +1,55 @@
+picotron cartridge // www.picotron.net
+version 2
+
+:: gfx/
+:: map/
+:: sfx/
+:: gfx/0.gfx
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTA3LTExIDA1OjQxOjQxIixtb2RpZmllZD0iMjAyNC0w
+OC0wMSAwNDo0MDoyOCIscmV2aXNpb249MjRdXWx6NAABAQAAczEAAPEUe1swXT17Ym1wPXB4dQBD
+IAgIBCAWQDUgBT0FAAYFDRwNBRYGAPMJBgAFPQUgNUAWICxmbGFncz0wLHBhbl94CADKeT0wLHpv
+b209OH0sTgD-FxAkMBQFNAAEBRQFDw8kAhQCBQQABBUUBRQFJAIUAAQlFCAUAAQQVQAZXxAQBPDw
+MQD-----------------------------------------------9q-wIICATwAxEMIAURHAcwEQzw
+Cj0AHY8LDAdQDAfwC6YAHf8MRQXwAAUPFQWwBQAPFi8UkAUALrAFHxWwBfBKIgEeDzEA--------
+------_QUG09OH19
+:: gfx/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTA3LTExIDA1OjQxOjQwIixtb2RpZmllZD0iMjAyNC0w
+OC0wMSAwNDo0MDoyOCJdXWx6NAAEAAAAAwAAADBuaWw=
+:: map/0.map
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTA3LTExIDA1OjQxOjQxIixtb2RpZmllZD0iMjAyNC0w
+OC0wMSAwNDo0MDoyOCIscmV2aXNpb249MjNdXWx6NABoAAAAWBAAAPAIe3tibXA9dXNlcmRhdGEo
+ImkxNiIsMzIDAC8iMAEA--------------------_-EIIiksaGlkZGVuPWZhbHNlLHBhbl94PTAI
+ANJ5PTAsdGlsZV9oPTE2CgAQdwoAgHpvb209MX19
+:: map/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTA3LTExIDA1OjQxOjQwIixtb2RpZmllZD0iMjAyNC0w
+OC0wMSAwNDo0MDoyOCJdXWx6NAAEAAAAAwAAADBuaWw=
+:: sfx/0.sfx
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTA3LTExIDA1OjQxOjQxIixtb2RpZmllZD0iMjAyNC0w
+OC0wMSAwNDo0MDoyOCIscmV2aXNpb249MjNdXWx6NACpAAAAkhcAAP8scHh1AAMoAAAEAAQPQBAC
+DgABoAEgAqAOAA8QAA3wygECAwQFBgcAD-_QCAkKCw8MDw0PDg8PAA--8P8BAOv-J9IBEAYPIBAB
+IAEgAfAAAhACDBABIA8hIAEwD0Dwww8oD--wxg-4Cg--D4AP9w8NAfAJARAGDDAA------_9H-8B
+AKy-yA9AAA1A--_w8HAKAP-------------------4RQ-7Dw-zk=
+:: sfx/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTA3LTExIDA1OjQxOjQwIixtb2RpZmllZD0iMjAyNC0w
+OC0wMSAwNDo0MDoyOCJdXWx6NAAEAAAAAwAAADBuaWw=
+:: main.lua
+--[[pod_format="raw",created="2024-07-11 05:41:41",modified="2024-07-12 02:01:34",revision=7]]
+cd("/appdata/cartridges/polarity")
+include("loop.lua")
+include("entity.lua")
+include("entities/projectile.lua")
+include("entities/ship.lua")
+include("gun.lua")
+include("utils/array.lua")
+include("utils/collision.lua")
+include("utils/dump.lua")
+include("utils/queue.lua")
+include("utils/transforms.lua")
+
+:: .info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTA3LTExIDA2OjE3OjI0Iixtb2RpZmllZD0iMjAyNC0w
+OC0wMSAwNDo0MDoyOCIscnVudGltZT03LHdvcmtzcGFjZXM9e3tsb2NhdGlvbj0iZ2Z4LzAuZ2Z4
+Iix3b3Jrc3BhY2VfaW5kZXg9Mn0se2xvY2F0aW9uPSJtYXAvMC5tYXAiLHdvcmtzcGFjZV9pbmRl
+eD0zfSx7bG9jYXRpb249InNmeC8wLnNmeCIsd29ya3NwYWNlX2luZGV4PTR9fV1dbHo0AAQAAAAD
+AAAAMG5pbA==
+:: [eoc]
