@@ -1,3 +1,4 @@
+--[[pod_format="raw",created="2025-01-06 21:02:01",modified="2025-01-06 21:02:01",revision=0]]
 entity = {
     type = 'entity',
     -- game details
@@ -9,6 +10,14 @@ entity = {
     x=63,
     y=63,
     dead = false,
+    -- max velocity
+    mv = 20,
+    -- acceleration (pixels per second)
+    dx = 0,
+    dy = 0,
+    -- velocity
+    vx = 0,
+    vy = 0,
 
     -- hit box
     hb = {
@@ -109,7 +118,7 @@ terrain = entity: new({
     -- top, right, bottom, left cover supplied to surounding spaces
     cover = {
         0, 0, 0, 0
-    }
+    },
     -- whether a unit can ocupy the space or not
     traversable = true
 })
