@@ -12,8 +12,8 @@ function _draw()
     cls()
     local update_time = time()
     state.mouse:draw()
-    if (state.map != nil) then 
-        map(state.map[1])
+    if (state.map_data != nil) then 
+        map(state.map_data[2].bmp)
     end
     for e in all(state.units) do
         e:draw()
@@ -123,7 +123,15 @@ function restart()
             menuItem:new({
                 text='Demo Level',
                 onSelect = function ()
-                    state.map = fetch("test.map")
+                    state.map_data = fetch("test.map")
+                    printh(dump(state.map_data))
+                    printh(dump(state.map_data[1].bmp))
+                    local ud = state.map_data[1].bmp
+                    for i=0,(ud:height()-1) do
+                        for j=0,(ud:width()-1) do
+                            printh(dump(ud:get(i,j,1)))
+                        end
+                    end
                     sceneMenu.active=false
                     return
                 end
@@ -154,7 +162,7 @@ function restart()
         --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
         --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
         -- }
-        map = nil,
+        map_data = nil,
         units = {},
         projectiles = {},
         particles = {},
