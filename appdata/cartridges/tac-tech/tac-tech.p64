@@ -4,16 +4,16 @@ version 2
 :: gfx/
 :: gfx/0.gfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-MS0wOCAwMTo0NDozMiIscmV2aXNpb249MjExXV1sejQAOgEAALEyAADzIXtbMF09e2JtcD1weHUA
-QyAQEATwVgcQB8AX0BfABxAH8FYsZmxhZ3M9MCxwYW5feAgAynk9MCx6b29tPTh9LD4A-xP1Ag8V
-JQ8WRQbVFhUOpQb1HQ51DvU7DvUEDvUEDxU1DvUCUQAc7-ADPxQwPiAOPxUOEA49BAAGcCA_MD7w
-Aj4qAAYVAA8pAAYfE4UAHFP-FAEUDgIAEh4IADUPFQQMAAAWACINBAkACRUADwoAKwNTAC8EDSAA
-AS-_AUkBHR-wMQCvL-8VMgAefxYQ9QD-FcA3AB6fEtUeBc8VHgXNAwAOD1sAH5_1PgWfFQU_BZ0E
-ABofHmkASj_1-hLvAR4PMQD-----------------------------------------------------
---------iVBtPTh9fQ==
+MS0xMyAxNzowNTo1NSIscmV2aXNpb249MTExNF1dbHo0ADoBAACxMgAA8yF7WzBdPXtibXA9cHh1
+AEMgEBAE8FYHEAfAF9AXwAcQB-BWLGZsYWdzPTAscGFuX3gIAMp5PTAsem9vbT04fSw_AP8T9QIP
+FSUPFkUG1RYVDqUG9R0OdQ71Ow71BA71BA8VNQ71AlEAHO-wAz8UMD4gDj8VDhAOPQQABnAgPjA_
+8AI_KgAGFQAPKQAGHxOFABxT-xQBFA4CABIeCAA1DxUEDAAAFgAiDQQJAAkVAA8KACsDUwAvBA0g
+AAEv-gFJAR0f8DEAry--FTIAHn8WEPUA-xXANwAenxLVHgXPFR4FzQMADg9bAB_ftT4FnxUFPgWd
+BAAaHx5pAEo-tf4S7wEeDzEA----------------------------------------------------
+---------4lQbT04fX0=
 :: gfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-MS0wOCAwMTo0NDozMiJdXQ==
+MS0xMyAxNzowNTo1NiJdXQ==
 :: map/
 :: map/0.map
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI1LTAxLTA3IDAzOjQ2OjQ4Iixtb2RpZmllZD0iMjAyNS0w
@@ -29,41 +29,666 @@ DwAHGw_ABjAM1AYPAAcNAPQGDgQADwAF-58OSAQPBAA3H2OAAAUPBABVD4AA-wENYAQPBABYHzhq
 EAM-bWFwZhAaUDAuNX19
 :: map/test.map
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-MS0wNyAwNDowNTo0MyIscmV2aXNpb249MTg4XV1sejQA6QEAANEgAADwCHt7Ym1wPXVzZXJkYXRh
-KCJpMTYiLDMyAwAvIjABAP----83LzMwAQBnEzIEAA8BAP-WD_wBCR8y2AJYHjMsAA_UAD4vMzDs
-AA8vMzABAGsTMoQAD4gAXQ9wAA4PlABMLjIwaAAPAQD-fw8AAlYPAQD-----qPEYIiksaGlkZGVu
-PWZhbHNlLG5hbWU9Im9iamVjdHMiLHBhbl94PTE3CQDieT0yMyx0aWxlX2g9MTYKABB3CgCvem9v
-bT0wLjV9LGoQC184YzAwOQQAYQB8ABIwCAAfMQQAZB85gAD-ARdjDAAPBAA9H2OAAAUPBABVD4AA
--x0XYSQABQQAEjQYAB8xLAAoBAQABCgAHzEEAAESNBwAWDg4MDA5BAAfY1QAAEs4MDBhJAAPYAQR
-HzmAABAOIAAPBAAXDkAAD4AA-xkA1AEP7AEBD6QEBB9jQAAYDoAADwQASA_AAP_pL2E0gAIoD0AA
-CA6AAA8gACMPBAAKHzhAAA0PIAAvCGwACQQAAxQAD0AADQ8gAC0FBAAbOAQAAxQAD0AADQ8gABEE
-RAYPAAcbD4AGMAzUBg8ABw0A9AYOBAAPAAX-nw5IBA8EADcfY4AABQ8EAFUPgAD-AQ1gBA8EAFgf
-OGoQAz9tYXBmEBpQMC41fX0=
+MS0xMyAxNzowNTo1NSIscmV2aXNpb249NzcwXV1sejQA6QEAANEgAADwEXt7cGFuX3g9MTcsYm1w
+PXVzZXJkYXRhKCJpMTYiLDMyAwAvIjABAP----83LzMwAQBnEzIEAA8BAP-WD_wBCR8y2AJYHjMs
+AA_UAD4vMzDsAA8vMzABAGsTMoQAD4gAXQ9wAA4PlABMLjIwaAAPAQD-fw8AAlYPAQD-----qPAQ
+IiksbmFtZT0ib2JqZWN0cyIsaGlkZGVuPWZhbHNlLEIQ4nk9MjMsdGlsZV9oPTE2CgAQdwoAr3pv
+b209MC41fSxqEBRfOGMwMDkEAGEAfAASMAgAHzEEAGQfOYAA-wEXYwwADwQAPR9jgAAFDwQAVQ_A
+AP8dF2EkAAUEABI0GAAfMSwAKAQEAAQoAB8xBAABEjQcAFg4ODAwOQQAH2NUAABLODAwYSQAD2AE
+ER85gAAQDiAADwQAFw5AAA_AAP8ZANQBD_wBAQ_kBAQfY0AAGA6AAA8EAEgPgAD-qS9hNIACKA9A
+AAgOgAAPIAAjDwQACh84QAANDyAALwhsAAkEAAMUAA9AAA0PIAAtBQQAGzgEAAMUAA9AAA0PIAAR
+BEQGDwAHGw_ABjAM1AYPAAcNAPQGDgQADwAF-58OSAQPBAA3H2OAAAUPBABVD4AA-wENYAQPBABY
+FThqED9tYXBmEB5QMC41fX0=
 :: map/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-MS0wOCAwMTo0NDozMiJdXQ==
+MS0xMyAxNzowNTo1NiJdXQ==
 :: sfx/
 :: sfx/0.sfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-MS0wOCAwMTo0NDozMiIscmV2aXNpb249MTg5XV1sejQAoAAAAAsKAAD-MHB4dQADKAAABAAED0AQ
-Ag4AAaABIAKgDgAPEAAN8MoBAgNADw_QBAUGB0AMkAgJCgtADJAPDA8NDw4MQAzw-wEA6-8nqgEQ
-Bg8gEAEgASAB8AACEAIOEAEgDyEgATAPQPDDDygP--DGD-gKD-8PgA-3Dw0B8AkBEAYOMAD-----
--70f-wEArM-ID0AADxBA--_w8P8BAP-qUP----8p
+MS0xMyAxNzowNTo1NSIscmV2aXNpb249MTA4OV1dbHo0AKAAAAALCgAA-zBweHUAAygAAAQABA9A
+EAIOAAGgASACoA4ADxAADfDKAQIDQA8PkAQFBgdADJAICQoLQAyQDwwPDQ8ODEAM8P8BAOv-J6oB
+EAYPIBABIAEgAfAAAhACDhABIA8hIAEwD0Dwww8oD--wxg-4Cg--D4AP9w8NAfAJARAGDjAA----
+--_9H-8BAKzPyA9AAA8QQP--sPD-AQD-6lD-----KQ==
 :: sfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-MS0wOCAwMTo0NDozMiJdXQ==
+MS0xMyAxNzowNTo1NiJdXQ==
+:: entity.lua
+--[[pod_format="raw",created="2025-01-09 16:01:30",modified="2025-01-13 17:05:55",revision=445]]
+--[[pod_format="raw",created="2025-01-06 21:02:01",modified="2025-01-06 21:02:01",revision=0]]
+entity = {
+    type = 'entity',
+}
+
+function entity:new(o)
+    local o = o or {}
+    setmetatable(o, self)
+    self.__index = self
+    -- need to set in constructor so it creates a new table object each time
+    return o
+end
+
+function entity:draw()
+    if not self.dead then
+        if (self.draw_circle ~= nil) self:draw_circle()
+        if (self.draw_sprite ~= nil) self:draw_sprite()
+        -- local points = self:get_hit_box()
+        -- line(points[1][1], points[1][2], points[2][1], points[2][2])
+        -- line(points[2][1], points[2][2], points[3][1], points[3][2])
+        -- line(points[3][1], points[3][2], points[4][1], points[4][2])
+        -- line(points[4][1], points[4][2], points[1][1], points[1][2])
+    end
+    if (self.draw_particles ~= nil) self:draw_particles()
+    for p in all(self.particles) do
+        p:draw()
+    end
+end
+
+function entity:update(time_elapsed)
+	if not self.dead then
+		if (self.handle_controls != nil) self:handle_controls(time_elapsed, state.controls)
+		if (self.update_duration ~= nil) self:update_duration(time_elapsed)
+		if (self.update_position != nil) self:update_position(time_elapsed)
+	end
+	if (self.update_particles != nil) self:update_particles(time_elapsed)
+end
+
+add_circle = function(self, radius, col)
+	self.radius = radius
+	self.col = col
+	self.draw_circle = function(self)
+		circ(self.x, self.y, self.radius, self.col)
+	end
+end
+
+add_sprite = function(self, s_id, width, height)
+	self.s_id = s_id
+	self.width = width
+	self.height = height
+	self.draw_sprite = function(self)
+		spr(self.s_id, self.x-self.width/2, self.y-self.height/2, 1, 1)
+	end
+end
+
+add_duration = function(self, duration)
+	self.duration = duration
+	self.update_duration = function(self, time_elapsed)
+		if (self.duration < 0) then
+			self.dead = true
+		else
+			self.duration -= time_elapsed
+		end
+	end
+end
+
+add_particles = function(self)
+	self.particles = {}
+	self.draw_particles = function(self)
+		for p in all(self.particles) do
+	        p:draw()
+	    end
+	end
+	self.update_particles = function(self, time_elapsed)
+		for p in all(self.particles) do
+			p:update()
+		end
+		ArrayRemove(
+			self.particles, 
+			function(t, i, j)
+				if (t[i].dead) return false
+				t[i]:update(time_elapsed)
+				return true
+			end
+		)
+	end
+end
+
+add_hitbox = function(self, type)
+	-- hit box
+	self.hb = {
+		t = "ngon",
+		-- todo, reformat to be ngon
+		h = 4,
+		w = 4
+	}
+	self.get_hit_box = function(self)
+		return {
+			{self.x-self.hb.w, self.y-self.hb.h}, --top left
+			{self.x-self.hb.w, self.y+self.hb.h-1}, --bottom left
+			{self.x+self.hb.w-1, self.y+self.hb.h-1}, --bottom right
+			{self.x+self.hb.w-1, self.y-self.hb.h}, --top right
+		}
+	end
+	self.on_hit = function(self) print("hit") end
+end
+
+add_terrain = function(self)
+	self.elevation = 0
+	-- top, right, bottom, left cover supplied to surounding spaces
+	self.cover = {0, 0, 0, 0}
+	self.traversable = true
+end
+
+add_stats = function(self)
+	self.owner="player"
+	
+	-- health
+	self.maxHealth = 20
+	self.health = 20
+	-- armor
+	self.maxArmor = 5
+	self.armor = 5
+	
+	-- attributes
+	-- controls how fast the unit moves and can get shots off on visible enemies
+	self.speed = 5
+	-- controls how fast the unit can react. i.e. shooting at enemies peaking from behind cover, moving between cover
+	self.reflexes = 5
+	-- controls melee damage and how much the unit can carry
+	self.strength = 5
+	-- controls the health and resistances of the unit
+	self.constitution = 5
+	-- controls how accurate the unit is with their attacks
+	self.accuracy = 5
+end
+
+add_position = function(self)
+	self.x = 0
+	self.y = 0
+	self.move = function(self, new_x, new_y)
+		self.x = new_x
+		self.y = new_y
+	end
+end
+
+-- requires position first
+add_movement = function(self, max_velocity, pdx, pdy)
+	 -- max velocity
+    self.mv = max_velocity or 20
+    -- acceleration (pixels per second)
+    self.dx = 0
+    self.dy = 0
+    -- passive decelleration
+    self.pdx = pdx or 0
+    self.pdy = pdy or 0
+    -- velocity
+    self.vx = 0
+    self.vy = 0
+    self.calculate_velocity = function(self, time_elapsed)
+    	if (self.dx != 0) then
+    		self.vx = mid(-self.mv, self.vx + (self.dx * time_elapsed), self.mv)
+    	elseif (self.vx > 0) then
+    		self.vx = max(0, self.vx - (self.pdx * time_elapsed))
+    	elseif (self.vx < 0) then
+    		self.vx = min(0, self.vx + (self.pdx * time_elapsed))
+    	end
+    	if (self.dy != 0) then
+    		self.vy = mid(-self.mv, self.vy + (self.dy * time_elapsed), self.mv)
+    	elseif (self.vy > 0) then
+    		self.vy = max(0, self.vy - (self.pdy * time_elapsed))
+    	elseif (self.vy < 0) then
+    		self.vy = min(0, self.vy + (self.pdy * time_elapsed))
+    	end
+    end
+    self.calculate_position = function(self, time_elapsed)
+    	self.x += self.vx
+    	self.y += self.vy
+    end
+    self.update_position = function(self, time_elapsed)
+		self:calculate_velocity(time_elapsed)
+		self:calculate_position(time_elapsed)
+    end
+end
+
+--https://gamedevacademy.org/lua-inheritance-tutorial-complete-guide/
+
+:: gui.lua
+--[[pod_format="raw",created="2025-01-08 17:33:11",modified="2025-01-13 17:05:55",revision=1243]]
+local wWidth = get_display():width()
+local wHeight = get_display():height()
+local itemHeight = 14
+
+gui = create_gui()
+
+menus={
+	main={
+		type="menu",
+		items={"Level Select", "Close"},
+		["Level Select"]={
+			type="menu",
+			items={"Test", "Back"},
+			["Test"]={
+				type="func",
+				call=function() load_level("map/test.map") end,
+			},
+			["Back"]={
+				type="func",
+				function() attach_menu({ "main" }) end,
+			}
+		},
+		["Close"]={
+			type="func",
+			call=function() mainMenu.hidden=true end,
+		}
+	},
+}
+
+local function traverse_path(path)
+	val = menus
+	for item in all(path) do
+		val = val[item]
+	end
+	return val
+end
+
+local function remove_all_children(el)
+	for child in all(el.child) do
+		el:detach(child)
+	end
+end
+
+local function attach_menu(path)
+	remove_all_children(parent)
+	
+	local select_item = function(item)
+		if (item.type == "menu") then
+			new_path = path
+			new_path[#new_path+1] = menu.items[i]
+			attach_menu(new_path)
+		elseif (item.type == "function") then
+			item.call()
+		end
+	end
+
+	local menu = traverse_path(path)
+	
+	local mainMenu = parent:attach{
+		x=wWidth/2-50, y=wHeight/2-(#menu.items+1)*itemHeight,
+		width=100, height=(#menu.items+1)*itemHeight,
+		hover=1,
+		draw=function(self)
+			bgFill(self)
+		end,
+		update=function(self)
+			if (state.controls.down_p) then
+				self.hover = self.hover < #menu.items and self.hover+1 or 1
+			end
+			if (state.controls.up_p) then
+				self.hover = self.hover > 1 and self.hover-1 or #menu.items
+			end
+			if (state.controls.primary_p) then
+				select_item(menu[menu.items[self.hover]])
+			end
+		end
+	}
+
+	local title = mainMenu:attach{
+		x=0, y=0,
+		width=mainMenu.width, height=12,
+		draw=function(self)
+			print("Main Menu", 2, 2, 1)
+		end
+	}
+	
+	for i=1,#menu.items+1 do
+		item = menu[menu.items[i]]
+		mainMenu:attach{
+			x=0, y=itemHeight*i,
+			width=mainMenu.width, height=itemHeight,
+			clicked=false,
+			draw=function(self)
+				bgFill(self, self.clicked and 5 or mainMenu.hover==i and 22 or 7)
+				border(self)
+				print(menu.items[i], 3, 3, 1)
+			end,
+			click=function(self) self.clicked=true end,
+			release=function(self) self.clicked=false end,
+			tap=function(self) 
+				select_item(self)
+			end
+		}
+	end
+end
+
+
+
+local function load_level(map_path)
+	state.map_data = fetch("map/test.map")
+   printh(dump(state.map_data))
+   printh(dump(state.map_data[1].bmp))
+   local ud = state.map_data[1].bmp
+   for i=0,(ud:height()-1) do
+       for j=0,(ud:width()-1) do
+           printh(dump(ud:get(i,j,1)))
+       end
+   end
+end
+
+function bgFill(self, col)
+	rectfill(0, 0, self.width, self.height, col or 6)
+end
+
+function border(self, col)
+	rect(0, 0, self.width-1, self.height-1, col or 5)
+end
+
+parent = gui:attach{
+	x=0, y=0, width=wWidth, height=wHeight,
+	paused=false,
+	update=function (self)
+		if (state.controls.pause_p) then
+			if (self.paused) then
+				self.paused = false
+				remove_all_children(self)
+			else
+				self.paused=true
+				attach_menu({"main"})
+			end
+		end
+	end
+}
+:: loop.lua
+--[[pod_format="raw",created="2025-01-09 16:02:14",modified="2025-01-13 17:05:55",revision=590]]
+window{
+	pauseable=false
+	
+}
+
+screen_width = 480
+screen_height = 270
+
+function _init()
+    -- enable mouse
+    --poke(0x5f2d, 1)
+    restart()
+end
+
+function _draw()
+    cls()
+    local update_time = time()
+    state.mouse:draw()
+    if (state.map_data != nil) then 
+        map(state.map_data[2].bmp)
+    end
+    for e in all(state.units) do
+        e:draw()
+    end
+    for p in all(state.projectiles) do
+        p:draw()
+    end
+    gui:draw_all()
+    buttonsPressed = ""
+    if (state.controls.mouse_b_l) then buttonsPressed = buttonsPressed.."m_b_l, " end
+    if (state.controls.mouse_b_r) then buttonsPressed = buttonsPressed.."m_b_r, " end
+    if (state.controls.mouse_b_m) then buttonsPressed = buttonsPressed.."m_b_m, " end
+    if (state.controls.up) then buttonsPressed = buttonsPressed.."up, " end
+    if (state.controls.right) then buttonsPressed = buttonsPressed.."right, " end
+    if (state.controls.down) then buttonsPressed = buttonsPressed.."down, " end
+    if (state.controls.left) then buttonsPressed = buttonsPressed.."left, " end
+    if (state.controls.primary) then buttonsPressed = buttonsPressed.."primary, " end
+    if (state.controls.secondary) then buttonsPressed = buttonsPressed.."secondary, " end
+    print(string.format("cpu: %.3f \ncontrols: %s", stat(1), buttonsPressed), state.camera.x, state.camera.y, 13)
+    --?""
+    state.last_draw = update_time
+end
+
+function _update()
+    local update_time = time()
+    local time_elapsed = update_time - state.last_update
+
+    update_controls()
+    state.mouse:update(time_elapsed)
+    state.camera:update(
+    	time_elapsed,
+        state.controls.up,
+        state.controls.down,
+        state.controls.left,
+        state.controls.right,
+        state.controls.mouse_pos,
+        state.controls.mouse_b_m
+    )
+    
+    gui:update_all()
+
+    -- loop through all particles, removing them when dead and all child particles are gone
+    ArrayRemove(state.projectiles, function(t, i, j)
+        local v = t[i]
+        v:update(update_time - state.last_update)
+
+        return not v.dead or #v.particles > 0
+    end)
+
+    -- remove enemies if dead, otherwise update
+    ArrayRemove(state.units, function(t, i, j)
+        local v = t[i]
+        if (v.dead) return false
+        v:update(update_time - state.last_update)
+
+        return true
+    end)
+
+    -- state.camera:move(state.player.x - screen_width/2, state.player.y - screen_height/2)
+    camera(state.camera.x, state.camera.y)
+
+    -- move mouse
+    state.mouse:move(
+    	state.controls.mouse_pos[1] + state.camera.x, 
+    	state.controls.mouse_pos[2] + state.camera.y
+    )
+
+    state.last_update = update_time
+end
+
+function update_controls()
+    local mouse_x, mouse_y, mouse_b, wheel_x, wheel_y = mouse()
+    state.controls.last_mouse_pos = state.controls.mouse_pos
+    state.controls.mouse_pos = {mouse_x, mouse_y}
+    state.controls.mouse_b_l = (mouse_b & 0b0001) == 1
+    state.controls.mouse_b_r = (mouse_b & 0b0010) == 2
+    state.controls.mouse_b_m = (mouse_b & 0b0100) == 4
+    state.controls.mouse_wheel_x = wheel_x
+    state.controls.mouse_wheel_y = wheel_y
+    state.controls.up = btn(2) or btn(10)
+    state.controls.up_p = btnp(2) or btnp(10)
+    state.controls.right = btn(1) or btn(9)
+    state.controls.right_p = btnp(1) or btnp(9)
+    state.controls.down = btn(3) or btn(11)
+    state.controls.down_p = btnp(3) or btnp(11)
+    state.controls.left = btn(0) or btn(8)
+    state.controls.left_p = btnp(0) or btnp(8)
+    state.controls.primary = btn(4)
+    state.controls.primary_p = btnp(4)
+    state.controls.secondary = btn(5)
+    state.controls.secondary_p = btnp(5)
+    state.controls.pause = btn(6)
+    state.controls.pause_p = btnp(6)
+end
+
+function restart()
+    cls()
+    --music(0)
+    local mouse = entity:new({
+        type='other'
+    })
+    add_position(mouse)
+
+    state = {
+        last_update = time(),
+        last_draw = time(),
+        mouse = mouse,
+        camera = cam:new(),
+        -- better to keep these in seperate lists. easier to optimize loops
+        -- map = {
+        --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
+        --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
+        --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
+        --     { terrain:new() }, { terrain:new() }, { terrain:new() }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), },
+        --     { terrain:new() }, { terrain:new() }, { terrain:new() }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), },
+        --     { terrain:new() }, { terrain:new() }, { terrain:new() }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), },
+        --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
+        --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
+        --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
+        -- }
+        map_data = nil,
+        units = {},
+        projectiles = {},
+        particles = {},
+        menus={},
+        -- contains current state of controls being pressed, moved, pos, etc.
+        controls = {},
+    }
+end
+
+function load_map()
+
+end
+
 :: main.lua
---[[pod_format="raw",created="2024-12-30 18:09:39",modified="2025-01-08 01:44:32",revision=199]]
+--[[pod_format="raw",created="2024-12-30 18:09:39",modified="2025-01-13 17:05:55",revision=1157]]
+include("loop.lua")
+include("entity.lua")
+include("gui.lua")
 include("/appdata/utils/dump.lua")
 include("/appdata/utils/array.lua")
 include("/appdata/utils/camera.lua")
-cd("/appdata/cartridges/tac-tech")
-include("loop.lua")
-include("entity.lua")
 include("menu.lua")
+
+:: menu.lua
+--[[pod_format="raw",created="2025-01-09 16:03:03",modified="2025-01-09 16:06:29",revision=8]]
+menuItem = {
+    text='update this with new text',
+    -- top, left
+    padding={2, 2},
+    onSelect = function ()
+        return
+    end
+}
+
+function menuItem:new(o)
+    local o = o or {}
+    setmetatable(o, self)
+    self.__index = self
+    -- need to set in constructor so it creates a new table object each time
+    return o
+end
+
+menu = {
+    type = 'menu',
+    title = nil,
+    backgroundCol = 0,
+    highlightCol = 6,
+    outlineCol = nil,
+    textCol=0,
+    -- width, height
+    dimensions=nil,
+    lineHeight=12,
+    -- position
+    position={0, 0},
+    hover=1,
+    -- if no mouse movement and keyboard used, then ignore mouse for selection
+    last_mouse_pos=nil,
+    -- if menu should register key presses and clicks
+    active=true,
+    -- color of line seperator
+    seperate=false,
+    seperateCol=0,
+
+    items = {
+        menuItem:new({
+            text='update this menu with new items',
+            onSelect = function ()
+            end
+        })
+    }
+}
+
+function menu:new(o)
+    local o = o or {}
+    if (o.dimensions == nil) then
+        local height = 0
+        if (o.title != nil) then
+            height += self.lineHeight
+        end
+        height += #o.items * self.lineHeight
+        o.dimensions = {
+            100,
+            height
+        }
+    end
+    setmetatable(o, self)
+    self.__index = self
+    -- need to set in constructor so it creates a new table object each time
+    return o
+end
+
+function menu:draw()
+    local y = self.position[1]
+    rectfill(self.position[1], self.position[2], self.position[1]+self.dimensions[1], self.position[2]+self.dimensions[2], self.backgroundCol)
+    if (self.outlineCol != nil) then
+        rect(self.position[1]-1, self.position[2]-1, self.position[1]+self.dimensions[1]+1, self.position[2]+self.dimensions[2]+1, self.outlineCol)
+    end
+    if (self.title != nil) then
+        -- give title 2 pix padding
+        y += 2
+        print(self.title, self.position[1] + 2, y, self.textCol)
+        y += self.lineHeight - 2
+        line(self.position[1], y, self.position[1]+self.dimensions[1], y, 0)
+        y += 1
+    end
+    for i=1,#self.items do
+        local item = self.items[i]
+        if (self.hover == i) then
+            rectfill(self.position[1], y, self.position[1]+self.dimensions[1], y+self.lineHeight, self.highlightCol)
+        end
+        y += item.padding[1]
+        print(item.text, self.position[1] + item.padding[2], y, self.textCol)
+        y += self.lineHeight - item.padding[1]
+        if (self.seperate and i != #self.items) then
+            line(self.position[1], y, self.position[1]+self.dimensions[1], y, self.seperateCol)
+            y += 1
+        end
+    end
+end
+
+function menu:update(up, down, mouse_pos, select)
+    if (
+        mouse_pos[1] > self.position[1] and mouse_pos[1] < self.position[1] + self.dimensions[1] and 
+        mouse_pos[2] > self.position[2] and mouse_pos[2] < self.position[2] + self.dimensions[2]
+    ) then
+        if (
+            self.last_mouse_pos[1] != mouse_pos[1] or
+            self.last_mouse_pos[2] != mouse_pos[2]
+        ) then
+            local seperator = 0
+            if (self.seperator) then
+                seperator = 1
+            end
+            self.hover = flr((mouse_pos[2] - self.position[2]) / (self.lineHeight + seperator))
+        end
+    end
+    if (up) then
+        if (self.hover == 1) then
+            self.hover = #self.items
+        end
+        self.hover -= 1
+    end
+    if (down) then
+        if (self.hover == #self.items) then
+            self.hover = 1
+        end
+        self.hover += 1
+    end
+    self.last_mouse_pos = mouse_pos
+    if (select) then
+        self.items[self.hover].onSelect()
+    end
+end
+
 :: .info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-MS0wOCAwMTo0NDozMiIscnVudGltZT0xMix3b3Jrc3BhY2VzPXt7bG9jYXRpb249Im1haW4ubHVh
-IzEiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249ImdmeC8wLmdmeCIsd29ya3NwYWNlX2lu
-ZGV4PTJ9LHtsb2NhdGlvbj0ic2Z4LzAuc2Z4Iix3b3Jrc3BhY2VfaW5kZXg9NH19XV0=
+MS0xMyAxNzowNTo1NiIscnVudGltZT0xMix3b3Jrc3BhY2VzPXt7bG9jYXRpb249Imd1aS5sdWEj
+NTgiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249Im1haW4ubHVhIzEiLHdvcmtzcGFjZV9p
+bmRleD0xfSx7bG9jYXRpb249Imxvb3AubHVhIzIwIix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0
+aW9uPSJlbnRpdHkubHVhIzE1NiIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2NhdGlvbj0iZ2Z4LzAu
+Z2Z4Iix3b3Jrc3BhY2VfaW5kZXg9Mn0se2xvY2F0aW9uPSJtYXAvdGVzdC5tYXAiLHdvcmtzcGFj
+ZV9pbmRleD0zfSx7bG9jYXRpb249InNmeC8wLnNmeCIsd29ya3NwYWNlX2luZGV4PTR9fV1d
 :: [eoc]

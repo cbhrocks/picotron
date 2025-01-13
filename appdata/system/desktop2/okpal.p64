@@ -1,0 +1,2879 @@
+picotron cartridge // www.picotron.net
+version 2
+
+:: gfx/
+:: gfx/0.gfx
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTMxIDA1OjMzOjA3Iixtb2RpZmllZD0iMjAyNS0w
+MS0wOSAwNjo0ODo0OSIscmV2aXNpb249MzY3Ml1dbHo0AA8CAACLOgAA9iN7WzBdPXtibXA9cHh1
+AEMgCAgEcLcgRyAXIEcgt3AsZmxhZ3M9MCxwYW5feD0tMS44MwEAETcXABB5FwAnNDICAKcsem9v
+bT0xMX0sWQDxCAwMBDAncAcgB2AHoAegB5BnQGdAJwAnBAA7Z-ALagBGNi4xNgEAFDNpADcwLjMB
+ACIyN2oAHDdpACPwDGoAPyAHUGgAS-8SN2BXQHcgFwAXAAcAFxAHEDcQByAHEBcQB0AHMAdgN-AM
+cAA7YC0HcAcQB9wAH1BiAEDxBgkJBDAHYAcNB0AHLQcgB00HAAdtFwIASwcAZwBoABMwWgASMEoA
+HThKAGE3MAc9BxBGABBdQgAhB10OAG8gBz0HMDdOAB0pEEeQAAFQAF9NByBHEEgAGf8KGBgE8Cja
+gNoPGXDaHmDaLlDaPkDaTjDZXgMABP8CTkDZPlDZLmDZHnDZDoDZ8ChtAAsN8AL-CPAbB7AHsAdQ
+ZzAHAEdABxAnUAcgB-AMswAZB0YAAfEBTwAHIAdKACPzAgsLBCBHQAdOByAHbgcAB44XAgDPBwAH
+bgcgB04HQEcgUAAcc9BOQG4gjhACAF8gbkBO0EIAGVwQEATw8DEARC4xMjU1AAEMAA85AP------
+-----------------------------------------------------------------whQbT04fX0=
+:: gfx/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTMxIDA1OjMzOjA2Iixtb2RpZmllZD0iMjAyNS0w
+MS0wOSAwNjo0OTowOCIsc3RvcmVkPSIyMDI0LTAzLTMxIDA1OjMzOjA2Il1d
+:: map/
+:: map/0.map
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTMxIDA1OjMzOjA2Iixtb2RpZmllZD0iMjAyNS0w
+MS0wOSAwNjo0ODo0OSIscmV2aXNpb249MzUyMF1dbHo0AGkAAABYEAAA8Ah7e2JtcD11c2VyZGF0
+YSgiaTE2IiwzMgMALyIwAQD--------------------78QgiKSxoaWRkZW49ZmFsc2UscGFuX3g9
+MAgAwnk9MCx0aWxlX2g9OAkA4Hc9OCx6b29tPTAuNX19
+:: map/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTMxIDA1OjMzOjA2Iixtb2RpZmllZD0iMjAyNS0w
+MS0wOSAwNjo0OTowOCIsc3RvcmVkPSIyMDI0LTAzLTMxIDA1OjMzOjA2Il1d
+:: pal/
+:: pal/0.pal
+b64$LS1bW3BvZCxiZ19jb2xvcj0wLGJsYWNrZXN0X2NvbG9yPTAsY3JlYXRlZD0iMjAyNC0wOC0y
+MyAxODoxMzowMSIsaGlkZGVuPXtbMF09ZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFs
+c2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2Us
+ZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFs
+c2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2Us
+ZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFs
+c2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2Us
+ZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFs
+c2UsZmFsc2V9LGhpZGRlbl90b2dnbGVzPXtbMF09ZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2V9LGlj
+b249dXNlcmRhdGEoInU4IiwxNiwxNiwiMDAwMTAxMDEwMTAxMDEwMTAxMDEwMTAwMDAwMDAwMDAw
+MDAxMDcwNzA3MDcwNzA3MDcwNzA2MDEwMDAwMDAwMDAwMDEwNzA3MDcwNzA3MDcwNzA3MDYwNjAx
+MDAwMDAwMDAwMTA3MDcwNzA3MDcwNzA3MDcwNjA2MDYwMTAwMDAwMDAxMDcwNzA3MDcwNzA3MDcw
+NzA2MDYwNjA2MDEwMDAwMDEwNzA3MDcwNzA3MDcwNzA3MDcwNzA3MDcwMTAwMDAwMTA3MDcwNzA3
+MDcwNzA3MDcwNzA3MDcwNzAxMDAwMDAxMDcwNzA2MDYwMTAxMGQwZDAxMDEwNzA3MDEwMDAwMDEw
+NzA3MDYwNjAxMDEwZDBkMDEwMTA3MDcwMTAwMDAwMTA3MDcwMTAxMDcwNzA2MDYwZDBkMDcwNzAx
+MDAwMDAxMDcwNzAxMDEwNzA3MDYwNjBkMGQwNzA3MDEwMDAwMDEwNzA3MGQwZDAxMDEwZDBkMDYw
+NjA3MDcwMTAwMDAwMTA3MDcwZDBkMDEwMTBkMGQwNjA2MDcwNzAxMDAwMDAxMDcwNzA3MDcwNzA3
+MDcwNzA3MDcwNzA3MDEwMDAwMDEwNzA3MDcwNzA3MDcwNzA3MDcwNzA3MDcwMTAwMDAwMTAxMDEw
+MTAxMDEwMTAxMDEwMTAxMDEwMTAxMDAiKSxsb2NrZWQ9e1swXT10cnVlLHRydWUsdHJ1ZSx0cnVl
+LHRydWUsdHJ1ZSx0cnVlLHRydWUsdHJ1ZSx0cnVlLHRydWUsdHJ1ZSx0cnVlLHRydWUsdHJ1ZSx0
+cnVlLHRydWUsdHJ1ZSx0cnVlLHRydWUsdHJ1ZSx0cnVlLHRydWUsdHJ1ZSx0cnVlLHRydWUsdHJ1
+ZSx0cnVlLHRydWUsdHJ1ZSx0cnVlLHRydWUsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2Us
+ZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFs
+c2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2Us
+ZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2UsZmFsc2V9LG1vZGlmaWVk
+PSIyMDI0LTA4LTIzIDE4OjIyOjQ1Iixva3BhbF92ZXJzaW9uPSIwLjAuNCIscmV2aXNpb249MTIs
+dGVzdF9jdWJlX2NvbG9ycz17WzBdPXsxNSwzMSw0fSx7MzEsNCwyMH0sezQsMjAsMjF9LHsxMCw5
+LDI1fSx7OSwyNSwyNH0sezgsMjQsMn0sezI2LDExLDI3fSx7MTEsMjcsM30sezI3LDMsMTl9LHsy
+OCwxNywxOX0sezI4LDEyLDE2fSx7MTIsMTYsMX0sezYsMjksMTN9LHsyOSwxMywxOH0sezEzLDE4
+LDF9LHs3LDIzLDE0fSx7MjMsMTQsMTN9LHsxNCwzMCwxOH0sezcsNiwyMn0sezYsMjIsNX0sezIy
+LDUsMjF9LHsxLDEsMX0sezEsMSwxfSx7MSwxLDF9fSx3aGl0ZXN0X2NvbG9yPTddXWx6NAAPAQAA
+FQIAAPUFdXNlcmRhdGEoImkzMiIsNjQsIjABAMAxZDJiNTMwMDdlMjUIAPAXMDA4NzUxMDBhYjUy
+MzYwMDVmNTc0ZjAwYzJjM2M3MDBmZmYxZTgIAEAwMDRkCAARYTYAYGZmZWMyNwoAIGU0OABAMjlh
+ZCQAYDgzNzY5YyAAMTc3YTgAwGNjYWEwMDFjNWVhYzAA8B1hNWExMDA3NTRlOTcwMDEyNTM1OTAw
+NzQyZjI5MDA0OTJkMzgwMGEyODg3OUAA8ANhY2M1MDBjMzAwNGMwMGViNmJGAGA5MGVjNDIKACBi
+MsAAoDY0ZGZmNjAwYmSJAACWAEAwZGFiQAAwODU2uABfYWVjZjABAOJQMDAwIik=
+:: pal/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTMxIDE5OjQ3OjQ2Iixtb2RpZmllZD0iMjAyNS0w
+MS0wOSAwNjo0OTowOCIsc3RvcmVkPSIyMDI0LTAzLTMxIDE5OjQ3OjQ2Il1d
+:: sfx/
+:: sfx/0.sfx
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTMxIDA1OjMzOjA3Iixtb2RpZmllZD0iMjAyNS0w
+MS0wOSAwNjo0ODo0OSIscmV2aXNpb249MzQ1N11dbHo0ABEBAABSCAAA8CdweHUAAygAAAQABA9A
+EAIOAAGgASACoA4ADxAADfDKAQIDBAUGBwAP-5AICQoLDwwPDQ8ODw8QAPAADQ8RDxIPEw8UDxUP
+Fg8XEwDxAQ8YDxkPGg8bDxwPHQ8eDx8UAPEAIA8hDyIPIw8kDyUPJg8nFADxACgPKQ8qDysPLA8t
+Dy4PLxQA8QAwDzEPMg8zDzQPNQ82DzcUAP8FOA85DzoPOw88Dz0PPg8-AA--8P8BAOv-J1oBEAYP
+IBABIAEgAfAAAhACDBABIA8hIAEwD0Dwww8oD--wxg-4Cg--D4AP9w8NAfAJARAGDDAA-zkf-wEA
+3L-4D0AADUD--7DwcAoA--9kH-8BAP_ZUP----8g
+:: sfx/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTMxIDA1OjMzOjA2Iixtb2RpZmllZD0iMjAyNS0w
+MS0wOSAwNjo0OTowOCIsc3RvcmVkPSIyMDI0LTAzLTMxIDA1OjMzOjA2Il1d
+:: src/
+:: src/globals.lua
+--[[pod_format="raw",created="2024-04-03 09:15:53",modified="2025-01-09 06:48:49",revision=1453]]
+picotron_gfx_pid = nil
+picotron_map_pid = nil
+
+current_import_choice = "dont_clobber"
+
+undo_stack = nil
+
+padlock_flashing = false
+padlock_flashing_time = 0
+
+
+-- Saved in undo stack ----------------------------------------------------------
+
+
+pal_okhsl = {}
+pal_code = {}
+
+-- and also `test_cube_colors`
+
+
+-- Saved in metadata --------------------------------------------------------------
+
+
+okpal_version = "1.0.3"
+
+active_color = nil
+bg_color = 0
+blackest_color = 0
+whitest_color = 7
+
+hidden_toggles = {}
+hidden = {}
+locked = {}
+for i = 0, 63 do locked[i] = i <= 32 end
+		
+test_cube_colors = nil
+
+
+-- Constants ----------------------------------------------------------------------
+
+
+default_test_cube_colors = {
+	[0] = 
+	{15, 31, 4},
+	{31, 4, 20},
+	{4, 20, 21},
+	--
+	{10, 9, 25},
+	{9, 25, 24},
+	{8, 24, 2},
+	--
+	{26, 11, 27},
+	{11, 27, 3},
+	{27, 3, 19},
+	--
+	{28, 17, 19},
+	{28, 12, 16},
+	{12, 16, 1},
+	--
+	{6, 29, 13},
+	{29, 13, 18},
+	{13, 18, 1},
+	--
+	{7, 23, 14},
+	{23, 14, 13},
+	{14, 30, 18},
+	--
+	{7, 6, 22},
+	{6, 22, 5},
+	{22, 5, 21},
+	--
+	{1, 1, 1},
+	{1, 1, 1},
+	{1, 1, 1},
+	--
+}
+:: src/gui.lua
+--[[pod_format="raw",created="2024-03-31 05:58:06",modified="2025-01-09 06:48:49",revision=4716]]
+function generate_gui()
+	gui = create_gui()
+	local pal_el = create_palette{ x = 16, y = 6 }
+	gui:attach(pal_el)
+	gui:attach(create_visibility_buttons { x = pal_el.x - 14, y = pal_el.y + 1 })
+	gui:attach(create_color_preview { x = pal_el.x + pal_el.width + 8, y = pal_el.y })
+	for i = 0, 2 do
+		for j = 0, 7 do
+			gui:attach(create_test_cube { x = 390 + i * 28, y = 16 + j * 28, test_id = i + 3 * j })
+		end
+	end
+	local h_slider = create_hue_slider{ x = 6, y = 68 }
+	gui:attach(h_slider)
+	h_slider:attach(create_hue_sat_slider { x = slider_border, y = slider_border })
+	local sl_slider = create_sat_lum_slider{ x = 192, y = 68 }
+	gui:attach(create_sat_slider { x = sl_slider.x, y = sl_slider.y + sl_slider.height })
+	gui:attach(create_lum_slider { x = sl_slider.x + sl_slider.width, y = sl_slider.y })
+	gui:attach(sl_slider)
+end
+
+
+function create_palette(el)
+	local size = 12
+	local nb_columns = 16
+	local nb_rows = 4
+	el.width = (nb_columns * size) + 1
+	el.height = (nb_rows * size) + 1
+
+	function el:draw(msg)
+		clip()
+		rect(0, 0, self.width, self.height, outline_color())
+		for c = 0, 63 do
+			local x = 1 + ((c % nb_columns) * size)
+			local y = 1 + ((c \ nb_columns) * size)
+			rectfill(x, y, x + size - 1, y + size - 1, c)
+			if hidden[c] then
+				ovalfill(
+					x + 2, y + 2,
+					x + size - 3, y + size - 3,
+					0
+				)
+			end
+			if c == active_color then
+				rect(
+					x + 1, y + 1,
+					x + size - 2, y + size - 2,
+					contrast_color(active_color)
+				)
+			end
+		end	
+		if self.drag_pos then
+			local col = (msg.mx - 1) \ size
+			local row = (msg.my - 1) \ size
+			local c = col + row * nb_columns
+			if 0 <= c and c <= 63 then
+				local x = 1 + col * size
+				local y = 1 + row * size
+				if c != active_color and not locked[c] then
+					oval(
+						x + 2, y + 2,
+						x + size - 3, y + size - 3,
+						contrast_color(c)
+					)
+				end
+			end
+			local mx, my = self.drag_pos.x, self.drag_pos.y
+			rectfill(mx, my, mx + 8, my + 8, active_color)		
+		end
+	end
+
+	function el:click(msg)
+		local col = min(nb_columns - 1, (msg.mx - 1) \ size)
+		local row = min(nb_rows - 1, (msg.my - 1) \ size)
+		local c = col + row * nb_columns
+		if msg.mb == 1 then
+			active_color = c
+			self.click_pos = { x = msg.mx, y = msg.my }
+		elseif msg.mb == 2 then
+			hidden[c] = not hidden[c]
+		end
+	end	
+	
+	function el:drag(msg)
+		if self.click_pos and not self.drag_pos then
+			local dx = abs(self.click_pos.x - msg.mx)
+			local dy = abs(self.click_pos.y - msg.my)
+			if dx > 1 or dy > 1 then
+				if locked[active_color] then
+					padlock_flashing = true
+				else
+					self.drag_pos = {}
+				end
+			end
+		end
+		if self.drag_pos then
+			self.drag_pos = { x = msg.mx, y = msg.my }
+		end
+	end
+	
+	function el:release(msg)
+		if self.drag_pos then
+			local col = (msg.mx - 1) \ size
+			local row = (msg.my - 1) \ size
+			local c = col + row * nb_columns
+			if 0 <= c and c <= 63 and not locked[c] then
+				undo_stack:checkpoint()
+				swap_colors(active_color, c)
+				active_color = c
+				send_palette()
+			end			
+		end
+		self.click_pos = nil
+		self.drag_pos = nil
+		padlock_flashing = false
+		padlock_flashing_time = 0
+	end
+
+	return el
+end
+
+
+function create_visibility_buttons(el)
+	local size = 12
+	local nb_rows = 4
+	el.width = size
+	el.height = nb_rows * size
+	el.cursor = "pointer"
+	
+	function el:draw(msg)
+		pal(7, outline_color())
+		for row = 0, 3 do
+			if hidden_toggles[row] then
+				spr(4, 0, row * size)
+			else
+				spr(3, 0, row * size)
+			end
+		end
+		pal(7, 7)
+	end
+	
+	function el:tap(msg)
+		local row = mid(0, msg.my \ size, 3)
+		hidden_toggles[row] = not hidden_toggles[row]
+		for c = row * 16, row * 16 + 15 do
+			hidden[c] = hidden_toggles[row]
+		end
+	end
+	
+	return el
+end
+
+
+function create_color_preview(el)
+	local size = 12
+	el.width = size * 4 + 2 + 120
+	el.height = size * 4 + 2
+	
+	function el:draw(msg)
+		if active_color then
+			---rect(0, 0, self.height - 1, self.height - 1, 0)
+			rectfill(1, 1, self.height - 2, self.height - 2, active_color)
+			print(string.format("%d", active_color), 4, 4, contrast_color(active_color))
+			local c = get_color(active_color)
+			print("#" .. color_to_hex(c), 7, self.height - 10, contrast_color(active_color))
+			pal(7, outline_color())
+			if locked[active_color] then
+				if padlock_flashing_time % 18 < 10 then
+					spr(2, self.height + 4, 1)
+				end
+			else
+				spr(1, self.height + 4, 1)
+			end
+			if hidden[active_color] then
+				spr(4, self.height + 4 + size, 1)
+			else
+				spr(3, self.height + 4 + size, 1)
+			end
+			if bg_color == active_color then
+				spr(10, self.height + 4 + 2 * size, 1)
+			else
+				spr(9, self.height + 4 + 2 * size, 1)
+			end
+			pal(7, 7)
+			local hue = pal_okhsl[active_color].h * 360.0
+			while hue < 0.0 do
+				hue += 360.0
+			end
+			print("\|k\014       hue: " .. string.format("%3.0f", hue) .. "", self.height + 5, 26, outline_color())
+			print("\014saturation: " .. string.format("%3.0f", pal_okhsl[active_color].s * 100.0) .. "%")
+			print("\014 luminance: " .. string.format("%3.0f", pal_okhsl[active_color].l * 100.0) .. "%")
+		else
+			---print("\^pOkPal\^-p\014\|o 1.0.2", 8, 16, outline_color())
+			print("\^pOkPal", 8, 16, outline_color())
+			local ppid = env().parent_pid
+			if not ppid then
+				print("\014\|b\-gpress f1 for help")
+			elseif ppid == 1 then
+				print("\014\|b\-gpress f1 for help.")
+			else
+				print("\014\|b\-g(press f1 for help)")
+			end
+		end
+	end
+	
+	function el:tap(msg)
+		if (not active_color) return
+		if msg.mx < self.height or msg.my > size then
+			return
+		elseif msg.mx < self.height + 4 + size then
+			locked[active_color] = not locked[active_color]
+		elseif msg.mx < self.height + 4 + 2 * size then
+			hidden[active_color] = not hidden[active_color]
+		elseif msg.mx < self.height + 4 + 3 * size then
+			if key("shift") and bg_color != active_color then
+				whitest_color = active_color
+			elseif key("ctrl") then
+				blackest_color = active_color
+			elseif bg_color == active_color then
+				bg_color = blackest_color
+			else
+				bg_color = active_color
+			end
+		end
+	end
+	
+	function el:hover(msg)
+		if msg.mx >= self.height + 4 and msg.mx <= self.height + 4 + 3 * size and msg.my <= size then
+			self.cursor = "pointer"
+		else
+			self.cursor = 1
+		end
+	end
+	
+	return el
+end
+
+
+function create_test_cube(el)
+	el.width = 24 + 4
+	el.height = 24 + 4
+
+	function el:draw()
+		local colors = test_cube_colors[self.test_id]
+		pal(10, colors[1])
+		pal(9, colors[2])
+		pal(25, colors[3])
+		spr(8, 2, 2)
+		pal(10, 10)
+		pal(9, 9)
+		pal(25, 25)
+	end
+	
+	function el:hover(msg)
+		if msg.mx > 2 and msg.my > 2 and msg.mx < self.width - 2 and msg.my < self.height - 2 then
+			el.cursor = "crosshair"
+		else
+			el.cursor = 1
+		end
+	end
+	
+	function el:click(msg)
+		local face = 2
+		if msg.mx > self.width - 10 or msg.my < 10 then
+			if msg.mx > self.height - msg.my then
+				face = 3
+			else
+				face = 1
+			end
+		end
+		if msg.mb == 1 then
+			undo_stack:checkpoint()
+			test_cube_colors[self.test_id][face] = active_color or 1
+		elseif msg.mb == 2 then
+			active_color = test_cube_colors[self.test_id][face]
+		end
+	end
+	
+	return el
+end
+
+
+-- Utility functions ----------------------------------------------------------------
+
+
+function outline_color()
+	if pal_okhsl[bg_color].l < 0.5 then
+		return whitest_color
+	else
+		return blackest_color
+	end
+end
+
+
+function contrast_color(c)
+	return (pal_okhsl[c].l < 0.5) and whitest_color or blackest_color
+end
+
+
+function sl_coords(c)
+	local sat = pal_okhsl[c].s
+	local lum = pal_okhsl[c].l
+	local x = slider_border + sat * slider_inner
+	local y = slider_border + slider_inner - lum * slider_inner
+	return x, y
+end
+
+
+function coords_sl(x, y)
+	local sat = (x - slider_border) / slider_inner
+	local lum = 1.0 - ((y - slider_border) / slider_inner)
+	return sat, lum
+end
+
+
+-- Remove 0.25 to compensate for Picotron's angle origin,
+-- and 29/360 to compensate for OkLab weird position of
+-- the red color.
+local angle_correction = 0.25 + 0.08
+
+
+function hs_coords(c)
+	local hue = pal_okhsl[c].h
+	local sat = mid(0.0, pal_okhsl[c].s, 1.0)
+	local a = angle_correction - hue
+	local dx = sat * cos(a) * (slider_inner / 2)
+	local dy = sat * sin(a) * (slider_inner / 2)
+	local x = slider_border + (slider_inner / 2) + dx
+	local y = slider_border + (slider_inner / 2) + dy
+	return x, y
+end
+
+
+function coords_hs(x, y)
+	local dx = x - (slider_border + (slider_inner / 2))
+	local dy = y - (slider_border + (slider_inner / 2))
+	local hue = -atan2(dx, dy) + angle_correction
+	dx = (2.0 * dx) / slider_inner
+	dy = (2.0 * dy) / slider_inner
+	local sat = sqrt(dx * dx + dy * dy) -- / (slider_inner / 2)
+	return hue, sat
+end
+
+
+function h_coords(c, radius_delta)
+	local s = slider_size + 2 * slider_border
+	local r = s - slider_border + (radius_delta or 0)
+	local hue = pal_okhsl[c].h
+	local a = angle_correction - hue
+	local dx = cos(a) * (r / 2)
+	local dy = sin(a) * (r / 2)
+	local x = (s / 2) + dx + 0.5
+	local y = (s / 2) + dy + 0.5
+	return x, y
+end
+
+
+function coords_h(x, y)
+	local s = slider_size + 2 * slider_border
+	local r = s - 6
+	local dx = x - ((s / 2) + 0.5)
+	local dy = y - ((s / 2) + 0.5)
+	local hue = -atan2(dx, dy) + angle_correction
+	dx = (2.0 * dx) / r
+	dy = (2.0 * dy) / r
+	local sat = sqrt(dx * dx + dy * dy)
+	return hue, sat
+end
+:: src/gui_sliders.lua
+--[[pod_format="raw",created="2024-04-05 07:49:07",modified="2024-05-03 07:20:34",revision=630]]
+slider_size = 170
+slider_border = 6
+slider_inner = slider_size - 2 * slider_border
+
+
+-- Hue / saturation slider ----------------------------------------------------------
+
+
+function create_hue_sat_slider(el)
+	el.width = slider_size
+	el.height = slider_size
+	el.drag_delta = nil
+	
+	function el:draw()
+		clip()
+		oval(
+			slider_border - 1, slider_border - 1,
+			slider_border + slider_inner + 1, slider_border + slider_inner + 1,
+			outline_color()
+		)
+		fillp(0b0101101001011010)
+		rectfill(slider_size \ 2 - 24, slider_size \ 2, slider_size \ 2 + 24, slider_size \ 2, 7)
+		rectfill(slider_size \ 2, slider_size \ 2 - 24, slider_size \ 2, slider_size \ 2 + 24, 7)
+		fillp()
+		for c = 0, 63 do
+			-- TODO: put nb_columns in global constant
+			if not hidden[c] and pal_okhsl[c].l != 0 then
+				local x, y = hs_coords(c)
+				ovalfill(x - 3, y - 3, x + 3, y + 3, c)
+			end
+		end
+		if active_color and not hidden[active_color] then
+			local x, y = hs_coords(active_color)
+			pal(7, whitest_color)
+			pal(14, active_color)
+			spr(
+				self.drag_delta and 12 or 11,
+				x - 5, y - 5,
+				x + 5, y + 5
+			)
+			pal(14, 14)
+			pal(7, 7)
+		end
+	end	
+	
+	function el:hover(msg)
+		if (not msg.mx or not msg.my) return false
+		local _, r = coords_hs(msg.mx, msg.my)
+		if r > 1.02 then
+			return false
+		end
+		if active_color and not hidden[active_color] then
+			local ax, ay = hs_coords(active_color)
+			local dx = abs(ax - msg.mx)
+			local dy = abs(ay - msg.my)
+			if dx <= 5 and dy <= 5 then
+				self.cursor = "grab"
+			else
+				self.cursor = 1
+			end
+		end
+		return true
+	end
+	
+	function el:click(msg)
+		undo_stack:checkpoint()
+		local _, r = coords_hs(msg.mx, msg.my)
+		if r > 1.02 then
+			return false
+		end
+		if active_color and not hidden[active_color] then
+			local ax, ay = hs_coords(active_color)
+			local dx = abs(ax - msg.mx)
+			local dy = abs(ay - msg.my)
+			if dx <= 5 and dy <= 5 then
+				self.drag_delta = { x = ax - msg.mx, y = ay - msg.my }
+				return true
+			end
+		end
+		active_color = nil
+		-- In reverse order to prioritize colors on top
+		for c = 63, 0, -1 do
+			local cx, cy = hs_coords(c)
+			local dx = abs(cx - msg.mx)
+			local dy = abs(cy - msg.my)
+			if dx <= 3 and dy <= 3 and not hidden[c] and pal_okhsl[c].l != 0 then
+				active_color = c
+				self.drag_delta = { x = cx - msg.mx, y = cy - msg.my }
+				self.cursor = "grab"
+				return true
+			end
+		end
+		self.drag_delta = nil
+		return true
+	end
+	
+	function el:drag(msg)
+		if (not active_color) return
+		if (not self.drag_delta) return
+		if locked[active_color] then
+			padlock_flashing = true
+		else
+			local ax = msg.mx + self.drag_delta.x
+			local ay = msg.my + self.drag_delta.y
+			local hue, sat = coords_hs(ax, ay)
+			change_color(active_color, hue, sat, nil)
+			return true
+		end
+	end
+	
+	function el:release(msg)
+		send_palette()
+		self.drag_delta = nil
+		padlock_flashing = false
+		padlock_flashing_time = 0
+	end
+
+	return el
+end
+
+
+-- Saturation / luminance slider ----------------------------------------------------
+
+
+function create_sat_lum_slider(el)
+	el.width = slider_size
+	el.height = slider_size
+	el.drag_delta = nil
+		
+	function el:draw()
+		clip()
+		rect(
+			slider_border - 1, slider_border - 1, 
+			slider_border + slider_inner + 1, slider_border + slider_inner + 1, 
+			outline_color()
+		)
+		for c = 0, 63 do
+			if not hidden[c] and pal_okhsl[c].l != 0 then
+				local x, y = sl_coords(c)
+				ovalfill(x - 3, y - 3, x + 3, y + 3, c)
+			end
+		end
+		if active_color and not hidden[active_color] then
+			local x, y = sl_coords(active_color)
+			pal(7, whitest_color)
+			pal(14, active_color)
+			spr(
+				self.drag_delta and 12 or 11,
+				x - 5, y - 5,
+				x + 5, y + 5
+			)
+			pal(14, 14)
+			pal(7, 7)
+		end
+	end	
+	
+	function el:hover(msg)
+		if active_color and not hidden[active_color] then
+			local ax, ay = sl_coords(active_color)
+			local dx = abs(ax - msg.mx)
+			local dy = abs(ay - msg.my)
+			if dx < 6 and dy < 6 then
+				self.cursor = "grab"
+			else
+				self.cursor = 1
+			end
+		end
+	end
+	
+	function el:click(msg)
+		undo_stack:checkpoint()
+		if active_color and not hidden[active_color] then
+			local ax, ay = sl_coords(active_color)
+			local dx = abs(ax - msg.mx)
+			local dy = abs(ay - msg.my)
+			if dx < 6 and dy < 6 then
+				self.drag_delta = { x = ax - msg.mx, y = ay - msg.my }
+				return
+			end
+		end
+		active_color = nil
+		-- In reverse order to prioritize colors on top
+		for c = 63, 0, -1 do
+			local cx, cy = sl_coords(c)
+			local dx = abs(cx - msg.mx)
+			local dy = abs(cy - msg.my)
+			if dx < 3 and dy < 3 and not hidden[c] and pal_okhsl[c].l != 0 then
+				active_color = c
+				self.drag_delta = { x = cx - msg.mx, y = cy - msg.my }
+				self.cursor = "grab"
+				return
+			end
+		end
+		self.drag_delta = nil
+	end
+	
+	function el:drag(msg)
+		if (not active_color) return
+		if (not self.drag_delta) return
+		if locked[active_color] then
+			padlock_flashing = true
+		else
+			local ax = msg.mx + self.drag_delta.x
+			local ay = msg.my + self.drag_delta.y
+			local sat, lum = coords_sl(ax, ay)
+			change_color(active_color, nil, sat, lum)
+		end
+	end
+	
+	function el:release(msg)
+		send_palette()
+		self.drag_delta = nil
+		padlock_flashing = false
+		padlock_flashing_time = 0
+	end
+
+	return el
+end
+
+
+-- 1D Sliders ----------------------------------------------------------------------
+
+
+function create_hue_slider(el)
+	el.width = slider_size + 2 * slider_border
+	el.height = slider_size + 2 * slider_border
+
+	function el:draw()
+		clip()
+		for c = 0, 63 do
+			if not hidden[c] and pal_okhsl[c].l != 0 then
+				cx1, cy1 = h_coords(c, -2)
+				cx2, cy2 = h_coords(c, 18)
+				line(cx1, cy1, cx2, cy2, c)
+			end
+		end
+		if active_color and not hidden[active_color] then
+			local ax, ay = h_coords(active_color)
+			pal(7, outline_color())
+			pal(13, active_color)
+			spr(7, ax - 4, ay - 4)
+			pal(13, 13)
+			pal(7, 7)
+		end
+	end	
+
+	function el:hover(msg)
+		-- I think there is a bug in Picotron's handling of mouse coords
+		-- when one widget is on top of another.
+		--[[
+		if (not msg.mx or not msg.my) return
+		if active_color then
+			local ax, ay = h_coords(active_color)
+			--printh(string.format("%.0f %.0f - %.0f %.0f", ax, ay, msg.mx, msg.my))
+			if
+				msg.mx >= ax - 6 and msg.mx <= ax + 6
+				and msg.my >= ay - 6 and msg.my <= ay + 6
+			then
+				self.cursor = "grab"
+			else
+				self.cursor = 1
+			end
+		end
+		--]]
+	end
+
+	function el:click(msg)
+		undo_stack:checkpoint()
+		if active_color and not hidden[active_color] then
+			local ax, ay = h_coords(active_color)
+			--[[
+			if
+				msg.mx >= ax - 6 and msg.mx <= ax + 6
+				and msg.my >= ay - 6 and msg.my <= ay + 6
+			then
+			]]
+				self.drag_delta = { x = ax - msg.mx, y = ay - msg.my }
+			-- end
+		end
+	end
+	
+	function el:drag(msg)
+		if (not active_color) return
+		if (not self.drag_delta) return
+		if locked[active_color] then
+			padlock_flashing = true
+		else
+			local ax = msg.mx + self.drag_delta.x
+			local ay = msg.my + self.drag_delta.y
+			local hue = coords_h(ax, ay)
+			change_color(active_color, hue, nil, nil)
+		end
+	end
+	
+	function el:release(msg)
+		send_palette()
+		self.drag_delta = nil
+		padlock_flashing = false
+		padlock_flashing_time = 0
+	end
+
+	return el
+end
+
+
+function create_sat_slider(el)
+	el.width = slider_size
+	el.height = 16
+	
+	function el:draw()
+		clip()
+		for c = 0, 63 do
+			if not hidden[c] and pal_okhsl[c].l != 0 then
+				local ax, _ = sl_coords(c)
+				line(ax, 0, ax, self.height - 9, c)
+			end
+		end
+		if active_color and not hidden[active_color] then
+			local ax, _ = sl_coords(active_color)
+			pal(7, outline_color())
+			pal(13, active_color)
+			spr(5, ax - 4, self.height - 9)
+			pal(13, 13)
+			pal(7, 7)
+		end
+	end	
+	
+	function el:hover(msg)
+		if active_color and not hidden[active_color] then
+			local ax, _ = sl_coords(active_color)
+			if msg.mx and msg.mx >= ax - 4 and msg.mx <= ax + 4 and msg.my >= self.height - 9 then
+				self.cursor = "grab"
+			else
+				self.cursor = 1
+			end
+		end
+	end
+
+	function el:click(msg)
+		undo_stack:checkpoint()
+		if active_color and not hidden[active_color] then
+			local ax, _ = sl_coords(active_color)
+			if msg.mx and msg.mx >= ax - 4 and msg.mx <= ax + 4 and msg.my >= self.height - 9 then
+				self.drag_delta_x = ax - msg.mx
+			end
+		end
+	end
+	
+	function el:drag(msg)
+		if (not active_color) return
+		if (not self.drag_delta_x) return
+		if locked[active_color] then
+			padlock_flashing = true
+		else
+			local ax = msg.mx + self.drag_delta_x
+			local sat, lum = coords_sl(ax, 0)
+			change_color(active_color, nil, sat, nil)
+		end
+	end
+	
+	function el:release(msg)
+		send_palette()
+		self.drag_delta_x = nil
+		padlock_flashing = false
+		padlock_flashing_time = 0
+	end
+			
+	return el
+end
+
+
+function create_lum_slider(el)
+	el.width = 16
+	el.height = slider_size
+	
+	function el:draw()
+		clip()
+		for c = 0, 63 do
+			if not hidden[c] and pal_okhsl[c].l != 0 then
+				local _, ay = sl_coords(c)
+				line(0, ay, self.width - 9, ay, c)
+			end
+		end
+		if active_color and not hidden[active_color] then
+			local _, ay = sl_coords(active_color)
+			pal(7, outline_color())
+			pal(13, active_color)
+			spr(6, self.width - 9, ay - 4)
+			pal(13, 13)
+			pal(7, 7)
+		end
+	end	
+	
+	function el:hover(msg)
+		if active_color and not hidden[active_color] then
+			local _, ay = sl_coords(active_color)
+			if msg.my and msg.my >= ay - 4 and msg.my <= ay + 4 and msg.mx >= self.width - 9 then
+				self.cursor = "grab"
+			else
+				self.cursor = 1
+			end
+		end
+	end
+
+	function el:click(msg)
+		undo_stack:checkpoint()
+		if active_color and not hidden[active_color] then
+			local _, ay = sl_coords(active_color)
+			if msg.my and msg.my >= ay - 4 and msg.my <= ay + 4 and msg.mx >= self.width - 9 then
+				self.drag_delta_y = ay - msg.my
+			end
+		end
+	end
+	
+	function el:drag(msg)
+		if (not active_color) return
+		if (not self.drag_delta_y) return
+		if locked[active_color] then
+			padlock_flashing = true
+		else
+			local ay = msg.my + self.drag_delta_y
+			local sat, lum = coords_sl(0, ay)
+			change_color(active_color, nil, nil, lum)
+		end
+	end
+	
+	function el:release(msg)
+		send_palette()
+		self.drag_delta_y = nil
+		padlock_flashing = false
+		padlock_flashing_time = 0
+	end
+			
+	return el
+end
+
+:: src/hexdialog.lua
+--[[pod_format="raw",created="2024-04-03 19:36:00",modified="2025-01-09 06:48:49",revision=1458]]
+gui_state = {
+	choice = "dont_clobber"
+}
+
+
+function _init()
+	window {
+	    width = 208,
+	    height = 124,
+	    title = "Import Hex File",
+	    resizeable = false,
+	}
+	
+	gui = create_gui()
+	
+	local x, y = 16, 16
+	local line_height = 12
+	local line_gap = 2
+	gui:attach(create_radio_button {
+		x = x, y = y, 
+		label = "Don't overwrite Picotron palette\n(only use last 32 colors)",
+		group = "choice",
+		key = "dont_clobber",
+	})
+	y += 2 * line_height + line_gap
+	gui:attach(create_radio_button {
+		x = x, y = y, 
+		label = "Overwrite but reorder colors\nto match Picotron palette",
+		group = "choice",
+		key = "remap",
+	})
+	y += 2 * line_height + line_gap
+	gui:attach(create_radio_button {
+		x = x, y = y, 
+		label = "Overwrite *without* reordering\n(may render GUI hard to use!)",
+		group = "choice",
+		key = "overwrite",
+	})
+	
+	y += 2 * line_height + 12
+	x = 150
+	
+	gui:attach_button {
+		x = x, y = y,
+		label = "Import",
+		bgcol = 0x060d,
+		fgcol = 0x0101,
+		tap = handle_confirm,
+	}
+end
+
+
+function _draw()
+	cls(7)
+	gui:draw_all()
+end
+
+
+function _update()
+	gui:update_all()
+end
+
+
+function handle_confirm()
+	send_message(
+		env().okpal_parent_pid,
+		{
+			event = "okpal_hexdialog_confirm",
+			okpal_filename = env().okpal_filename,
+			okpal_hexdialog_choice = gui_state.choice,
+			okpal_data = env().okpal_data,
+			okpal_metadata = env().okpal_metadata,
+		}
+	)
+	exit(0)
+end
+
+
+-- Widgets ------------------------------------------------------------------------
+
+
+function create_radio_button(el)
+	el.width = 188
+	el.height = 80 -- TODO: count the lines?
+	el.cursor = "pointer"
+	
+	function el:draw()
+		oval(0, 0, 8, 8, 1)
+		if gui_state[el.group] == el.key then
+			ovalfill(2, 2, 6, 6, 1)
+		end
+		print(el.label, 15, 1, 13)
+	end
+	
+	function el:tap()
+		gui_state[el.group] = el.key
+	end
+	
+	return el
+end
+:: src/oklab.lua
+--[[pod_format="raw",created="2024-03-31 09:08:26",modified="2024-04-02 08:53:32",revision=979]]
+-- Copyright(c) 2021 Bjorn Ottosson
+--
+-- Permission is hereby granted, free of charge, to any person obtaining a copy of
+-- this software and associated documentation files(the "Software"), to deal in
+-- the Software without restriction, including without limitation the rights to
+-- use, copy, modify, merge, publish, distribute, sublicense, and /or sell copies
+-- of the Software, and to permit persons to whom the Software is furnished to do
+-- so, subject to the following conditions:
+--
+-- The above copyright noticeand this permission notice shall be included in all
+-- copies or substantial portions of the Software.
+--
+-- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+-- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+-- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE
+-- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+-- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+-- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+-- SOFTWARE.
+
+oklab = {}
+oklab.__index = oklab
+
+function oklab.color_to_okhsl(code)
+	local srgb = {
+		r = ((code & 0xff0000) >> 16) / 255,
+		g = ((code & 0x00ff00) >> 8) / 255,
+		b = ((code & 0x0000ff)) / 255,
+	}
+	return oklab.srgb_to_okhsl(srgb)
+end
+
+function oklab.okhsl_to_color(okhsl)
+	local srgb = oklab.okhsl_to_srgb(okhsl)
+	local r = mid(0x00, math.floor(srgb.r * 255 + 0.5), 0xff)
+	local g = mid(math.floor(srgb.g * 255 + 0.5), 0xff)
+	local b = mid(math.floor(srgb.b * 255 + 0.5), 0xff)
+	return (r << 16) | (g << 8) | b
+end
+
+function oklab.new()
+    local inst = setmetatable({}, oklab)
+    return inst
+end
+
+-- Finds the maximum saturation possible for a given hue that fits in sRGB
+-- Saturation here is defined as S = C/L
+-- a and b must be normalized so a^2 + b^2 == 1
+function oklab.compute_max_saturation(a, b)
+    if a ~= 0.0 or b ~= 0.0 then
+    	-- Max saturation will be when one of r, g or b goes below zero.
+        -- Select different coefficients depending on which component goes below zero first
+
+        -- Blue component (default)
+        local k0 = 1.35733652
+        local k1 = -0.00915799
+        local k2 = -1.1513021
+        local k3 = -0.50559606
+        local k4 = 0.00692167
+        local wl = -0.0041960863
+        local wm = -0.7034186147
+        local ws = 1.707614701
+
+        if -1.88170328 * a - 0.80936493 * b > 1 then
+            -- Red component
+            k0 = 1.19086277
+            k1 = 1.76576728
+            k2 = 0.59662641
+            k3 = 0.75515197
+            k4 = 0.56771245
+            wl = 4.0767416621
+            wm = -3.3077115913
+            ws = 0.2309699292
+        elseif 1.81444104 * a - 1.19445276 * b > 1 then
+            -- Green component
+            k0 = 0.73956515
+            k1 = -0.45954404
+            k2 = 0.08285427
+            k3 = 0.1254107
+            k4 = 0.14503204
+            wl = -1.2684380046
+            wm = 2.6097574011
+            ws = -0.3413193965
+        end
+
+        -- Approximate max saturation using a polynomial:
+        local S = k0 + k1 * a + k2 * b + k3 * a * a + k4 * a * b
+
+        -- Do one step Halley's method to get closer
+        -- this gives an error less than 10e6, except for some blue hues where the dS/dh is close to infinite
+        -- this should be sufficient for most applications, otherwise do two/three steps
+
+        local k_l = 0.3963377774 * a + 0.2158037573 * b
+        local k_m = -0.1055613458 * a - 0.0638541728 * b
+        local k_s = -0.0894841775 * a - 1.291485548 * b
+
+        do
+            local l_ = 1.0 + S * k_l
+            local m_ = 1.0 + S * k_m
+            local s_ = 1.0 + S * k_s
+
+            local l = l_ * l_ * l_
+            local m = m_ * m_ * m_
+            local s = s_ * s_ * s_
+
+            local l_dS = 3.0 * k_l * l_ * l_
+            local m_dS = 3.0 * k_m * m_ * m_
+            local s_dS = 3.0 * k_s * s_ * s_
+
+            local l_dS2 = 6.0 * k_l * k_l * l_
+            local m_dS2 = 6.0 * k_m * k_m * m_
+            local s_dS2 = 6.0 * k_s * k_s * s_
+
+            local f = wl * l + wm * m + ws * s
+            local f1 = wl * l_dS + wm * m_dS + ws * s_dS
+            local f2 = wl * l_dS2 + wm * m_dS2 + ws * s_dS2
+
+            local s_denom = f1 * f1 - 0.5 * f * f2
+            if s_denom ~= 0.0 then  S = S - f * f1 / s_denom end
+        end
+
+        return S
+    else
+        return 0.0
+    end
+end
+
+-- finds L_cusp and C_cusp for a given hue
+-- a and b must be normalized so a^2 + b^2 == 1
+function oklab.find_cusp(a, b)
+	-- First, find the maximum saturation (saturation S = C/L)
+    local S_cusp = oklab.compute_max_saturation(a, b)
+
+    -- Convert to linear sRGB to find the first point where at least one of r,g or b >= 1:
+    local rgb_at_max = oklab.oklab_to_linear_srgb({L = 1, a = S_cusp * a, b = S_cusp * b })
+    local max_comp = math.max(rgb_at_max.r, rgb_at_max.g, rgb_at_max.b)
+    if max_comp ~= 0.0 then
+        local L_cusp = (1.0 / max_comp) ^ 0.3333333333333333
+        return { L = L_cusp, C = L_cusp * S_cusp }
+    else
+        return { L = 0.0, C = 0.0 }
+    end
+end
+
+-- Finds intersection of the line defined by
+-- L = L0 * (1 - t) + t * L1
+-- C = t * C1
+-- a and b must be normalized so a^2 + b^2 == 1
+function oklab.find_gamut_intersection(a, b, L1, C1, L0, x)
+    -- Find the cusp of the gamut triangle
+    local cusp = x or oklab.find_cusp(a, b)
+
+    -- Find the intersection for upper and lower half separately
+    local t = 0.0
+    if ((L1 - L0) * cusp.C - (cusp.L - L0) * C1) <= 0.0 then
+        -- Lower half
+        local t_denom = C1 * cusp.L + cusp.C * (L0 - L1)
+        if t_denom ~= 0.0 then t = cusp.C * L0 / t_denom end
+    else
+        -- Upper half
+        -- First intersect with triangle
+        local t_denom = C1 * (cusp.L - 1.0) + cusp.C * (L0 - L1)
+        if t_denom ~= 0.0 then t = cusp.C * (L0 - 1.0) / t_denom end
+
+        -- Then one step Halley's method
+        do
+            local dL = L1 - L0
+            local dC = C1
+
+            local k_l = 0.3963377774 * a + 0.2158037573 * b
+            local k_m = -0.1055613458 * a - 0.0638541728 * b
+            local k_s = -0.0894841775 * a - 1.291485548 * b
+
+            local l_dt = dL + dC * k_l
+            local m_dt = dL + dC * k_m
+            local s_dt = dL + dC * k_s
+
+            -- If higher accuracy is required, 2 or 3 iterations of the following block can be used:
+            do
+                local L = L0 * (1.0 - t) + t * L1
+				local C = t * C1
+
+				local l_ = L + C * k_l
+				local m_ = L + C * k_m
+				local s_ = L + C * k_s
+
+				local l = l_ * l_ * l_
+				local m = m_ * m_ * m_
+				local s = s_ * s_ * s_
+
+				local ldt = 3.0 * l_dt * l_ * l_
+				local mdt = 3.0 * m_dt * m_ * m_
+				local sdt = 3.0 * s_dt * s_ * s_
+
+				local ldt2 = 6.0 * l_dt * l_dt * l_
+				local mdt2 = 6.0 * m_dt * m_dt * m_
+				local sdt2 = 6.0 * s_dt * s_dt * s_
+
+                local r0 = 4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s - 1
+				local r1 = 4.0767416621 * ldt - 3.3077115913 * mdt + 0.2309699292 * sdt
+				local r2 = 4.0767416621 * ldt2 - 3.3077115913 * mdt2 + 0.2309699292 * sdt2
+
+                local r_denom = r1 * r1 - 0.5 * r0 * r2
+                local u_r = 0.0
+                if r_denom ~= 0.0 then u_r = r1 / r_denom end
+				local t_r = -r0 * u_r
+
+                local g0 = -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s - 1
+				local g1 = -1.2684380046 * ldt + 2.6097574011 * mdt - 0.3413193965 * sdt
+				local g2 = -1.2684380046 * ldt2 + 2.6097574011 * mdt2 - 0.3413193965 * sdt2
+
+                local g_denom = g1 * g1 - 0.5 * g0 * g2
+                local u_g = 0.0
+                if g_denom ~= 0.0 then u_g = g1 / g_denom end
+				local t_g = -g0 * u_g
+
+                local b0 = -0.0041960863 * l - 0.7034186147 * m + 1.707614701 * s - 1
+				local b1 = -0.0041960863 * ldt - 0.7034186147 * mdt + 1.707614701 * sdt
+				local b2 = -0.0041960863 * ldt2 - 0.7034186147 * mdt2 + 1.707614701 * sdt2
+
+                local b_denom = (b1 * b1 - 0.5 * b0 * b2)
+                local u_b = 0.0
+                if b_denom ~= 0.0 then u_b = b1 / b_denom end
+				local t_b = -b0 * u_b
+
+                if u_r < 0.0 then t_r = 3.40282347e+38 end
+                if u_g < 0.0 then t_g = 3.40282347e+38 end
+                if u_b < 0.0 then t_b = 3.40282347e+38 end
+
+                t = t + math.min(t_r, t_g, t_b)
+            end
+        end
+    end
+
+    return t
+end
+
+function oklab.get_Cs(L, a_, b_)
+    local cusp = oklab.find_cusp(a_, b_)
+    local C_max = oklab.find_gamut_intersection(a_, b_, L, 1.0, L, cusp)
+    local ST_max = oklab.to_ST(cusp)
+
+    -- Scale factor to compensate for the curved part of gamut shape:
+    local k = 0.0
+    local k_denom = math.min(L * ST_max.S, (1.0 - L) * ST_max.T)
+    if k_denom ~= 0.0 then k = C_max / k_denom end
+
+    local C_mid = 0.0
+    do
+        local ST_mid = oklab.get_ST_mid(a_, b_)
+
+        -- Use a soft minimum function, instead of a sharp triangle shape to get a smooth value for chroma.
+        local C_a = L * ST_mid.S
+        local C_b = (1.0 - L) * ST_mid.T
+
+        local cae4 = C_a * C_a * C_a * C_a
+        local cbe4 = C_b * C_b * C_b * C_b
+        C_mid = 0.9 * k * ((1.0 / (1.0 / cae4 + 1.0 / cbe4)) ^ 0.25)
+    end
+
+    local C_0 = 0.0
+    do
+        -- for C_0, the shape is independent of hue, so ST are constant. Values picked to roughly be the average values of ST.
+        local C_a = L * 0.4
+        local C_b = (1.0 - L) * 0.8
+
+        -- Use a soft minimum function, instead of a sharp triangle shape to get a smooth value for chroma.
+        local cae2 = C_a * C_a
+        local cbe2 = C_b * C_b
+        C_0 = math.sqrt(1.0 / (1.0 / cae2 + 1.0 / cbe2))
+    end
+
+    return { C_0 = C_0, C_mid = C_mid, C_max = C_max }
+end
+
+-- Returns a smooth approximation of the location of the cusp
+-- This polynomial was created by an optimization process
+-- It has been designed so that S_mid < S_max and T_mid < T_max
+function oklab.get_ST_mid(a_, b_)
+    local S = 0.11516993
+    local s_denom = 7.4477897 + 4.1590124 * b_
+        + a_ * (-2.19557347 + 1.75198401 * b_
+        + a_ * (-2.13704948 - 10.02301043 * b_
+        + a_ * (-4.24894561 + 5.38770819 * b_ + 4.69891013 * a_)))
+    if s_denom ~= 0.0 then
+        S = 0.11516993 + 1.0 / s_denom
+    end
+
+    local T = 0.11239642
+    local t_denom = 1.6132032 - 0.68124379 * b_
+        + a_ * (0.40370612 + 0.90148123 * b_
+        + a_ * (-0.27087943 + 0.6122399 * b_
+        + a_ * (0.00299215 - 0.45399568 * b_ - 0.14661872 * a_)))
+	if t_denom ~= 0.0 then
+        T = 0.11239642 + 1.0 / t_denom
+    end
+
+	return { S = S, T = T }
+end
+
+function oklab.linear_srgb_to_oklab(c)
+    local l = 0.4122214708 * c.r
+            + 0.5363325363 * c.g
+            + 0.0514459929 * c.b
+	local m = 0.2119034982 * c.r
+            + 0.6806995451 * c.g
+            + 0.1073969566 * c.b
+	local s = 0.0883024619 * c.r
+            + 0.2817188376 * c.g
+            + 0.6299787005 * c.b
+
+    local l_ = l ^ 0.3333333333333333
+    local m_ = m ^ 0.3333333333333333
+    local s_ = s ^ 0.3333333333333333
+
+    return {
+        L = 0.2104542553 * l_
+          + 0.793617785 * m_
+          - 0.0040720468 * s_,
+        a = 1.9779984951 * l_
+          - 2.428592205 * m_
+          + 0.4505937099 * s_,
+        b = 0.0259040371 * l_
+          + 0.7827717662 * m_
+          - 0.808675766 * s_ }
+end
+
+function oklab.okhsl_to_oklab(hsl)
+	local l = hsl.l
+    if l >= 1.0 then return { L = 1.0, a = 0.0, b = 0.0 } end
+    if l <= 0.0 then return { L = 0.0, a = 0.0, b = 0.0 } end
+
+    local s = hsl.s
+    if s < 0.0 then s = 0.0 end
+    if s > 1.0 then s = 1.0 end
+
+    local h = hsl.h
+    local h_rad = h * 6.283185307179586
+    local a_ = math.cos(h_rad)
+    local b_ = math.sin(h_rad)
+    local L = oklab.toe_inv(l)
+
+    local cs = oklab.get_Cs(L, a_, b_)
+    local C_0 = cs.C_0
+	local C_mid = cs.C_mid
+	local C_max = cs.C_max
+
+    local mid = 0.8
+	local mid_inv = 1.25
+
+    local C = 0.0
+    local t = 0.0
+    local k_0 = 0.0
+    local k_1 = 0.0
+    local k_2 = 0.0
+    if s < mid then
+        t = mid_inv * s
+
+		k_1 = mid * C_0
+        if C_mid ~= 0.0 then
+		    k_2 = 1.0 - k_1 / C_mid
+        end
+
+        local k_denom = 1.0 - k_2 * t
+		if k_denom ~= 0.0 then
+            C = t * k_1 / k_denom
+        end
+    else
+        local t_denom = 1.0 - mid
+        if t_denom ~= 0.0 then
+            t = (s - mid) / t_denom
+        end
+
+		k_0 = C_mid
+        if C_0 ~= 0.0 then
+		    k_1 = (1.0 - mid) * C_mid * C_mid * mid_inv * mid_inv / C_0
+        end
+
+        local C_denom = C_max - C_mid
+		k_2 = 1.0
+        if C_denom ~= 0.0 then
+            k_2 = 1.0 - k_1 / C_denom
+        end
+
+        local k_denom = 1.0 - k_2 * t
+        if k_denom ~= 0.0 then
+		    C = k_0 + t * k_1 / k_denom
+        end
+    end
+
+    return {
+        L = L,
+        a = C * a_,
+        b = C * b_ }
+end
+
+function oklab.okhsl_to_srgb(hsl)
+    return oklab.oklab_to_srgb(oklab.okhsl_to_oklab(hsl))
+end
+
+function oklab.okhsv_to_oklab(hsv)
+	local v = hsv.v
+    if v <= 0.0 then return { L = 0.0, a = 0.0, b = 0.0 } end
+    if v > 1.0 then v = 1.0 end
+
+    local s = hsv.s
+    if s < 0.0 then s = 0.0 end
+    if s > 1.0 then s = 1.0 end
+
+    local h = hsv.h
+    local h_rad = h * 6.283185307179586
+    local a_ = math.cos(h_rad)
+    local b_ = math.sin(h_rad)
+
+    local cusp = oklab.find_cusp(a_, b_)
+	local ST_max = oklab.to_ST(cusp)
+	local S_max = ST_max.S
+	local T_max = ST_max.T
+	local S_0 = 0.5
+    local k = 1.0
+    if S_max ~= 0.0 then
+	    k = 1.0 - S_0 / S_max
+    end
+
+    -- first we compute L and V as if the gamut is a perfect triangle:
+
+	-- L, C when v==1:
+    local v_denom = S_0 + T_max - T_max * k * s
+    local L_v = 1.0
+    local C_v = 0.0
+    if v_denom ~= 0.0 then
+        L_v = 1.0 - s * S_0 / v_denom
+	    C_v = s * T_max * S_0 / v_denom
+    end
+
+    local L = v * L_v
+	local C = v * C_v
+
+    --then we compensate for both toe and the curved top part of the triangle:
+    local L_vt = oklab.toe_inv(L_v)
+    local C_vt = 0.0
+    if L_v ~= 0.0 then
+        C_vt = C_v * L_vt / L_v
+    end
+
+    local L_new = oklab.toe_inv(L)
+    if L ~= 0.0 then
+        C = C * L_new / L
+    end
+    L = L_new
+
+    local rgb_scale = oklab.oklab_to_linear_srgb({
+        L = L_vt,
+        a = a_ * C_vt,
+        b = b_ * C_vt })
+    local max_comp = math.max(
+        rgb_scale.r,
+        rgb_scale.g,
+        rgb_scale.b, 0.0)
+    local scale_L = 0.0
+    if max_comp ~= 0.0 then
+        scale_L = (1.0 / max_comp) ^ 0.3333333333333333
+    end
+
+	C = C * scale_L
+    return {
+        L = L * scale_L,
+        a = C * a_,
+        b = C * b_ }
+end
+
+function oklab.okhsv_to_srgb(hsv)
+    return oklab.oklab_to_srgb(oklab.okhsv_to_oklab(hsv))
+end
+
+function oklab.oklab_to_linear_srgb(lab)
+    local l_ = lab.L
+        + 0.3963377774 * lab.a
+        + 0.2158037573 * lab.b
+	local m_ = lab.L
+        - 0.1055613458 * lab.a
+        - 0.0638541728 * lab.b
+	local s_ = lab.L
+        - 0.0894841775 * lab.a
+        - 1.291485548 * lab.b
+
+    local l = l_ * l_ * l_
+    local m = m_ * m_ * m_
+    local s = s_ * s_ * s_
+
+    return {
+        r = 4.0767416621 * l
+          - 3.3077115913 * m
+          + 0.2309699292 * s,
+        g = -1.2684380046 * l
+           + 2.6097574011 * m
+           - 0.3413193965 * s,
+        b = -0.0041960863 * l
+           - 0.7034186147 * m
+           + 1.707614701 * s }
+end
+
+function oklab.oklab_to_okhsl(lab)
+    local L = lab.L
+    if L >= 1.0 then return { h = 0.0, s = 0.0, l = 1.0 } end
+    if L <= 0.0 then return { h = 0.0, s = 0.0, l = 0.0 } end
+
+    local Csq = lab.a * lab.a + lab.b * lab.b
+    if Csq > 0.0 then
+        local C = math.sqrt(Csq)
+        local a_ = lab.a / C
+        local b_ = lab.b / C
+
+        -- 1.0 / math.pi = 0.3183098861837907
+        local h = 0.5 + 0.5 * math.atan(-lab.b, -lab.a) * 0.3183098861837907
+
+        local cs = oklab.get_Cs(L, a_, b_)
+        local C_0 = cs.C_0
+        local C_mid = cs.C_mid
+        local C_max = cs.C_max
+
+        -- Inverse of the interpolation in okhsl_to_srgb:
+        local mid = 0.8
+        local mid_inv = 1.25
+
+        local s = 0.0
+        if C < C_mid then
+            local k_1 = mid * C_0
+            local k_2 = 1.0
+            if C_mid ~= 0.0 then
+                k_2 = (1.0 - k_1 / C_mid)
+            end
+
+            local t_denom = k_1 + k_2 * C
+            local t = 0.0
+            if t_denom ~= 0.0 then
+                t = C / t_denom
+            end
+
+            s = t * mid
+        else
+            local k_0 = C_mid
+            local k_1 = 0.0
+            if C_0 ~= 0.0 then
+                k_1 = (1.0 - mid) * C_mid * C_mid * mid_inv * mid_inv / C_0
+            end
+
+            local C_denom = C_max - C_mid
+            local k_2 = 1.0
+            if C_denom ~= 0.0 then
+                k_2 = 1.0 - k_1 / C_denom
+            end
+
+            local t_denom = k_1 + k_2 * (C - k_0)
+            local t = 0.0
+            if t_denom ~= 0.0 then
+                t = (C - k_0) / t_denom
+            end
+
+            s = mid + (1.0 - mid) * t
+        end
+
+        return { h = h, s = s, l = oklab.toe(L) }
+    else
+        return { h = 0.0, s = 0.0, l = L }
+    end
+end
+
+function oklab.oklab_to_okhsv(lab)
+    local L = lab.L
+    if L >= 1.0 then return { h = 0.0, s = 0.0, v = 1.0 } end
+    if L <= 0.0 then return { h = 0.0, s = 0.0, v = 0.0 } end
+
+    local Csq = lab.a * lab.a + lab.b * lab.b
+    if Csq > 0.0 then
+        local C = math.sqrt(Csq)
+        local a_ = lab.a / C
+        local b_ = lab.b / C
+
+        -- 1.0 / math.pi = 0.3183098861837907
+        local h = 0.5 + 0.5 * math.atan(-lab.b, -lab.a) * 0.3183098861837907
+
+        local cusp = oklab.find_cusp(a_, b_)
+        local ST_max = oklab.to_ST(cusp)
+        local S_max = ST_max.S
+        local T_max = ST_max.T
+        local S_0 = 0.5
+        local k = 1.0
+        if S_max ~= 0.0 then
+            k = 1.0 - S_0 / S_max
+        end
+
+        -- first we find L_v, C_v, L_vt and C_vt
+        local t_denom = C + L * T_max
+        local t = 0.0
+        if t_denom ~= 0.0 then
+            t = T_max / t_denom
+        end
+        local L_v = t * L
+        local C_v = t * C
+
+        local L_vt = oklab.toe_inv(L_v)
+        local C_vt = 0.0
+        if L_v ~= 0.0 then
+            C_vt = C_v * L_vt / L_v
+        end
+
+        -- we can then use these to invert the step that compensates for the toe and the curved top part of the triangle:
+        local rgb_scale = oklab.oklab_to_linear_srgb({
+            L = L_vt,
+            a = a_ * C_vt,
+            b = b_ * C_vt })
+        local scale_denom = math.max(
+            rgb_scale.r,
+            rgb_scale.g,
+            rgb_scale.b, 0.0)
+        local scale_L = 0.0
+        if scale_denom ~= 0.0 then
+            scale_L = (1.0 / scale_denom) ^ 0.3333333333333333
+            L = L / scale_L
+            C = C / scale_L
+        end
+
+        local toel = oklab.toe(L)
+        C = C * toel / L
+        L = toel
+
+        -- we can now compute v and s:
+        local v = 0.0
+        if L_v ~= 0.0 then v = L / L_v end
+
+        local s = 0.0
+        local s_denom = ((T_max * S_0) + T_max * k * C_v)
+        if s_denom ~= 0.0 then
+            s = (S_0 + T_max) * C_v / s_denom
+        end
+
+        return { h = h, s = s, v = v }
+    else
+        return { h = 0.0, s = 0.0, v = L }
+    end
+end
+
+function oklab.oklab_to_srgb(lab)
+    local lrgb = oklab.oklab_to_linear_srgb(lab)
+	return {
+		r = oklab.srgb_transfer_function(lrgb.r),
+		g = oklab.srgb_transfer_function(lrgb.g),
+		b = oklab.srgb_transfer_function(lrgb.b) }
+end
+
+function oklab.srgb_to_okhsl(rgb)
+    return oklab.oklab_to_okhsl(oklab.srgb_to_oklab(rgb))
+end
+
+function oklab.srgb_to_okhsv(rgb)
+    return oklab.oklab_to_okhsv(oklab.srgb_to_oklab(rgb))
+end
+
+function oklab.srgb_to_oklab(srgb)
+    return oklab.linear_srgb_to_oklab({
+		r = oklab.srgb_transfer_function_inv(srgb.r),
+		g = oklab.srgb_transfer_function_inv(srgb.g),
+		b = oklab.srgb_transfer_function_inv(srgb.b) })
+end
+
+function oklab.srgb_transfer_function(a)
+    if 0.0031308 >= a then
+        return 12.92 * a
+    else
+        return 1.055 * (a ^ 0.4166666666666667) - 0.055
+    end
+end
+
+function oklab.srgb_transfer_function_inv(a)
+    if 0.04045 < a then
+        return ((a + 0.055) * 0.9478672985781991) ^ 2.4
+    else
+        return a * 0.07739938080495357
+    end
+end
+
+function oklab.to_ST(cusp)
+	local L = cusp.L
+    local C = cusp.C
+    if L ~= 0.0 and L ~= 1.0 then
+        return { S = C / L, T = C / (1.0 - L) }
+    elseif L ~= 0.0 then
+        return { S = C / L, T = 0.0 }
+    elseif L ~= 1.0 then
+        return { S = 0.0, T = C / (1.0 - L) }
+    else
+        return { S = 0.0, T = 0.0 }
+    end
+end
+
+function oklab.toe(x)
+    local y = 1.170873786407767 * x - 0.206
+	return 0.5 * (y + math.sqrt(y * y + 0.14050485436893204 * x))
+end
+
+function oklab.toe_inv(x)
+    local denom = 1.170873786407767 * (x + 0.03)
+    if denom ~= 0.0 then
+    	return (x * x + 0.206 * x) / denom
+    else
+        return 0.0
+    end
+end
+
+return oklab
+:: src/palette.lua
+--[[pod_format="raw",created="2024-03-31 08:27:10",modified="2024-05-03 07:18:27",revision=3088]]
+function set_color(c, code)
+	poke4(0x5000 + 4 * c, code)
+end
+
+
+function get_color(c)
+	return peek4(0x5000 + 4 * c)
+end
+
+
+function color_to_hex(c)
+	return string.format("%06x", c)
+end
+
+
+function rebuild_pal(c)
+	for c = 0, 63 do
+		pal_code[c] = get_color(c)
+		pal_okhsl[c] = oklab.color_to_okhsl(pal_code[c])
+	end
+end
+
+
+function change_color_code(c, code)
+	pal_code[c] = code
+	pal_okhsl[c] = oklab.color_to_okhsl(pal_code[c])
+	set_color(c, code)
+end
+
+
+function change_color(c, hue, sat, lum)
+	local hsl = {
+		h = hue or pal_okhsl[c].h,
+		s = sat or pal_okhsl[c].s,
+		l = lum or pal_okhsl[c].l,
+	}
+	hsl.h = mid(-1.0, hsl.h, 1.0)
+	hsl.s = mid(0.0, hsl.s, 1.0)
+	hsl.l = mid(0.0, hsl.l, 1.0)
+	local code = oklab.okhsl_to_color(hsl)
+	pal_code[c] = code
+	pal_okhsl[c] = hsl
+	set_color(c, code)
+	return
+end
+
+
+function swap_colors(c1, c2)
+	pal_code[c1], pal_code[c2] = pal_code[c2], pal_code[c1]
+	pal_okhsl[c1], pal_okhsl[c2] = pal_okhsl[c2], pal_okhsl[c1]
+	set_color(c1, pal_code[c1])
+	set_color(c2, pal_code[c2])
+end
+
+
+function clear_colors()
+	for c = 0, 63 do
+		local code, lum
+		if c == 7 then
+			code = 0xffffff
+			lum = 1.0
+		else
+			code = 0x000000
+			lum = 0.0
+		end
+		pal_code[c] = code
+		pal_okhsl[c] = { h = 0.0, s = 0.0, l = lum }
+		set_color(c, code)
+		locked[c] = (c == 0) or (c == 7)
+		hidden[c] = false
+		for row = 0, 3 do hidden_toggles[row] = false end
+		for i = 0, #test_cube_colors - 1 do
+			test_cube_colors[i] = { 1, 1, 1 }
+		end
+	end
+	bg_color = 0
+	blackest_color = 0
+	whitest_color = 7
+end
+
+
+function restore_default_palette()
+	for c = 0, 63 do
+		code = peek4(0x5000 + 4 * (64 + c))
+		set_color(c, code)
+		pal_code[c] = code
+		pal_okhsl[c] = oklab.color_to_okhsl(code)
+		locked[c] = c <= 31
+		hidden[c] = false
+		for row = 0, 3 do hidden_toggles[row] = false end
+		test_cube_colors = copy(default_test_cube_colors)
+	end
+	bg_color = 0
+	blackest_color = 0
+	whitest_color = 7
+end
+:: src/remap.lua
+--[[pod_format="raw",created="2024-04-04 07:28:50",modified="2024-05-03 07:18:27",revision=1092]]
+-- Color remapping ---------------------------------------------------------------
+
+
+-- assumes `pal_okhsl` is up to date
+function remap_colors()
+	local new_pal_code = {}
+	local picotron_okhsl = {}
+	local remaining_pico_c = {}
+	local remaining_new_c = { 0 }
+	for pico_c = 0, 31 do
+		local code = peek4(0x5000 + 4 * (64 + pico_c))
+		picotron_okhsl[pico_c] = oklab.color_to_okhsl(code)
+		add(remaining_pico_c, pico_c)
+	end	
+	for c = 1, 63 do
+		if pal_code[c] != 0x000000 then
+			add(remaining_new_c, c)
+		end
+	end
+
+		
+	-- Choose colors 0 (black) and 7 (white) first
+	local best_black, best_white = find_blackest_and_whitest()
+	new_pal_code[0] = pal_code[best_black]
+	del(remaining_pico_c, 0)
+	del(remaining_new_c, best_black)
+	new_pal_code[7] = pal_code[best_white]
+	del(remaining_pico_c, 7)
+	del(remaining_new_c, best_white)
+		
+	-- Find best match for the other colors
+	local deltas = {}
+	for c = 0, 63 do
+		deltas[c] = {}
+		for pico_c = 0, 31 do
+			local delta_sat = pal_okhsl[c].s - picotron_okhsl[pico_c].s
+			local delta_lum = pal_okhsl[c].l - picotron_okhsl[pico_c].l
+			-- TODO: should ignore hue if sat or lum is low
+			local delta_hue = pal_okhsl[c].h - picotron_okhsl[pico_c].h
+			if delta_hue > 360.0 then
+				delta_hue -= 360.0
+			elseif delta_hue < -360.0 then
+				delta_hue += 360.0
+			end
+
+			delta_hue *= 2.0 * picotron_okhsl[pico_c].s * pal_okhsl[c].s
+			delta_sat *= 0.5
+
+			deltas[c][pico_c] =
+				math.sqrt(
+					(delta_hue * delta_hue)
+					+ (delta_sat * delta_sat)
+					+ (delta_lum * delta_lum)
+				)
+		end
+	end
+	
+	while #remaining_pico_c > 0 and #remaining_new_c > 0  do
+		local min_delta = 1000.0
+		local match_c = nil
+		local match_pico_c = nil
+		for i = 1, #remaining_new_c do
+			local c = remaining_new_c[i]
+			for j = 1, #remaining_pico_c do
+				local pico_c = remaining_pico_c[j]
+				local d = deltas[c][pico_c]
+				if d and d < min_delta then
+					min_delta = d
+					match_c = c
+					match_pico_c = pico_c
+				end
+			end
+		end
+		if match_c then
+			new_pal_code[match_pico_c] = pal_code[match_c]
+			del(remaining_new_c, match_c)
+			del(remaining_pico_c, match_pico_c)
+		end
+	end
+
+	-- Add remaining colors
+	for i = 1, #remaining_new_c do
+		local c = remaining_new_c[i]
+		local dest = 1
+		while new_pal_code[dest] do
+			dest += 1
+		end
+		new_pal_code[dest] = pal_code[c]
+		dest += 1
+	end
+	
+	for c = 0, 63 do
+		set_color(c, new_pal_code[c] or 0x000000)
+	end
+	rebuild_pal()
+end
+
+
+function find_blackest_and_whitest()
+	local min_lum = 1.0
+	local best_black = 0
+	local max_lum = 0.0
+	local best_white = 1
+	for c = 0, 63 do
+		if pal_okhsl[c].l < min_lum then
+			best_black = c
+			min_lum = pal_okhsl[c].l
+		end
+		if pal_okhsl[c].l > max_lum then
+			best_white = c
+			max_lum = pal_okhsl[c].l
+		end
+	end
+	return best_black, best_white
+end
+:: src/.info.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTA0LTAzIDE4OjA3OjM0Iixtb2RpZmllZD0iMjAyNS0w
+MS0wOSAwNjo0OTowOCIsc3RvcmVkPSIyMDI0LTA0LTAzIDE4OjA3OjM0Il1d
+:: label.png
+b64$iVBORw0KGgoAAAANSUhEUgAAAeAAAAEOCAYAAABRmsRnAAAgCUlEQVR4Ae3dLZSyTB_A8f-j
+MUwkEo3GjUaj0Ug0Go1GotFoNBKJRqPRaNxIJE54wvvez724iKAwfMjH9TtnzwqC4DjMVf-RYfCv
+AACARo3beFMXa9WrQZ6Fx-tr77A3_gxnvWG2AkDfA5wViSYiUEV8o_CV-ayqPudirWQWHo3jG-0m
+RBhA1nodrQ-J7Tznpp1vuuabnG-anHdrapH7j9bYJtfa1ACXicCrAWniS83C4z2Y8ddlwgkAXYhv
+9No77BsJSXK9L3O95Lnv4lo1k-i_68u7fqQGOG0gopsrOoif8uqLx9_LD2C0v0y0AQDdkNa05L4i
+TctqS6EAx28gunie_L47rqk4z8KjXKzVywhHgxMdm7WvSc56k3ucAaDuGJmuY12Tds9NrMWpAU7G
+oMiAtmHwTeP5KthNTQAiDKDptSe55piuQ-FzTFtQ5Lpt6E28G0XbkxngaBDSfhjTwWvDYCUHLRqw
+WXh8eN0077AnvgAGpex69_78NjUnd4DLhODTX-hirZ7imgxs8r3keWmxTh7fxskIYFiitdo77O9r
+b7SO5F2L09adT65FJg1JnlP0-st83zJt_EeHwb9tmlBNhK6poCavWXZSm0xMAEA7jYb4pZuOLwAA
+SWNl2YxCEyoY59V2xzgCQE_MGAIAAAgwAAAEGAAAEGAAAAgwAAAwNy77AToMGEUMnrJsBgFAswE2
+WXzs6bLQ8Std7H52q2LHe9fvQsf7Uuz7rjfbQsfPvqbFvoBV8AsfT8WOX0yKzQdtFTp_erkUOt65
+HAsdv5Vi9yNOwQdgOn9-D5Nic75tdt8_qyXQxgA3wb0e8h33teZXBQB0N8A6DB62lWV-PsJv4po3
+0gCqF18z8qwXbVxjgI8HOPlgRPt4QIBquNfD3-9f697EN74_vFsvyq4xrEfog1GeByPPewDyx9f9
+Wv-9_wnxkFSxxijLZj1CvwIcTWhl2Q8TPf6fSQ_UDPDXupdB1WFw-8taK6pcY4gwum6cNqnTHhgm
+PFBxiK_H3sU4bzhN1phX_5OfCXTBKPlgRJM8PqGj10x0gPgWiWva_yZrzKu1hzUJvQhw2gNCfAHi
+W3WkTdeY5PusSeiy8bsHhIkO1BPh__sexTi5buSJcNE1JjqXNQm9DHBbgxtftIDOxrdHwS2zVhQ5
+L3ks8UWvA8yiBQBAywNsO16h44OFLnS89sJCx1vXS6HjL7di9xNKsfv5vpwKHT8Lio1-sW8rMi14
+greYFDvhahX7vl-Fxn8WzovNt8212Hy2zgUHtNj9AEBlAQYADI__eEbnqZljdj13bXY992B0nrf8
+MjrP8a-lAqzD4PELWDazDQBQKr7_btdofLfeudH4Hm8q97GjPPHN2gcAIL7Et3h8UwP8KrREGACI
+L-EtH9_nAEeBVZZ93xe9jv4TYQAgvsS3XHyfApyMbzK4yfcAAMSX_JoZJ_Orw0CUZd9fx8MbvQcA
+GFB83bXIqXjY-OvFOIYm515u2uh6m_nU6NybWKXG9SHAaRG_-wDEFwCAyjwFOB7h5D4AAFBjgAku
+AAD1GjEEAAA0b1zFhwSeU_wEr9jh_5oHoe7PP20vhY5fya7eGzoUPf5c6_0cxSp4fM3cYofrTcET
+AEBERgwBAADNG2e9ocPgYVtZNqMFAEBFRnnim7UPAIAiHP-a6PX2t1uj1zvdLuYBfhVaIgwAIL7l
+4ysiMk4LrLLsp9fR-_g1ADQtvhZl-Y-kWaeSx7-bBvGtKr4iIqPkjuQkYwIC6BJl2Q9rVXwNe3ds
+cl-a_yC_VcRXRGScnHg6DO6TLpq40QSM3gOAT3kV1LR16t2alfy8_Lr37logvqbxFREZJXckw0t8
+AbTJu3Uo_f67iCZjnTw-bR_Ib9n4ioiMsyZkctIyAQG0McbJtSrajtasV2tX1rmvPm_Q4_weCHcN
+UgNMcAG0NbjJ9SnrdZHPy7sNNBJgAMhDh8E9VtHrV9vJ-__Of7WddX3TcBa9f6CMEUMAoEx8lWU-
+xCjt9atYJd97dX7yf1oIk_GMv34n_V2y7geowpghAFA2wskomkTcJJh5o1r19yXEqMLo1SSL-wFA
+WtySMSoaJ2XZD2tMHcEkvmijcd4Jy8QDmuNeD4-bX_u3x0bHpJ2b9XnJc03jlndtSMbW9Hrx9ejd
+2lR23WI9RGMBfvVwMOmAhgIcC2Iynsn4xmN6f50S1OS_rHOLSK4H0XZ8f9Yxace-O--VZ2WdbyLr
+c6r6fOApwFF8lWU-vY7_E2Gg4tj_xC9PBKMYvwqtSeSrklwf4mtHfF1JrjNp6058Tcp6P2vdMo1k
+nvuL-x86HUyMzlP2t9n1jmb3qVaG308WZteTU67jRk8nJiZV2QkNIEdQE-_TcX4I9U_ss467b6cd
+k7GvjhjnWqh_1pT42vIupPH3oxAmz08LdN77efVZrIHl4xu6zcb3sjKLqGl83YnKfexDgOMTO23S
+RZMdQEUBjuKa_J8W1ZcRjZ8XRToW6rR9D-sTn9lEdHMvhAUCmnZ82eulbQ99HSS_5eP7FOC0CBNf
+oMYAR4FM-H8V7OgvK9JFr912Rded5PFFA548P77NOkh8q4qviMg4awImJy3xBWoI8Nf6HtF3MY2O
+iW8nQ5r3mOSxphFPXcB_1g5l2alrSdqxpmGLf350fnK7yOcm7zXr3ocaYuJbXXwzA0xwgWYjnBbB
+tCiaHPMqsFWGN2vdiO9LRjF5fNb7r87Lel3F-b_7P_JLfE3j_zLAAADcY3gqHtLwYna9YG127u1g
+FtGzLMTkVk8l4ltZgHUYMEOBF3bfPoMAoNoAK8tmFAEAKGjEEAAAQIABACDAAACAAAMAQIABAAAB
+7qTNdPryfe2uGSQAvWIfmr3eXE6NXm-37RPgIfGWXwwCAOLbofgS4BK0LBgEACC_RvElwAAA4vuB
+_BLgHvCWX_L4VwYCAPHtUHwJcMJZFrmPVXISXeB4ACC_xDduzBRpJ_2uRbnNzd5g3fzDAqAb1Ipw
+12HE1Hr8Ec6yYCAAAAQY9QvWIvbhef9xt2VwAIAAI8lbfonjXxkIACDA3TeXk5xlketYJSfROY9t
+q2AtYh_e9x93W1ltd0-79cVjkgBABcYMwefsb7fsuLspVUQjdBgwCPgoZdkMAgHuyIK58URmtihn
+Pqgfz-Gvpc4P1iJ2SuePu62strvncb54omYOCyBQ53oWBgwCAe7QYrl3RG880d65kgjP5SRnWfz3
+-_21cxwDAEAvA4zigrWIfXjef9xtZbXdPe3XF0-UzGHgANztg7nReRv7bHbB7y_z8yZXs-P8pdl5
+S39YAVZ7R-TGE_2dRTlmkyJuLqePfA-trn_-k5tSSAC9o8NgOPG9WM3G9zgREYMAG8bXOioJcx7b
+mwB-7MGRxW8wS0Y7Ht9ou64I2ykfe9xtZbXdPd-XxRM1c-ixAeLbwfgaKBHfIjoT4MV0Jqfb5eUx
+au_I3niivbMox2yCmMY32k6LcK4HbO9mR3njirJsVipgIPHVYdDaZ574VhPfTgX4dLvkinCVzrHA
+zhNhTcb3YX94fNiX50HS7jrzPWXZLyNe1YO62u6e7_viiZo5rJRAC0Nd9RpAfJuLbycCvJ0sZfft
+546w2juiN55o7yzKMZssyfhG28kIN-kwvPrM5MOZdmwQ67t9YEEDuqSpwBLf5uLbiQDvvv2HCDch
+Gd-4-ll4-Bn1VbUPmHsQ7cYqGdtf9OFMBjncPr4frPNHWM0cVj_gxrAmn9e2BDcZw40Oi593LRHD
+q8F5Juf8uaBrdj3rah7f-_dNRl2bsKfbRRbT2etJvXdELoFo71zLA6MsW5Sc0t-P2J83wkXj_-Ie
+LfspvvEIf5KzXLD6AvHY6tnvHwZh3IWb3H37sp0sxb0_B_k_edMibECHgVysVb4HR06i5TckZeJb
+Nrpd4iwX4vnlxwrojUR0dTARZX8zLgS4HdzrQdyvdWowsyJcNLzxoJ9jYY3MUwJbRXQ-9swnvrO_
+eL-fa_YQX6CJ5zCYZO4nwgS4FaFIi__fKLpf67cR1t75NyzO-GWE4rGNRzgtvl1gH0SClKGzDyJy
+_AlvGIjcfscoinHVEU6Lrz6KqBUPImAS6fu6RqgJcCsnbiy_0bZy5pnhTUa4D5IRtg_JAxLxrTPC
+xBcojsD202hI8X2IsGW-jG-f2Iffv09wlgvx-BPxBXLGlegSYAycDgPiCzQcYeJLgGvxrTxGvW0P
+-8zJ3K8sW3QYGIc4GV8A2RFW9reIuvT7iy79Zq-nNnu90M-fuMYDPNFO4Qgryxb3ekgf2_vhv-dT
+XTKikbWfCKduK8u_h7hsfPVRRK0Yb2CQiO_D8Sd_gyjCE-246L_LcFoA0uIbHfffORtPZBY75hKI
+2ue-7pAj-Oo3SBv3JOIL5KMvxRZu4tv9_IqIjD71W0QRLhQIy376S4tv-D21d0Quwf2P_JaM9M-Y
+RiHOvcAQXyBffG9n4juA_IqIjD-5m0QRnujyUYyCkBZloltPiF_N_dPxxBd4H9-YfjXrybpFfNsZ
+4MomcRjkigCqjzDjD3wu1Pdnsa2xJr7tDvBEO-KtPJloswnE4t_OEOswEPF-fwe1YlyAyp6xTwd2
+ciXcNRi1YXJFES4aXuLbIrH4iojoI0OC4dkH8-tfmbB_PLgYToCLRjgKL-Fth6zYEmEMLb6vtnNH
+eJrvPHTfuE03M9GJifgivgDQtNUtvL8_Tq23sd0Hc9nY50IR1mHAQBPg9iG_ANoQ32g7HuE6ZQU_
+kifyIMBGvpUnIiIBk6yV1EpEHzP2h4Eoy2aQ0Kv4Nh1hAkuAPxrf_PZEO4P5gbzl1-214187E2G1
+_vlv2UQYvbexz7IP5sbh1N7r4-6E-pXj1OJHIMD1xndoEY7HN9pue4RT9xNhDDDCxvE93QgsAUat
+D_t0en_9vz0-cMn4diXCmXHuQYTP59_Fcj7-XWjRf38CuLqFb8OYN7qZ8Y3tV07751jamOQdzy5c
+b_ppo-Nujup2gHUYSFBwMncxvtF2WoT7pssRjsc32ibCw46w6aJutB5mhPr_bH0g1sYx9FaNXu-k
+nhqNb_g6uY9tZYDji-S38p7en_j8X7Dt8SXC3YsvER52hD-y3HwgsMS33vi2MsDJxXminYcIdzm_
+RTj_VbzlV_p_Igz0g3Lmor3z2_Cez8-HxM3nzQWa_FYT39YFOGtRriO6OgxSw9DmCPchvkQYeBPh
+xfSjgSW_zcS3dQFuMvTu1zp1f91B2N9uspk_P2D72y0zwvis_Xwu53NsgWzZooiO_-4SJZvYat7O
+2yS_1cb3--2Vf0Tk37ZEse74vYpvxL0eGrmPeISz4jsETf3uVdxTPMLEF1XFN9Pk2p77PB4Nv5_f
+sdBm7C8bQz-9cwPvdSRtxzP7ftf084Lb6_8XGRPfxLz4WjdyP0OObpyy7FZGOA3RRaPr4lFErXKE
+um2xRm4fD3Cb4tt0hNG9CAMfWSfPrwOrGKJOGjEEAPAhk-SwJoOrVq--QIAL02EgyrL5FSDKskWH
+AQOBwUc4ii9h7b8x8UXbIsy8wBAjrI_xZ4H4DsKIIQCAz1Orn-AuAwZjIMafuKgOA1GW3ezktmzR
+YSDu1-rtse710Pj94fF3YvwxJNp9vy6BAHcyvkUiTHyJMJp1OtzurxfrKfHdu-3_wq7f6OUCz2n2
+erf83280xMXdvR6IL9Cy_KZtDy6_b-YT3-7EV0Rk3OhkC4NWBE5ZtugwSN2Pdoh_I36T4cQ3vn_x
+njJABYKs3APx7Vh8Gw9w2xZ4AOiCs715c0TLA0x8PxtgHQZED4Uoy2beoN-CuYh1Tt8fi_piPe3u
+dyS_mUY8AQA_ISsqnY5NQWrv-MT2Mb5q32xEiG-z8RUR_UdE-q37JnUYiLJsVhx0Yv4wX5t1OtwG
+Gd8-C-jU038yJdfL70L_NVuKiMjNUUyOnhszBAA_aWjRTRNF912osxBrApxKh4Eoy2akYUxZNvMI
+g0Zg_2nEEABAu8JKcAlwaToMRFk2o4zSlGWLDgMGAr2P8HURMigDMWYIAKBFEQ4DBmQgRnV9sA4D
+UZbNCKMyyrJFszgB6IkxQwAAnxes--4PtzaDQYABAI3wlxJlNzj5EqxF7EP7b1t7Z6PzlDM3Ou90
+uBmdt1hPjc5zN2Y-grtf5zpuVMuPEgairGg6AdVRli06DMrNz2AiOpgwmGhNfOPsxd-tIN8a3rn4
+7i5mETWN78k-NRrfwyn-9cbMfnSJDiYieiY6mIiyv4udF0W8wHlAk-GNRzg4_fftdzG2zVpBfD8Y
+XwJckcV09vuD3y7FJ3MYiLJsBrJARKPtVzHtanSPu_399Wq744eH2Iv0UP_u-L_xJr7diG8tAR5a
+TOLxjbaLRpj4Fo-vqwhHx3YpumnxjbaJ8ECjG_-AsrnAEt9m4ltLgIckGV-TCOswIMIV6mJ40_JL
+hAcgXIpYKXENlyIS2388vv6c1Yr4diy_BLgtwSC_ABF_iO_jY-A6RnXn908Mz2Hx8y43s2i7m4PR
+ueFNG11vs9gbnet9m30-AtwiOgyI8BvK-hYdTFL3A521Wokcj8-RXT0mdbXdMVY9NCIk5k63S6H9
+mXEhvrkj-Lij2Di3fi3OWGRZfPtLy0L0ynvct-JEy4LBGYAxQ1A_wovpzDi_IiI6DJ4ifNxtWYDf
+RFiH-ft_q_2O334gvpUnwT26x7ehfvlcyIkBJcDDjXCpqLyIb7TNQjwc-NbDiG9coFZi6_wIE9h_
+GjEEn6fDIDO_7-YD6HZ84xEmuMMyrjIiyrIZUQOMm-m4Me-QO_FRJDGns6IdmWiHcetqgE_HW_qb
+i-WUEWoAEUEZ7ubw_3q-ZkA6TMlJNIEdVoCzQpsWZqJcw0MXi_9qu5Pjbvt0zGq7Y6DwMr7RNhFu
+t4l25Ft5g41s0-Nzf9o0er3g5uc_dvTqzcV6_vSH6ukweBlb4os88X23H_2KMPEddnxFRMY8Cp_n
+LPtpH9EFhhXhl_HaHFoVNuJbPr69CvDpcPt97Z8_9iOY0GHwEGFnubi-9mLfBcAwdSGwxLe4Ud-i
+__dbLWIB2yz2rb--rPimbQPvFrWuL9YYxjwdenwrC7AOg4eIfDK_XYywDoOXsSXC2ZRl38ePxY34
+gvh2Jb4iImOmSDsiAnRlkcPwLNZTwl0DAtwCOgyIMDBk7pIxGKBR17-AYj1N3X-yT-fX_9Om1d8h
+iq8Xu_e4rP3A0HnLr-tfX_Kr9mt_WALc3QhXHV93c7j-1UGHQWZsiS_QHd9X212M79v96JVxX75I
+MsKVPR_J6Lqbg7j7daXXUJZNdIES8Y3vd-xr-77wuyC7PpOiiwFOBublb1xxeFo-5zPGpkyEz_fz
+-fV8PhcRER0GTxEGgIh3-X75vsMQdTTAA4vqJ8XjG23P53PiCwyV64u4Szm7_r5r7qq-__OB9a_M
+VQ_NGAJzOgxy-0-GNx7hIp9T5j-QF1lB6mKo4vFN20Z-jRmCbO5_Le7mkLpfRERZdu7-WQEu_jll
+-gN9i7C3-Op2fGWRuX8up9bfv754RuepmWN2PS97HX15PWdudr2N4ffb5-t_BLhghKP4VjqJw4BI
+AoYRHoKsUEc_EWvT_Irhaabx3V1ujcZ3ewtyH0uAc0a4rPl8Lufz8wSaz_cMMHpvs9jfX_9PGwak
+6PrxgcAS33rjKyIyYmo3_BAlYhtt67DYjwZ0Nb5p24S1-cElvtXHlwB-KMLRX0RZNgODQcSXCL_P
+7Sw8Et8BxFdEZMz0b8GkDgMiDLSY7fwuzIHn1BphnfL_ZrF-ef7_tCG_HYsvAW4J4gt0I77Rdh0R
+-nRg38bw2_DEi1mc9MYzOncnodH1vpUnwcHgd5mbx1dEZMTj9Xk6LPcjAm2VFY5PB8U0vu-2A0WM
+q-gQZdmiw0CUZTOihuMHM8y7bkR4s9h3Lr5t8i74gecwSEMNMIgIfjnLxf21558YEKJbGoHtpxFD
+8HnEt5-xTdtGP8JHEEGAe0KHAYPQw-gS4X5GmPiiKmOG4POUZTMIQIci3DRnuXj5vuef_JEIMEzo
+MCDCAAgsAUbTiO_jfTC-v97Y504tks5yweL5IToMeLa6sN7tnUav5_7Xza5fp03uY0dVRiTtAYDZ
+wkF807eT49a2BTYZW_Lb3DPkfq2f-ni2iG9b4ysiMmZKtGBStiwibYlvfP-GPnfmexDdz8Q3dQH_
+ifCQnjEdBq1cX4gvAW7tA0OEgWrjO8QIp41HG7478U034hH_POIL1BPfZIQZD_LblvhWHmBl2a2c
+5PZ0ef9r64MDkY19zr1fh4Eoy2bQUClr6dz-iC-xrTO_-1-aZNz3ByoZXXu6lODmt2uSEpKH2O6D
+_dsoY4BzYzr9Xfhut1rim9wOfa8V3307eVzHHqJzPdQeX_X8PpN9DPdEN3u9QQQ4Gd_2RliHARFO
+RBjIim-adtXxbVuEd9-Z69XO8kWHQe0RBgHuJeJbrX0wJ_Y9ju8QWUvn7RpChAnwfSIQlfwYr2rH
+Kx7deIyJcr9sZ3PZXc_5ouNeD51_xla368v390SYALdNcPPFni5T97cJ8a1PWmzjUSbG3ZYnOnni
+G-qeWEsndX8b7G_3QuPB_tINo75-wWRs2xZffCbK0R-aLys_0X5l2eJeD8bxzYptW_JblLLshz_0
+17iuCaDDoDU-PtHtjzbNKzQb4c10mhnlaM1JW4uK6Gp0QYABoNYIv1I0tgABBgB0kg4Do-OUZRud
+dz6fjc6bz_dG5x13W6PzVtvdZwOsLFt0GBgPNCDfX7_vJ1fmE9CD_HqHfaPxPezzxbCq_HrH-Pc5
+Yhqh9fFN2wZAfDsc39oDrCzb_IcC8X2aT_GCsSlgMZ3d-wDi26741h5gAJ_L76ttgPh_Nr6NBFhZ
+tvGPBqB8fIkwiG-74isiMi77o0SDNJ-PmaGoxuQq8v2Vvh8YoMV09vL90_1S6-XP57NcrrfC531f
+TsYxNDn3dDFbI5zlwujc8BaWGlfjABcJr7Js0WEgyrJ5kmAWYeKLAas7sPiMwgEuEl6gEH-5_3rp
+i0yuosNAlGVnn-P9RZxTFuvFdMYiDvQlwGXDqyz7-WIK4hvb1vPD_-kyuf6NcPQaqRFua3zt6e-v
+Htx8fjgQ4CrDCxSO7w91Xuc7PwovIX6KcJvF4xttE2EQ4Jgqw6ssW3QYiLJsRh7VI8SdkYwvEQYB
+Bggx0Dr2dPny-eDmM0gE_D1l2aLDQJRll5_Ujvc7AT2HX7Orlr6In7LALEsuKvEQE2F0GIHtp9En
+LhpFuKr4pm2jgxGuMr5pIUbrg0Jo_m_13TV6Pc8-NXq90_3S7gCXlRVbItz9COv5odr4ojMRJr7E
+d0jxFREZ1xrK6TLzoVKWLToMRFk2s3KI3GXs9d85kms__EsC3eMIg-gOJb4iIqO6wvsqvskIY8Dx
+-dnOFd--t1qW-t8I_4nPAEB8OxTfWgIchfddfMsIPKfQfrQ4vj-Ufp3-M5b_b4gBEN8OxrfSANvT
+5T2_RSjLFh0GpSNMfAcoijAhBohvx_IrIjKuKr5Fw5sWYWXZpSKMgUZY5DfC0TaAysznc8Jdg1HZ
+8JaNbzLC6Dk3Y65k7S8S4qX-G2IAaLlxmfhWEV4MNMJuLJRl45sMMQD0OcB1xFdZtugwEGXZ-DI9
+pzcHfmcAgzZq2w1FEUaP4xsGxBcAAW7jTRHhgcfXXTJQAAgwEUaj8RURcX0iDIAAE2E0Gt9khAkx
+gJ4at-0GowgXWrzR7fjGIyzyE_Kf1wBaw54ujc4LbmbPc9_uN_rCjxxFGAOKbzLErtmDAKBd8eV6
+HQswER5wfJMRJsQA8e3J9VoTYNvxiPAPa_nc-4hvMsI-IQZAfDt_vVYE2HY8Cbx8sel7hJPR7WKE
+a4lvMsQAiG-HrzfuUnzTIhxf6Keevr__Oarz8Y3vD32vE_FN-iYAiC-Xa2GATeIbj3C06CvLfohv
+FOMuRrirot8BAPHlei0OsO14-0XSNL7JECfj2_YIr27h-fVxahFfABioxgNsO14l4e2ieHyj7XiE
+Q98Ta-k8NqHvtTa8IkJ8AcDAiPh_Jr5Z_5OxbXN8lWUTXwAwNO5DfG_OkqmnU-d3UVujG4VXRAgv
+AJQ0aupCdcU3K7Y3R91jgeriqyyb_AJABcZ9_jLJCCvLvkf409E4Ti1Z3cLU-V0IbxvGEAAIcIdE
+0WhDRJIRbnt8CS8AEODehLjt0SW8AOoU3Hyu16cATz0tN0d1KsTN1P74_3q1IrwAiG_Lrtf5ABeJ
+76BCHI9vtJ0RYcILgPg2f73OB7isXoY4Gd_MCBPebNHYACC_dV2v0wGeelpujqolxH0NU9_-X5Vz
+AQDxrfN6nQ1wlfHNWnz7GCviAoAYtuN6-4jIvwT4vXiM2x4yHQai-NPzG6sVKwIAtMSY_OaTDG6b
+gpx5L8cj8QUAAtzd_JoEueo4G30_0a3c_XyW_Xz_9jhnuRDPPxlf57jbymq7y328uzmIu18-7V9M
+Z3K6XVoxdpvFXvanzdN_e7qU42Yni-X0-WdMp7K-3R72ecsvcfzrfXs7Wcru2ze_T2vpSOh7z-fp
+eBJ4jqxuoRynVub5_2AuG-uc61rfypOJdv4_4_5awuAg9oHnjACjVJDzxrOKzwcAEOBaTT0tN0f1
+Ks4AgGEadelmuxhfAAA6H2CUdDwyBgBAgAEAIMAAAIAAoxarlcjxyDig19zrgUFAJ-wjIv8yDA02
+8BbKcWrlPt5aOhL6XnU3cDz_DTHQQzoMxP1ai3s9iLJsBgStNmIIAPQpviIi7tf6v22AAANAQ-GN
+EGEQYABoOL5EGAQY7bNaiRyPjAMAsadLBoEAAwCaju-35UCECTCyhL4n1tJhIADUggh-zpghGKDV
+ijFAbyjLFh0GL9-H_whPZiLBzWcwGjRiCAD0IcJZf8gfYXu6ZCAaNGYIAGDYJrO1iIgEN5-BIMAA
+gDoFN18ms7_vvy_He4TRnH9E5F_GAQCAZo0YAgAAmvc-JobpCgWLAuQAAAAQdEVYdExvZGVQTkcA
+MjAxMTAyMjHjWbbBAAAAAElFTkSuQmCC
+:: main.lua
+--[[pod_format="raw",created="2024-03-31 05:33:06",modified="2025-01-09 06:48:49",revision=4437]]
+include "src/globals.lua"
+include "src/oklab.lua"
+include "src/palette.lua"
+include "src/remap.lua"
+include "src/gui.lua"
+include "src/gui_sliders.lua"
+
+
+function _init()	
+	local ppid = env().parent_pid
+	printh(ppid)
+	local bbs_mode = (not ppid) or (ppid == 1)
+
+	window {
+		tabbed = not bbs_mode,
+		icon = --[[pod_type="gfx"]]unpod("b64:bHo0ABYAAAAUAAAA8AVweHUAQyAICARwtyBHIBcgRyC3cA=="),
+	}
+	
+	find_gfx_map_pids()
+
+	-- Temptative fix for bbs bug
+	-- (location is nil in /system/lib/fs.lua:304)
+	if not bbs_mode then
+		mkdir("/ram/cart/pal")
+		wrangle_working_file(
+			save_working_file,
+			load_working_file,
+			"/ram/cart/pal/0.pal" -- default
+		)
+	end
+	
+	rebuild_pal()
+		
+	on_event("drop_items", handle_drop_items)
+	on_event("okpal_hexdialog_confirm", handle_okpal_hexdialog_confirm)
+	
+	undo_stack = create_undo_stack(undo_save_state, undo_load_state)
+
+	menuitem { id = "okpal_div1", label = "", divider = true, action = function() end }
+	menuitem {
+		id = "okpal_reset_colors",
+		label = "\^:0000000000000000 Picotron Palette",
+		shortcut = "Ctrl-P",
+		action = function() undo_stack:checkpoint(); restore_default_palette() end
+	}
+	menuitem {
+		id = "okpal_clear_colors",
+		label = "\^:0000000000000000 Empty Palette",
+		action = function() undo_stack:checkpoint(); clear_colors() end
+	}
+	menuitem { id = "okpal_div2", label = "", divider = true, action = function() end }
+	menuitem {
+		id = "okpal_manual",
+		label = "\^:0000000000000000 Help",
+		shortcut = "F1",
+		action = open_manual
+	}
+	
+	test_cube_colors = copy(default_test_cube_colors)
+	generate_gui()
+end
+
+
+function _draw()
+	cls(bg_color)
+	gui:draw_all()
+end
+
+
+function _update()
+	if padlock_flashing then
+		padlock_flashing_time += 1
+	end
+	
+	gui:update_all()
+	
+	if key("ctrl") then
+		if (keyp("c")) copy_color()
+		if (keyp("x")) cut_color()
+		if (keyp("v")) paste_color()
+		if (keyp("z")) undo_stack:undo()
+		if (keyp("y")) undo_stack:redo()
+		if (keyp("p")) then
+			undo_stack:checkpoint()
+			restore_default_palette()
+		end
+	end
+	
+	if (key("f1")) open_manual()
+end
+
+
+function open_manual()
+	local filepath = fullpath("manual.txt")
+	create_process(
+		"/system/apps/notebook.p64",
+		{
+			argv = { filepath } ,
+			window_attribs = {
+				workspace = "current",
+				autoclose = true,
+			}
+		}
+	)
+end
+
+
+function find_gfx_map_pids()
+	local processes = fetch "/ram/system/processes.pod"
+	for i = 1, #processes do
+		if processes[i].name == "gfx" then
+			picotron_gfx_pid = processes[i].id
+		elseif processes[i].name == "map" then
+			picotron_map_pid = processes[i].id
+		end
+	end
+end
+
+
+function send_palette()
+	local palette = userdata("i32", 64)
+	for c = 0, 63 do
+		palette:set(c, get_color(c))
+	end
+	if picotron_gfx_pid then
+		send_message(picotron_gfx_pid, { event = "set_palette", palette = palette })
+	end
+	if picotron_map_pid then
+		send_message(picotron_map_pid, { event = "set_palette", palette = palette })
+	end
+end
+
+
+-- Undo ---------------------------------------------------------------------------
+
+
+function undo_save_state(_item)
+	return {
+		pal_okhsl = copy(pal_okhsl),
+		pal_code = copy(pal_code),
+		test_cube_colors = copy(test_cube_colors),
+	}
+end
+
+
+function undo_load_state(state, _item)
+	pal_okhsl = state.pal_okhsl
+	pal_code = state.pal_code
+	test_cube_colors = state.test_cube_colors
+	for c = 0, 63 do
+		set_color(c, pal_code[c])
+	end
+	send_palette()
+end
+
+
+function copy(t)
+	if type(t) == "table" then
+		local new = {}
+		for k, v in pairs(t) do
+			new[k] = copy(v)
+		end
+		return new
+	else
+		return t
+	end
+end
+
+
+-- Drag-and-drop ------------------------------------------------------------------
+
+
+function handle_drop_items(msg)
+	for i = 1, #msg.items do
+		local item = msg.items[i]
+		if item.pod_type == "file_reference" and item.attrib == "file" then
+			send_message(pid(), { event = "open_file", filename = item.fullpath })
+		end
+	end
+end
+
+
+-- Loading and saving -------------------------------------------------------------
+
+
+function save_working_file()
+	local ext = pwf():ext()
+	if ext == "hex" or ext == "txt" then
+		return save_hex_file()
+	else
+		if ext != "pal" then
+			notify("unknown file extension: saved using default file format")
+		end
+		return save_pal_file()
+	end
+end
+
+
+function load_working_file(data, metadata)
+	local ext = pwf():ext()
+	if ext == "hex" or ext == "txt" then
+		local metadata = fetch_metadata(pwf()) or {}
+		if metadata.okpal_version then
+			current_import_choice = "overwrite"
+			load_hex_file(data, metadata or {})
+		else
+			create_process(
+				"src/hexdialog.lua",
+				{
+					okpal_filename = pwf(),
+					okpal_parent_pid = pid(),
+					okpal_data = data,
+					okpal_metadata = metadata,
+					path = path, 
+					window_attribs = { 
+						workspace = "current",
+						autoclose = true, -- ???
+						give_focus = nil, -- ???
+						show_in_workspace = nil, -- ???
+						corun_program = nil, -- ???
+						unique_location = nil, -- ???
+						has_frame = true,
+						x = nil, y = nil, z = nil,
+						moveable = true,
+						resizeable = false,
+						desktop_filenav = nil, -- ???
+					}
+				}
+			)
+		end
+		-- The actual loading will occur in the dialog's callback.
+		-- See `handle_okpal_hexdialog_confirm`.
+	else
+		if ext != "pal" then
+			notify("unkown file extension: loaded using default file format")
+		end
+		load_pal_file(data, metadata or {})
+	end
+	if (undo_stack) undo_stack:reset()
+	send_palette()
+end
+
+
+function handle_okpal_hexdialog_confirm(msg)
+	current_import_choice = msg.okpal_hexdialog_choice
+	load_hex_file(msg.okpal_data, msg.okpal_metadata or {})
+end
+
+
+-- Metadata ----------------------------------------------------------------------
+
+
+function create_metadata()
+	local metadata = {}
+	metadata.okpal_version = okpal_version
+	metadata.icon = userdata("u8",16,16,"0001010101010101010101000000000000010707070707070707060100000000000107070707070707070606010000000001070707070707070706060601000000010707070707070707060606060100000107070707070707070707070701000001070707070707070707070707010000010707060601010d0d01010707010000010707060601010d0d010107070100000107070101070706060d0d07070100000107070101070706060d0d07070100000107070d0d01010d0d060607070100000107070d0d01010d0d060607070100000107070707070707070707070701000001070707070707070707070707010000010101010101010101010101010100")
+	metadata.bg_color = bg_color
+	metadata.blackest_color = blackest_color
+	metadata.whitest_color = whitest_color
+	metadata.hidden_toggles = hidden_toggles
+	metadata.hidden = copy(hidden)
+	metadata.locked = copy(locked)
+	metadata.test_cube_colors = copy(test_cube_colors)
+	return metadata
+end
+
+
+function load_metadata(metadata)
+	metadata = metadata or {}
+	bg_color = metadata.bg_color or 0
+	blackest_color = metadata.blackest_color or 0
+	whitest_color = metadata.whitest_color or 7
+	
+	if type(metadata.hidden_toggles) == "table" then
+		hidden_toggles = metadata.hidden_toggles
+	else
+		hidden_toggles = {}
+		for row = 0, 3 do
+			hidden_toggles[row] = false
+		end
+	end
+	
+	if type(metadata.hidden) == "table" then
+		hidden = metadata.hidden
+	else
+		hidden = {}
+		for c = 0, 63 do
+			hidden[c] = false
+		end
+	end
+	
+	if type(metadata.locked) == "table" then
+		locked = metadata.locked
+	elseif pwf() == "/ram/cart/pal/0.pal" then
+		-- This only occurs when a default starting file
+		-- is created.
+		for c = 0, 63 do
+			locked[c] = c <= 31
+		end
+	else
+		locked = {}
+		for c = 0, 63 do
+			locked[c] = false
+		end
+	end
+	
+	if type(metadata.test_cube_colors) == "table" then
+		test_cube_colors = metadata.test_cube_colors
+	else
+		test_cube_colors = copy(default_test_cube_colors)
+	end
+end
+
+
+-- Load and save pal files -------------------------------------------------------
+
+
+function load_pal_file(data, metadata)
+	if data then
+		if type(data) == "userdata" and data:width() == 64 then
+			for c = 0, 63 do
+				if data[c] then
+					set_color(c, data[c])
+				end
+			end
+		else
+			notify("unable to load working file")
+			return
+		end
+	end
+	rebuild_pal()
+	load_metadata(metadata)
+end
+
+
+function save_pal_file()
+	local output = userdata("i32", 64)
+	for c = 0, 63 do
+		output:set(c, get_color(c))
+	end
+	return output, create_metadata()
+end
+
+
+-- Load and save hex files ---------------------------------------------------------
+
+
+function load_hex_file(data, metadata)
+	if type(data) == "string" then
+		local lines = split(data, "\n", false)
+		local codes = {}
+		for l in all(lines) do
+			local code = tonum("0x" .. l:gsub("%s",""))
+			if type(code) == "number" then
+				codes[#codes + 1] = code
+			elseif code then
+				notify("error importing hex file")
+			end
+		end
+		local start = 0
+		if current_import_choice == "dont_clobber" then
+			-- TODO: put in separate function and add menu item
+			for c = 0, 32 do
+				set_color(c, peek4(0x5000 + 4 * (64 + c)))
+			end
+			start = 32
+		end
+		if #codes > 64 - start then
+			notify("*** not enough space to import all the colors ***")
+		end
+		for c = start, 63 do
+			if codes[c - start + 1] then
+				set_color(c, codes[c - start + 1])
+			else
+				set_color(c, 0x000000)
+			end
+		end
+		rebuild_pal()
+		if current_import_choice == "remap" then
+			remap_colors()
+		end	
+	elseif data then
+		notify("import hex file: unkown type: " .. type(data))
+	end
+
+	load_metadata(metadata)
+	if current_import_choice == "dont_clobber" then
+		active_color = nil
+		for c = 0, 31 do
+			hidden[c] = true
+			locked[c] = true
+		end
+		hidden_toggles[0] = true
+		hidden_toggles[1] = true
+		blackest_color = 0
+		whitest_color = 7
+		bg_color = 0
+	else
+		local best_black, best_white = find_blackest_and_whitest()
+		blackest_color = metadata.blackest_color or best_black
+		whitest_color = metadata.whitest_color or best_white
+		bg_color = metadata.bg_color or blackest_color
+	end
+end
+
+
+function save_hex_file(filename)
+	-- Don't export trailing black colors
+	local fin = 63
+	while fin > 0 and get_color(fin) == 0 do
+		fin -= 1
+	end
+	
+	local output = ""
+	for c = 0, fin do
+		output ..= color_to_hex(get_color(c)) .. "\n"
+	end
+	return output, create_metadata()
+end
+
+
+-- Copy and paste ----------------------------------------------------------------
+
+
+function copy_color()
+	if active_color then
+		set_clipboard("#" .. color_to_hex(get_color(active_color)))
+	end
+end
+
+
+function cut_color()
+	if active_color then
+		set_clipboard("#" .. color_to_hex(get_color(active_color)))
+		if not locked[active_color] then
+			 undo_stack:checkpoint()
+			change_color_code(active_color, 0x000000)
+		end
+	end
+end
+
+
+function paste_color()
+	if not active_color then
+		notify("unable to paste: no selected color")
+		return
+	end
+	if locked[active_color] then
+		notify("unable to paste: selected color is locked")
+		return
+	end
+	local cb = get_clipboard()
+	if type(cb) == "string" then
+		local hex = string.gsub(cb, "%s", "")
+		if sub(hex, 1, 1) == "#" then
+			hex = sub(hex, 2, -1)
+		end
+		local code = tonumber("0x" .. hex)
+		if type(code) == "number" then
+			undo_stack:checkpoint()
+			change_color_code(active_color, code)
+		else
+			notify("unable to paste: unrecognized string: \"" .. cb .."\"")
+		end
+	else
+		notify("unable to paste: type not supported (" .. type(cb) .. ")")
+	end
+end
+:: manual.txt
+--[[pod_format="raw",created="2024-04-04 06:47:16",icon=userdata("u8",16,16,"00000101010101010101010101000000000106060606060606060606060100000107010606060606060606060606010000010106060707070707070707060100000106060607070707060606070601000107010606070707070606060706010000010106060706060607070707060100000106060607060606070707070601000107010606070707070707070706010000010106060606060606060606060100000106060606060606060606060601000107010606060606060606060601010000010101010101010101010101070100000101070707070707070707070601000000010606060606060606060601000000000001010101010101010101000000"),modified="2024-08-23 18:20:53",revision=219,stored="2024-04-04 06:56:33"]]
+# OkPal
+
+OkPal is a tool to create and edit color palettes.
+You can easily use those palettes in your programs,
+and even directly in Picotron's sprite and map
+editors.
+
+
+## Features
+
+- Any change to the palette is propagated to
+  Picotron's sprite and map editors.
+- Use a perceptually uniform color space (oklab).
+- Choose colors by hue, saturation and lightness.
+- Reorder colors by drag-and-drop.
+- Undo/redo.
+- Supports two file formats: ".hex" and ".pal"
+- Multiple options for importing external palettes
+  (keep default palette, overwrite it, or try to 
+  match it)
+
+
+## Usage
+
+The tool shows you four different views of the 64
+colors in the current palette:
+
+- at the top-left of the screen, the colors are
+  shown in palette order (same as in sprite editor
+  first tab);
+- below, on the left, the colors are shown inside
+  a circle picker: the angle correspond to the hue,
+  and the distance from the center correspond to the
+  saturation;
+- in the middle the colors are shown as inside a
+  square picker: the X axis correspond to the
+  saturation, and the Y axis correspond to the
+  lightness;
+- finally, on the right is a "test zone", where
+  you can use 24 paintable cubes to test color
+  combinations.
+
+To modify a color, you must first select it. You can
+do that either by clicking in the palette overview
+at the top of the screen, or by clicking directly on
+one of the color dots in the circle picker or in the
+square picker.
+
+Once selected, some information about the color are
+displayed on the right of the palette overview:
+
+- the color number;
+- the hex code corresponding to the RGB values of
+  the color;
+- a padlock icon: if the padlock is closed, the color
+  is "locked" and cannot be edited; click on the icon
+  to lock/unlock it;
+- an eye icon: if the eye is closed, the color is only
+  shown in the palette overview; it is hidden in the
+  circle and square pickers.
+- a paint bucket icon: you can click on it to change
+  the color background to the current selected color;
+  click again to go back to a black background.
+
+You can copy the current color by using Ctrl-C, and
+paste a copied color onto the current one by using
+Ctrl-V. This also works outside OkPal: the color is
+stored in the clipboard as a hex code ("#ffacc5").
+
+There is five different ways to adjust the selected
+color:
+
+- a small colored circle *outside* the circle picker
+  allows you to change the hue of the color;
+- a small colored circle *inside* the circle picker
+  allows you to change at the same time the hue and
+  the saturation;
+- a small colored triangle below the square picker
+  allows you to change just the saturation;
+- a small colored triangle at the right of the square
+  picker allows you to change the lightness;
+- finally, a small colored circle inside the square
+  picker allows you to change at the same time the
+  saturation and the lightness.
+
+Any change you make can be reverted by hitting
+Ctrl-Z for undo. Use Ctrl-Y for redo.
+
+Once you have several colors in you palettes, you can
+reorder them in the palette overview: just drag one
+color onto another, they will swap their positions.
+Note that both colors must be unlocked.
+
+
+## Using the palette in cartridges
+
+By default, the palette you edit is saved in the
+cart you're working on, alongside your sprite sheets
+and maps.
+
+The default path is "/ram/cart/pal/0.pal"
+
+In order to use a palette in your programs, you just
+need to copy it in memory:
+
+```
+poke4(0x5000, get(fetch"pal/0.pal"))
+```
+
+
+## Loading and saving
+
+If you only need one palette for your cart, you
+don't need to do anything special to save it. It is
+saved alongside the rest of your assets each time
+you hit Ctrl-S.
+
+In order to create a new palette, use the '+' button
+at the right of the tabs and choose the name of your
+new palette, for example "1.pal". If you need to
+start from scratch for this new palette, use
+"Empty Palette" or "Picotron Palette" from the menu.
+
+You can load a previously created palette by using
+"Open File" in the menu.
+
+
+## Importing and exporting
+
+You can import and export palettes for use with
+external tools. Currently the only supported format
+is ".hex" files, which are simple text files with one
+line per color, represented by their RGB code in hex
+format (without "#" or "0x", just the hexadecimal
+numbers).
+
+To import a palette, choose "Open File" from the
+menu, and select the ".hex" file. If this is the first
+time you open this external palette in OkPal, a
+dialog will appear to let you choose how to arrange
+the colors in the palette. You can either:
+
+- Keep default Picotron palette in the first 32 colors,
+  and put the imported colors in the last 32 slots.
+- Completely remove the Picotron palette and import
+  the whole palette, but reorder the colors to try
+  to match the default colors.
+- Or simply import the palette as is. Note that this
+  will affect the interface and probably make it
+  difficult to use the menu, the sprite editor and
+  the map editor.
+
+To export a palette, choose "Save File As" in the
+menu. In the save dialog, enter a file name ending
+in ".hex".
+
+
+## Changelog
+
+2024-08-23: version 1.0.3 (release #okpal-6)
+
+- added: add file icon to saved palettes;
+- changed: can load and import palettes by
+  double-clicking in the file dialog (no need
+  to drag-and-drop anymore);
+- fixed: bug in BBS;
+
+2024-05-03: version 1.0.2 (release #okpal-5)
+
+- fixed: bug while using "+" button in Picotron
+  0.1.0g;
+- changed: disabled tabs in BBS, as it prevents
+  the cart from running;
+
+2024-04-27: version 1.0.1 (release #okpal-4)
+
+- fixed: picotron's palette was not locked in the
+  default file on first opening;
+- fixed: saving a ".pal" file from an imported
+  ".hex" file was not working;
+- explain how to export to .hex in the manual;
+
+2024-04-06: version 1.0.0 (release #okpal-3)
+
+- propagate palette to sprite and map editors;
+- undo/redo;
+- reorder colors by drag-and-drop;
+- import dialog;
+- reorder imported colors to match default colors;
+- added a manual;
+- menu entries to initialize the palette and open
+  the manual;
+- flash padlock icon when trying to edit a locked
+  color;
+- shift-click paint-bucket icon to change the "white"
+  color used in the interface, and ctrl-click the
+  icon to change the "black" (useful when importing
+  external palettes);
+
+2024-04-02: version 0.0.3 (release #okpal-2)
+
+- Added the ability to change the background color (by clicking on the small paint bucket icon), and switched the default background to black.
+- Added the ability to import ".hex" files (using drag and drop from the "Open File" dialog); to actually create the ".pal" file, you need to save.
+- Improved the color pickers.
+- Added the ability to copy/paste colors (using a hex string starting with #).
+- Added the ability to show/hide individual colors (right click on a color in the palette).
+
+2024-04-01: v0.0.1 (release #okpal-1)
+
+- Added the ability to lock colors, to avoid accidentally modifying them. By default the first 33 colors are locked (click on the padlock to unlock)
+- Added the ability to hide specific rows of color from the two color pickers.
+- Added sliders to change the individual components (hue, saturation and luminance).
+- Added the ability to select a color by clicking on their dot in the color pickers.
+- Added a test zone, with 24 paintable cubes (click on a cube face to change its color).
+
+
+:: todo.txt
+--[[pod_format="raw",created="2024-03-31 20:08:43",modified="2024-04-04 10:05:39",revision=862]]
+- text entry for hex code
+- "New Empty Palette" in menu;
+- right click for fine-tuning colors;
+- undo/redo;
+- accept drag-and-drop (or copy/pasting) of gfx;
+- import the palette from an image saved by
+  the #paint cartridge;
+- write manual, and add it to menu;
+
+Maybe:
+- reorder colors by drag-and-drop (i.e. swap two
+  colors)
+- multi-selection (ability to move a group of
+  colors in the sliders)
+- Add another tab in the test zone, with the 
+  hue/sat circle and sat/lum square, but filles
+  with color zones instead of dots.
+:: untitled.pod
+b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTA4LTIzIDE4OjA2OjE2Iixtb2RpZmllZD0iMjAyNC0w
+OC0yMyAxODowNjo0MSIscmV2aXNpb249MV1dbHo0AAMAAAACAAAAIHt9
+:: .info.pod
+b64$LS1bW3BvZCxzdG9yZWQ9IjIwMjQtMDQtMTQgMTA6MzA6MDQiLGljb249dXNlcmRhdGEoInU4
+IiwxNiwxNiwiMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDEwNzA3MDcwNzA3
+MDcwNzA3MDcwNzAxMDAwMDAwMDEwNzBkMGQwZDBkMGQwZDBkMGQwZDBkMDcwMTAwMDEwNzBkMGQw
+ZDBkMGQwZDBkMGQwZDBkMGQwZDA3MDEwMTA3MGQwZDAxMDEwNjA2MDcwNzA2MDYwZDBkMDcwMTAx
+MDcwZDBkMDEwMTA2MDYwNzA3MDYwNjBkMGQwNzAxMDEwNzBkMGQwNjA2MGQwZDAxMDEwNzA3MGQw
+ZDA3MDEwMTA3MGQwZDA2MDYwZDBkMDEwMTA3MDcwZDBkMDcwMTAxMDcwZDBkMDcwNzA2MDYwNzA3
+MDEwMTBkMGQwNzAxMDEwNzBkMGQwNzA3MDYwNjA3MDcwMTAxMGQwZDA3MDEwMTA3MGQwZDBkMGQw
+ZDBkMGQwZDBkMGQwZDBkMDcwMTAxMDYwNzBkMGQwZDBkMGQwZDBkMGQwZDBkMDcwNjAxMDEwNjA2
+MDcwNzA3MDcwNzA3MDcwNzA3MDcwNjA2MDEwMDAxMDYwNjA2MDYwNjA2MDYwNjA2MDYwNjA2MDEw
+MDAwMDAwMTA2MDYwNjA2MDYwNjA2MDYwNjA2MDEwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAx
+MDEwMDAwMDAiKSxub3Rlcz0iUGFsZXR0ZSBFZGl0b3Jcbih1c2UgbWVudSB0byBvcGVuIHRoZSBt
+YW51YWwpIixhdXRob3I9ImRyYWttYW5pc28iLGNyZWF0ZWQ9IjIwMjQtMDQtMjcgMTI6MzA6NTQi
+LHJ1bnRpbWU9MTIsbW9kaWZpZWQ9IjIwMjUtMDEtMDkgMDY6NDk6MDgiLHRpdGxlPSJPa1BBTCIs
+dmVyc2lvbj0iMS4wLjMiLHdvcmtzcGFjZXM9e3tsb2NhdGlvbj0ibWFpbi5sdWEjMjU2Iix3b3Jr
+c3BhY2VfaW5kZXg9MX0se2xvY2F0aW9uPSJzcmMvZ3VpLmx1YSMyMDAiLHdvcmtzcGFjZV9pbmRl
+eD0xfSx7bG9jYXRpb249InNyYy9oZXhkaWFsb2cubHVhIzcyIix3b3Jrc3BhY2VfaW5kZXg9MX0s
+e2xvY2F0aW9uPSJzcmMvZ2xvYmFscy5sdWEjMjQiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRp
+b249ImdmeC8wLmdmeCIsd29ya3NwYWNlX2luZGV4PTJ9LHtsb2NhdGlvbj0ibWFwLzAubWFwIix3
+b3Jrc3BhY2VfaW5kZXg9M30se2xvY2F0aW9uPSJzZngvMC5zZngiLHdvcmtzcGFjZV9pbmRleD00
+fX1dXQ==
+:: [eoc]
