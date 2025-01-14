@@ -4,7 +4,7 @@ version 2
 :: gfx/
 :: gfx/0.gfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xNCAwNjowMjoxNCIscmV2aXNpb249MTUzNl1dbHo0ADoBAACxMgAA8yF7WzBdPXtibXA9cHh1
+MS0xNCAyMjoxMDoxNSIscmV2aXNpb249MTg0OV1dbHo0ADoBAACxMgAA8yF7WzBdPXtibXA9cHh1
 AEMgEBAE8FYHEAfAF9AXwAcQB-BWLGZsYWdzPTAscGFuX3gIAMp5PTAsem9vbT04fSw_AP8T9QIP
 FSUPFkUG1RYVDqUG9R0OdQ71Ow71BA71BA8VNQ71AlEAHO-wAz8UMD4gDj8VDhAOPQQABnAgPjA_
 8AI_KgAGFQAPKQAGHxOFABxT-xQBFA4CABIeCAA1DxUEDAAAFgAiDQQJAAkVAA8KACsDUwAvBA0g
@@ -13,7 +13,7 @@ BAAaHx5pAEo-tf4S7wEeDzEA----------------------------------------------------
 ---------4lQbT04fX0=
 :: gfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xNCAwNjowMjoxNCJdXQ==
+MS0xNCAyMjoxMDoxNiJdXQ==
 :: map/
 :: map/0.map
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI1LTAxLTA3IDAzOjQ2OjQ4Iixtb2RpZmllZD0iMjAyNS0w
@@ -29,29 +29,29 @@ DwAHGw_ABjAM1AYPAAcNAPQGDgQADwAF-58OSAQPBAA3H2OAAAUPBABVD4AA-wENYAQPBABYHzhq
 EAM-bWFwZhAaUDAuNX19
 :: map/test.map
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xNCAwNjowMjoxNCIscmV2aXNpb249MTE5Ml1dbHo0AOkBAADRIAAA8Ah7e2JtcD11c2VyZGF0
-YSgiaTE2IiwzMgMALyIwAQD-----Ny8zMAEAZxMyBAAPAQD-1g-sAQkfMtgCWB4zLAAPlAA_LzMw
-7AAPLzMwAQBrEzKEAA_IAF0PcAAOD5QATC4yMGgADwEA-38PAAJWDwEA-----6jxGCIpLGhpZGRl
-bj1mYWxzZSxuYW1lPSJvYmplY3RzIixwYW5feD0xNwkA4nk9MjMsdGlsZV9oPTE2CgAQdwoAr3pv
-b209MC41fSxqEAtfOGMwMDkEAGEAfAASMAgAHzEEAGQfOYAA-wEXYwwADwQAPR9jgAAFDwQAVQ_A
-AP8dF2EkAAUEABI0GAAfMSwAKAQEAAQoAB8xBAABEjQcAFg4ODAwOQQAH2NUAABLODAwYSQAD2AE
-ER85gAAQDiAADwQAFw5AAA_AAP8ZANQBD_wBAQ_kBAQfY0AAGA6AAA8EAEgPgAD-qS9hNIACKA9A
-AAgOgAAPIAAjDwQACh84QAANDyAALwhsAAkEAAMUAA9AAA0PIAAtBQQAGzgEAAMUAA9AAA0PIAAR
-BEQGDwAHGw_ABjAM1AYPAAcNAPQGDgQADwAF-58OSAQPBAA3H2OAAAUPBABVD4AA-wENYAQPBABY
-HzhqEAM-bWFwZhAaUDAuNX19
+MS0xNCAyMjoxMDoxNSIscmV2aXNpb249MTUwNF1dbHo0AOoBAADRIAAA8BF7e3Bhbl94PTE3LGJt
+cD11c2VyZGF0YSgiaTE2IiwzMgMALyIwAQD-----Ny8zMAEAZxMyBAAPAQD-1g-sAQkfMtgCWB4z
+LAAPlAA_LzMw7AAPLzMwAQBrEzKEAA_IAF0PcAAOD5QATC4yMGgADwEA-38PAAJWDwEA-----6jw
+ECIpLGhpZGRlbj1mYWxzZSxuYW1lPSJvYmplY3RzIixCEOJ5PTIzLHRpbGVfaD0xNgoAEHcKAK96
+b29tPTAuNX0sahAUXzhjMDA5BABhAHwAEjAIAB8xBABkHzmAAP8BF2MMAA8EAD0fY4AABQ8EAFUP
+gAD-HRdhJAAFBAASNBgAHzEsACgEBAAEKAAfMQQAARI0HABYODgwMDkEAB9jVAAASzgwMGEkAA9g
+BBEfOYAAEA4gAA8EABcOQAAPgAD-GQDUAQ-sAQEPpAQEH2NAABgOgAAPBABID4AA-6kvYTSAAigP
+QAAIDoAADyAAIw8EAAofOEAADQ8gAC8IbAAJBAADFAAPQAANDyAALQUEABs4BAADFAAPQAANDyAA
+EQREBg8ABxsPgAYwDNQGDwAHDQD0Bg4EAA8ABf_fDkgEDwQANx9jgAAFDwQAVQ_AAP8BDWAEDwQA
+WB84ahADP21hcGYQEVAwLjV9fQ==
 :: map/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xNCAwNjowMjoxNCJdXQ==
+MS0xNCAyMjoxMDoxNiJdXQ==
 :: sfx/
 :: sfx/0.sfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xNCAwNjowMjoxNCIscmV2aXNpb249MTUxMV1dbHo0AKAAAAALCgAA-zBweHUAAygAAAQABA9A
+MS0xNCAyMjoxMDoxNSIscmV2aXNpb249MTgyM11dbHo0AKAAAAALCgAA-zBweHUAAygAAAQABA9A
 EAIOAAGgASACoA4ADxAADfDKAQIDQA8PkAQFBgdADJAICQoLQAyQDwwPDQ8ODEAM8P8BAOv-J6oB
 EAYPIBABIAEgAfAAAhACDhABIA8hIAEwD0Dwww8oD--wxg-4Cg--D4AP9w8NAfAJARAGDjAA----
 --_9H-8BAKzPyA9AAA8QQP--sPD-AQD-6lD-----KQ==
 :: sfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xNCAwNjowMjoxNCJdXQ==
+MS0xNCAyMjoxMDoxNiJdXQ==
 :: entity.lua
 --[[pod_format="raw",created="2025-01-09 16:01:30",modified="2025-01-14 00:53:59",revision=854]]
 --[[pod_format="raw",created="2025-01-06 21:02:01",modified="2025-01-06 21:02:01",revision=0]]
@@ -256,7 +256,7 @@ end
 --https://gamedevacademy.org/lua-inheritance-tutorial-complete-guide/
 
 :: gui.lua
---[[pod_format="raw",created="2025-01-08 17:33:11",modified="2025-01-14 06:02:14",revision=1730]]
+--[[pod_format="raw",created="2025-01-08 17:33:11",modified="2025-01-14 22:10:15",revision=2047]]
 wWidth = get_display():width()
 wHeight = get_display():height()
 
@@ -277,29 +277,101 @@ function border(self, col)
 end
 
 :: hud.lua
---[[pod_format="raw",created="2025-01-14 00:55:33",modified="2025-01-14 06:02:14",revision=94]]
+--[[pod_format="raw",created="2025-01-14 00:55:33",modified="2025-01-14 22:10:15",revision=533]]
 local hud = gui:attach({
 	x=0, y=0, width=wWidth, height=wHeight,
-	update=function (self)
+	attach_log_button=function(self)
 	end
 })
 
-local log_button = hud:attach({
-	x=wWidth-20, y=0,
-	width=20, height=20,
-	show_log=false,
-	draw=function(self)
-		bgFill(self, 6)
+log_container = hud:attach{
+	x=wWidth-200, y=0,
+	width=200, height=150,
+	attach_log_button = function(self)
+		remove_all_children(self)
+		self:attach{
+			x=self.width-11, y=0,
+			width=11, height=11,
+			clicked=false,
+			draw=function(self)
+				bgFill(self, self.clicked and 5 or 6)
+				line(2, 2, self.width-3, 2, 22)
+				line(2, 4, self.width-3, 4, 22)
+				line(2, 6, self.width-3, 6, 22)
+				line(2, 8, self.width-3, 8, 22)
+				-- rounded
+				pset(0, 0, 0)
+				pset(self.width-1, 0, 0)
+				pset(0, self.height-1, 0)
+				pset(self.width-1, self.height-1, 0)
+			end,
+			click=function(self)
+				self.clicked=true
+			end,
+			release=function(self)
+				self.clicked=false
+			end,
+			tap=function(self)
+				remove_all_children(log_container)
+				log_container:attach_log()
+			end
+		}
+	end,
+	attach_log = function(self)
+		remove_all_children(self)
+		local title_bar = log_container:attach{
+			width=log_container.width, height=11,
+			bg_col=22,
+			draw=function(self)
+				bgFill(self, self.bg_col)
+				print("Game Log", 2, 2, 7)
+			end
+		}
 		
-		-- rounded
-		pset(0, 0, 8)
-		pset(self.width, 0, 0)
-		pset(0, self.height, 0)
-		pset(self.width, self.height, 0)
+		local close_button = title_bar:attach{
+			x=title_bar.width-11, y=0, z=50,
+			width=11, height=11,
+			clicked=false,
+			draw=function(self)
+				bgFill(self, self.clicked and 5 or 6)
+				-- close x
+				line(2, 2, self.width-4, 8, 22)
+				line(3, 2, self.width-3, 8, 22)
+				line(2, 8, self.width-4, 2, 22)
+				line(3, 8, self.width-3, 2, 22)
+				-- rounded
+				pset(0, 0, title_bar.bg_col)
+				pset(self.width-1, 0, title_bar.bg_col)
+				pset(0, self.height-1, title_bar.bg_col)
+				pset(self.width-1, self.height-1, title_bar.bg_col)
+			end,
+			click=function(self)
+				self.clicked=true
+			end,
+			release=function(self)
+				self.clicked=false
+			end,
+			tap=function(self)
+				remove_all_children(log_container)
+				log_container:attach_log_button()
+			end
+		}
+		
+		local log_text = log_container:attach_text_editor{
+			x=0, y=11, width=log_container.width, height=135,
+			text={"test"},--game_state.log,
+		}
+		
+		-- tables passed by reference, so should update automatically
+		log_text:set_text(game_state.log)
+
+		local log_text_scrollbar = log_text:attach_scrollbars{}
 	end
-})
+}
+
+log_container:attach_log_button()
 :: loop.lua
---[[pod_format="raw",created="2025-01-09 16:02:14",modified="2025-01-14 06:02:14",revision=1070]]
+--[[pod_format="raw",created="2025-01-09 16:02:14",modified="2025-01-14 22:10:15",revision=1361]]
 window{
 	pauseable=false
 	
@@ -380,7 +452,7 @@ function restart()
 end
 
 :: main.lua
---[[pod_format="raw",created="2024-12-30 18:09:39",modified="2025-01-14 06:02:14",revision=1613]]
+--[[pod_format="raw",created="2024-12-30 18:09:39",modified="2025-01-14 21:32:18",revision=1847]]
 include("entity.lua")
 include("/appdata/utils/dump.lua")
 include("/appdata/utils/array.lua")
@@ -392,7 +464,7 @@ include("menu.lua")
 include("hud.lua")
 
 :: menu.lua
---[[pod_format="raw",created="2025-01-09 16:03:03",modified="2025-01-14 06:02:14",revision=438]]
+--[[pod_format="raw",created="2025-01-09 16:03:03",modified="2025-01-14 22:10:15",revision=765]]
 local itemHeight = 14
 
 local function traverse_path(menu_tree, path)
@@ -522,7 +594,7 @@ local main_menu = gui:attach({
 })
 
 :: state.lua
---[[pod_format="raw",created="2025-01-13 19:40:16",modified="2025-01-14 06:02:14",revision=344]]
+--[[pod_format="raw",created="2025-01-13 19:40:16",modified="2025-01-14 22:10:15",revision=667]]
 state = {
 	cur_update = nil,
 	last_update = time(),
@@ -535,6 +607,7 @@ state = {
 	menus={},
 	-- contains current state of controls being pressed, moved, pos, etc.
 	controls = {},
+	log = {""},
 }
 
 function state:new(o)
@@ -545,13 +618,12 @@ function state:new(o)
 end
 
 function state:load_map_data(path)
+	self:log_msg("loading map data from: "..path)
 	self.map_data = fetch(path)
-   printh("Map Data: "..dump(self.map_data))
-   printh("Layer 1 BMP data: "..dump(self.map_data[1].bmp))
    local ud = self.map_data[1].bmp
    for i=0,(ud:height()-1) do
        for j=0,(ud:width()-1) do
-           printh(dump(ud:get(i,j,1)))
+           --printh(dump(ud:get(i,j,1)))
        end
    end
    self.camera:move(0, 0)
@@ -593,14 +665,18 @@ function state:update_controls()
     self.controls.pause = btn(6)
     self.controls.pause_p = btnp(6)
 end
+
+function state:log_msg(msg)
+	printh("current state: "..dump(self))
+	table.insert(self.log, msg)
+end
 :: .info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xNCAwNjowMjoxNCIscnVudGltZT0xMix3b3Jrc3BhY2VzPXt7bG9jYXRpb249Imd1aS5sdWEj
+MS0xNCAyMjoxMDoxNiIscnVudGltZT0xMix3b3Jrc3BhY2VzPXt7bG9jYXRpb249Imd1aS5sdWEj
 MTQiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249Im1lbnUubHVhIzExNiIsd29ya3NwYWNl
-X2luZGV4PTF9LHtsb2NhdGlvbj0iaHVkLmx1YSMyMCIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2Nh
-dGlvbj0ibWFpbi5sdWEjOSIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2NhdGlvbj0ibG9vcC5sdWEj
-MTciLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249InN0YXRlLmx1YSM0Iix3b3Jrc3BhY2Vf
-aW5kZXg9MX0se2xvY2F0aW9uPSJnZngvMC5nZngiLHdvcmtzcGFjZV9pbmRleD0yfSx7bG9jYXRp
-b249Im1hcC90ZXN0Lm1hcCIsd29ya3NwYWNlX2luZGV4PTN9LHtsb2NhdGlvbj0ic2Z4LzAuc2Z4
-Iix3b3Jrc3BhY2VfaW5kZXg9NH19XV0=
+X2luZGV4PTF9LHtsb2NhdGlvbj0iaHVkLmx1YSM4MSIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2Nh
+dGlvbj0ic3RhdGUubHVhIzI1Iix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0aW9uPSJsb29wLmx1
+YSM1NSIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2NhdGlvbj0iZ2Z4LzAuZ2Z4Iix3b3Jrc3BhY2Vf
+aW5kZXg9Mn0se2xvY2F0aW9uPSJtYXAvdGVzdC5tYXAiLHdvcmtzcGFjZV9pbmRleD0zfSx7bG9j
+YXRpb249InNmeC8wLnNmeCIsd29ya3NwYWNlX2luZGV4PTR9fV1d
 :: [eoc]
