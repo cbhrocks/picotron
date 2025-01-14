@@ -1,33 +1,35 @@
---[[pod_format="raw",created="2025-01-11 06:57:49",modified="2025-01-12 15:06:31",revision=26]]
+--[[pod_format="raw",created="2025-01-11 06:57:49",modified="2025-01-14 00:47:03",revision=45]]
 cam = entity:new({
-    grabbed=false,
     last_mouse_pos=nil,
-    handle_controls = function(self, time_elapsed, controls)
-    	if (self.grab and last_mouse_pos != nil) then
-			self.x -= controls.mouse_pos[1] - last_mouse_pos[1]
-			self.y -= controls.mouse_pos[2] - last_mouse_pos[2]
+    width=wWidth, height=wHeight,
+    handle_controls = function(self, game_state)
+    	time_elapsed = game_state.cur_update - game_state.last_update
+    	controls = game_state.controls
+    	if (controls.mouse_b_m and controls.last_mouse_pos != nil) then
+			self.x -= controls.mouse_pos[1] - controls.last_mouse_pos[1]
+			self.y -= controls.mouse_pos[2] - controls.last_mouse_pos[2]
 		else
 			if (controls.left) then 
-				self.dx = -25
+				self.dx = -100
 			elseif (controls.right) then 
-				self.dx = 25
+				self.dx = 100
 			else
 				self.dx = 0
 			end
 			if (controls.up) then 
-				self.dy = -25
+				self.dy = -100
 			elseif (controls.down) then 
-				self.dy = 25
+				self.dy = 100
 			else
 				self.dy = 0
 			end
 		end 
-		last_mouse_pos = mouse_pos
+		self.last_mouse_pos = controls.mouse_pos
     end
 })
 
 add_position(cam)
-add_movement(cam, 50, 40, 40)
+add_movement(cam, 20, 100, 100)
 
 function cam:new(o)
     local o = o or {}

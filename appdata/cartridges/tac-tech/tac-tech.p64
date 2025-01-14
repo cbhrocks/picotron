@@ -4,7 +4,7 @@ version 2
 :: gfx/
 :: gfx/0.gfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xMyAxNzowNTo1NSIscmV2aXNpb249MTExNF1dbHo0ADoBAACxMgAA8yF7WzBdPXtibXA9cHh1
+MS0xNCAwNjowMjoxNCIscmV2aXNpb249MTUzNl1dbHo0ADoBAACxMgAA8yF7WzBdPXtibXA9cHh1
 AEMgEBAE8FYHEAfAF9AXwAcQB-BWLGZsYWdzPTAscGFuX3gIAMp5PTAsem9vbT04fSw_AP8T9QIP
 FSUPFkUG1RYVDqUG9R0OdQ71Ow71BA71BA8VNQ71AlEAHO-wAz8UMD4gDj8VDhAOPQQABnAgPjA_
 8AI_KgAGFQAPKQAGHxOFABxT-xQBFA4CABIeCAA1DxUEDAAAFgAiDQQJAAkVAA8KACsDUwAvBA0g
@@ -13,7 +13,7 @@ BAAaHx5pAEo-tf4S7wEeDzEA----------------------------------------------------
 ---------4lQbT04fX0=
 :: gfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xMyAxNzowNTo1NiJdXQ==
+MS0xNCAwNjowMjoxNCJdXQ==
 :: map/
 :: map/0.map
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI1LTAxLTA3IDAzOjQ2OjQ4Iixtb2RpZmllZD0iMjAyNS0w
@@ -29,31 +29,31 @@ DwAHGw_ABjAM1AYPAAcNAPQGDgQADwAF-58OSAQPBAA3H2OAAAUPBABVD4AA-wENYAQPBABYHzhq
 EAM-bWFwZhAaUDAuNX19
 :: map/test.map
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xMyAxNzowNTo1NSIscmV2aXNpb249NzcwXV1sejQA6QEAANEgAADwEXt7cGFuX3g9MTcsYm1w
-PXVzZXJkYXRhKCJpMTYiLDMyAwAvIjABAP----83LzMwAQBnEzIEAA8BAP-WD_wBCR8y2AJYHjMs
-AA_UAD4vMzDsAA8vMzABAGsTMoQAD4gAXQ9wAA4PlABMLjIwaAAPAQD-fw8AAlYPAQD-----qPAQ
-IiksbmFtZT0ib2JqZWN0cyIsaGlkZGVuPWZhbHNlLEIQ4nk9MjMsdGlsZV9oPTE2CgAQdwoAr3pv
-b209MC41fSxqEBRfOGMwMDkEAGEAfAASMAgAHzEEAGQfOYAA-wEXYwwADwQAPR9jgAAFDwQAVQ_A
+MS0xNCAwNjowMjoxNCIscmV2aXNpb249MTE5Ml1dbHo0AOkBAADRIAAA8Ah7e2JtcD11c2VyZGF0
+YSgiaTE2IiwzMgMALyIwAQD-----Ny8zMAEAZxMyBAAPAQD-1g-sAQkfMtgCWB4zLAAPlAA_LzMw
+7AAPLzMwAQBrEzKEAA_IAF0PcAAOD5QATC4yMGgADwEA-38PAAJWDwEA-----6jxGCIpLGhpZGRl
+bj1mYWxzZSxuYW1lPSJvYmplY3RzIixwYW5feD0xNwkA4nk9MjMsdGlsZV9oPTE2CgAQdwoAr3pv
+b209MC41fSxqEAtfOGMwMDkEAGEAfAASMAgAHzEEAGQfOYAA-wEXYwwADwQAPR9jgAAFDwQAVQ_A
 AP8dF2EkAAUEABI0GAAfMSwAKAQEAAQoAB8xBAABEjQcAFg4ODAwOQQAH2NUAABLODAwYSQAD2AE
 ER85gAAQDiAADwQAFw5AAA_AAP8ZANQBD_wBAQ_kBAQfY0AAGA6AAA8EAEgPgAD-qS9hNIACKA9A
 AAgOgAAPIAAjDwQACh84QAANDyAALwhsAAkEAAMUAA9AAA0PIAAtBQQAGzgEAAMUAA9AAA0PIAAR
 BEQGDwAHGw_ABjAM1AYPAAcNAPQGDgQADwAF-58OSAQPBAA3H2OAAAUPBABVD4AA-wENYAQPBABY
-FThqED9tYXBmEB5QMC41fX0=
+HzhqEAM-bWFwZhAaUDAuNX19
 :: map/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xMyAxNzowNTo1NiJdXQ==
+MS0xNCAwNjowMjoxNCJdXQ==
 :: sfx/
 :: sfx/0.sfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xMyAxNzowNTo1NSIscmV2aXNpb249MTA4OV1dbHo0AKAAAAALCgAA-zBweHUAAygAAAQABA9A
+MS0xNCAwNjowMjoxNCIscmV2aXNpb249MTUxMV1dbHo0AKAAAAALCgAA-zBweHUAAygAAAQABA9A
 EAIOAAGgASACoA4ADxAADfDKAQIDQA8PkAQFBgdADJAICQoLQAyQDwwPDQ8ODEAM8P8BAOv-J6oB
 EAYPIBABIAEgAfAAAhACDhABIA8hIAEwD0Dwww8oD--wxg-4Cg--D4AP9w8NAfAJARAGDjAA----
 --_9H-8BAKzPyA9AAA8QQP--sPD-AQD-6lD-----KQ==
 :: sfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xMyAxNzowNTo1NiJdXQ==
+MS0xNCAwNjowMjoxNCJdXQ==
 :: entity.lua
---[[pod_format="raw",created="2025-01-09 16:01:30",modified="2025-01-13 17:05:55",revision=445]]
+--[[pod_format="raw",created="2025-01-09 16:01:30",modified="2025-01-14 00:53:59",revision=854]]
 --[[pod_format="raw",created="2025-01-06 21:02:01",modified="2025-01-06 21:02:01",revision=0]]
 entity = {
     type = 'entity',
@@ -69,27 +69,28 @@ end
 
 function entity:draw()
     if not self.dead then
-        if (self.draw_circle ~= nil) self:draw_circle()
-        if (self.draw_sprite ~= nil) self:draw_sprite()
+        if (self.draw_circle != nil) self:draw_circle()
+        if (self.draw_sprite != nil) self:draw_sprite()
         -- local points = self:get_hit_box()
         -- line(points[1][1], points[1][2], points[2][1], points[2][2])
         -- line(points[2][1], points[2][2], points[3][1], points[3][2])
         -- line(points[3][1], points[3][2], points[4][1], points[4][2])
         -- line(points[4][1], points[4][2], points[1][1], points[1][2])
     end
-    if (self.draw_particles ~= nil) self:draw_particles()
+    if (self.draw_particles != nil) self:draw_particles()
     for p in all(self.particles) do
         p:draw()
     end
 end
 
-function entity:update(time_elapsed)
+function entity:update(game_state)
+	local time_elapsed = game_state.cur_update - game_state.last_update
 	if not self.dead then
-		if (self.handle_controls != nil) self:handle_controls(time_elapsed, state.controls)
-		if (self.update_duration ~= nil) self:update_duration(time_elapsed)
-		if (self.update_position != nil) self:update_position(time_elapsed)
+		if (self.handle_controls != nil) self:handle_controls(game_state)
+		if (self.update_duration != nil) self:update_duration(game_state)
+		if (self.update_position != nil) self:update_position(game_state)
 	end
-	if (self.update_particles != nil) self:update_particles(time_elapsed)
+	if (self.update_particles != nil) self:update_particles(game_state)
 end
 
 add_circle = function(self, radius, col)
@@ -98,6 +99,7 @@ add_circle = function(self, radius, col)
 	self.draw_circle = function(self)
 		circ(self.x, self.y, self.radius, self.col)
 	end
+	return self
 end
 
 add_sprite = function(self, s_id, width, height)
@@ -107,17 +109,20 @@ add_sprite = function(self, s_id, width, height)
 	self.draw_sprite = function(self)
 		spr(self.s_id, self.x-self.width/2, self.y-self.height/2, 1, 1)
 	end
+	return self
 end
 
 add_duration = function(self, duration)
 	self.duration = duration
-	self.update_duration = function(self, time_elapsed)
+	self.update_duration = function(self, game_state)
+		local time_elapsed = game_state.cur_update - game_state.last_update
 		if (self.duration < 0) then
 			self.dead = true
 		else
 			self.duration -= time_elapsed
 		end
 	end
+	return self
 end
 
 add_particles = function(self)
@@ -127,7 +132,8 @@ add_particles = function(self)
 	        p:draw()
 	    end
 	end
-	self.update_particles = function(self, time_elapsed)
+	self.update_particles = function(self, game_state)
+		local time_elapsed = game_state.cur_update - game_state.last_update
 		for p in all(self.particles) do
 			p:update()
 		end
@@ -140,6 +146,7 @@ add_particles = function(self)
 			end
 		)
 	end
+	return self
 end
 
 add_hitbox = function(self, type)
@@ -159,6 +166,7 @@ add_hitbox = function(self, type)
 		}
 	end
 	self.on_hit = function(self) print("hit") end
+	return self
 end
 
 add_terrain = function(self)
@@ -166,6 +174,7 @@ add_terrain = function(self)
 	-- top, right, bottom, left cover supplied to surounding spaces
 	self.cover = {0, 0, 0, 0}
 	self.traversable = true
+	return self
 end
 
 add_stats = function(self)
@@ -189,6 +198,7 @@ add_stats = function(self)
 	self.constitution = 5
 	-- controls how accurate the unit is with their attacks
 	self.accuracy = 5
+	return self
 end
 
 add_position = function(self)
@@ -198,6 +208,7 @@ add_position = function(self)
 		self.x = new_x
 		self.y = new_y
 	end
+	return self
 end
 
 -- requires position first
@@ -233,134 +244,28 @@ add_movement = function(self, max_velocity, pdx, pdy)
     	self.x += self.vx
     	self.y += self.vy
     end
-    self.update_position = function(self, time_elapsed)
+    self.update_position = function(self, game_state)
+    	local time_elapsed = game_state.cur_update - game_state.last_update
 		self:calculate_velocity(time_elapsed)
 		self:calculate_position(time_elapsed)
     end
+    
+   return self
 end
 
 --https://gamedevacademy.org/lua-inheritance-tutorial-complete-guide/
 
 :: gui.lua
---[[pod_format="raw",created="2025-01-08 17:33:11",modified="2025-01-13 17:05:55",revision=1243]]
-local wWidth = get_display():width()
-local wHeight = get_display():height()
-local itemHeight = 14
+--[[pod_format="raw",created="2025-01-08 17:33:11",modified="2025-01-14 06:02:14",revision=1730]]
+wWidth = get_display():width()
+wHeight = get_display():height()
 
 gui = create_gui()
 
-menus={
-	main={
-		type="menu",
-		items={"Level Select", "Close"},
-		["Level Select"]={
-			type="menu",
-			items={"Test", "Back"},
-			["Test"]={
-				type="func",
-				call=function() load_level("map/test.map") end,
-			},
-			["Back"]={
-				type="func",
-				function() attach_menu({ "main" }) end,
-			}
-		},
-		["Close"]={
-			type="func",
-			call=function() mainMenu.hidden=true end,
-		}
-	},
-}
-
-local function traverse_path(path)
-	val = menus
-	for item in all(path) do
-		val = val[item]
-	end
-	return val
-end
-
-local function remove_all_children(el)
+function remove_all_children(el)
 	for child in all(el.child) do
 		el:detach(child)
 	end
-end
-
-local function attach_menu(path)
-	remove_all_children(parent)
-	
-	local select_item = function(item)
-		if (item.type == "menu") then
-			new_path = path
-			new_path[#new_path+1] = menu.items[i]
-			attach_menu(new_path)
-		elseif (item.type == "function") then
-			item.call()
-		end
-	end
-
-	local menu = traverse_path(path)
-	
-	local mainMenu = parent:attach{
-		x=wWidth/2-50, y=wHeight/2-(#menu.items+1)*itemHeight,
-		width=100, height=(#menu.items+1)*itemHeight,
-		hover=1,
-		draw=function(self)
-			bgFill(self)
-		end,
-		update=function(self)
-			if (state.controls.down_p) then
-				self.hover = self.hover < #menu.items and self.hover+1 or 1
-			end
-			if (state.controls.up_p) then
-				self.hover = self.hover > 1 and self.hover-1 or #menu.items
-			end
-			if (state.controls.primary_p) then
-				select_item(menu[menu.items[self.hover]])
-			end
-		end
-	}
-
-	local title = mainMenu:attach{
-		x=0, y=0,
-		width=mainMenu.width, height=12,
-		draw=function(self)
-			print("Main Menu", 2, 2, 1)
-		end
-	}
-	
-	for i=1,#menu.items+1 do
-		item = menu[menu.items[i]]
-		mainMenu:attach{
-			x=0, y=itemHeight*i,
-			width=mainMenu.width, height=itemHeight,
-			clicked=false,
-			draw=function(self)
-				bgFill(self, self.clicked and 5 or mainMenu.hover==i and 22 or 7)
-				border(self)
-				print(menu.items[i], 3, 3, 1)
-			end,
-			click=function(self) self.clicked=true end,
-			release=function(self) self.clicked=false end,
-			tap=function(self) 
-				select_item(self)
-			end
-		}
-	end
-end
-
-
-
-local function load_level(map_path)
-	state.map_data = fetch("map/test.map")
-   printh(dump(state.map_data))
-   printh(dump(state.map_data[1].bmp))
-   local ud = state.map_data[1].bmp
-   for i=0,(ud:height()-1) do
-       for j=0,(ud:width()-1) do
-           printh(dump(ud:get(i,j,1)))
-       end
-   end
 end
 
 function bgFill(self, col)
@@ -371,23 +276,30 @@ function border(self, col)
 	rect(0, 0, self.width-1, self.height-1, col or 5)
 end
 
-parent = gui:attach{
+:: hud.lua
+--[[pod_format="raw",created="2025-01-14 00:55:33",modified="2025-01-14 06:02:14",revision=94]]
+local hud = gui:attach({
 	x=0, y=0, width=wWidth, height=wHeight,
-	paused=false,
 	update=function (self)
-		if (state.controls.pause_p) then
-			if (self.paused) then
-				self.paused = false
-				remove_all_children(self)
-			else
-				self.paused=true
-				attach_menu({"main"})
-			end
-		end
 	end
-}
+})
+
+local log_button = hud:attach({
+	x=wWidth-20, y=0,
+	width=20, height=20,
+	show_log=false,
+	draw=function(self)
+		bgFill(self, 6)
+		
+		-- rounded
+		pset(0, 0, 8)
+		pset(self.width, 0, 0)
+		pset(0, self.height, 0)
+		pset(self.width, self.height, 0)
+	end
+})
 :: loop.lua
---[[pod_format="raw",created="2025-01-09 16:02:14",modified="2025-01-13 17:05:55",revision=590]]
+--[[pod_format="raw",created="2025-01-09 16:02:14",modified="2025-01-14 06:02:14",revision=1070]]
 window{
 	pauseable=false
 	
@@ -405,290 +317,290 @@ end
 function _draw()
     cls()
     local update_time = time()
-    state.mouse:draw()
-    if (state.map_data != nil) then 
-        map(state.map_data[2].bmp)
+
+    if (game_state.map_data != nil) then 
+        map(game_state.map_data[2].bmp)
     end
-    for e in all(state.units) do
+    for e in all(game_state.units) do
         e:draw()
     end
-    for p in all(state.projectiles) do
+    for p in all(game_state.projectiles) do
         p:draw()
     end
     gui:draw_all()
     buttonsPressed = ""
-    if (state.controls.mouse_b_l) then buttonsPressed = buttonsPressed.."m_b_l, " end
-    if (state.controls.mouse_b_r) then buttonsPressed = buttonsPressed.."m_b_r, " end
-    if (state.controls.mouse_b_m) then buttonsPressed = buttonsPressed.."m_b_m, " end
-    if (state.controls.up) then buttonsPressed = buttonsPressed.."up, " end
-    if (state.controls.right) then buttonsPressed = buttonsPressed.."right, " end
-    if (state.controls.down) then buttonsPressed = buttonsPressed.."down, " end
-    if (state.controls.left) then buttonsPressed = buttonsPressed.."left, " end
-    if (state.controls.primary) then buttonsPressed = buttonsPressed.."primary, " end
-    if (state.controls.secondary) then buttonsPressed = buttonsPressed.."secondary, " end
-    print(string.format("cpu: %.3f \ncontrols: %s", stat(1), buttonsPressed), state.camera.x, state.camera.y, 13)
+    if (game_state.controls.mouse_b_l) then buttonsPressed = buttonsPressed.."m_b_l, " end
+    if (game_state.controls.mouse_b_r) then buttonsPressed = buttonsPressed.."m_b_r, " end
+    if (game_state.controls.mouse_b_m) then buttonsPressed = buttonsPressed.."m_b_m, " end
+    if (game_state.controls.up) then buttonsPressed = buttonsPressed.."up, " end
+    if (game_state.controls.right) then buttonsPressed = buttonsPressed.."right, " end
+    if (game_state.controls.down) then buttonsPressed = buttonsPressed.."down, " end
+    if (game_state.controls.left) then buttonsPressed = buttonsPressed.."left, " end
+    if (game_state.controls.primary) then buttonsPressed = buttonsPressed.."primary, " end
+    if (game_state.controls.secondary) then buttonsPressed = buttonsPressed.."secondary, " end
+    print(string.format("cpu: %.3f \ncontrols: %s", stat(1), buttonsPressed), game_state.camera.x, game_state.camera.y, 13)
     --?""
-    state.last_draw = update_time
+    game_state.last_draw = update_time
 end
 
 function _update()
-    local update_time = time()
-    local time_elapsed = update_time - state.last_update
+    game_state.cur_update = time()
 
-    update_controls()
-    state.mouse:update(time_elapsed)
-    state.camera:update(
-    	time_elapsed,
-        state.controls.up,
-        state.controls.down,
-        state.controls.left,
-        state.controls.right,
-        state.controls.mouse_pos,
-        state.controls.mouse_b_m
-    )
+    game_state:update_controls()
+    game_state.camera:update(game_state)
     
     gui:update_all()
 
     -- loop through all particles, removing them when dead and all child particles are gone
-    ArrayRemove(state.projectiles, function(t, i, j)
+    ArrayRemove(game_state.projectiles, function(t, i, j)
         local v = t[i]
-        v:update(update_time - state.last_update)
+        v:update(game_state)
 
         return not v.dead or #v.particles > 0
     end)
 
     -- remove enemies if dead, otherwise update
-    ArrayRemove(state.units, function(t, i, j)
+    ArrayRemove(game_state.units, function(t, i, j)
         local v = t[i]
         if (v.dead) return false
-        v:update(update_time - state.last_update)
+        v:update(game_state)
 
         return true
     end)
 
-    -- state.camera:move(state.player.x - screen_width/2, state.player.y - screen_height/2)
-    camera(state.camera.x, state.camera.y)
+    -- set camera to the camera state location
+    camera(game_state.camera.x, game_state.camera.y)
 
-    -- move mouse
-    state.mouse:move(
-    	state.controls.mouse_pos[1] + state.camera.x, 
-    	state.controls.mouse_pos[2] + state.camera.y
-    )
-
-    state.last_update = update_time
-end
-
-function update_controls()
-    local mouse_x, mouse_y, mouse_b, wheel_x, wheel_y = mouse()
-    state.controls.last_mouse_pos = state.controls.mouse_pos
-    state.controls.mouse_pos = {mouse_x, mouse_y}
-    state.controls.mouse_b_l = (mouse_b & 0b0001) == 1
-    state.controls.mouse_b_r = (mouse_b & 0b0010) == 2
-    state.controls.mouse_b_m = (mouse_b & 0b0100) == 4
-    state.controls.mouse_wheel_x = wheel_x
-    state.controls.mouse_wheel_y = wheel_y
-    state.controls.up = btn(2) or btn(10)
-    state.controls.up_p = btnp(2) or btnp(10)
-    state.controls.right = btn(1) or btn(9)
-    state.controls.right_p = btnp(1) or btnp(9)
-    state.controls.down = btn(3) or btn(11)
-    state.controls.down_p = btnp(3) or btnp(11)
-    state.controls.left = btn(0) or btn(8)
-    state.controls.left_p = btnp(0) or btnp(8)
-    state.controls.primary = btn(4)
-    state.controls.primary_p = btnp(4)
-    state.controls.secondary = btn(5)
-    state.controls.secondary_p = btnp(5)
-    state.controls.pause = btn(6)
-    state.controls.pause_p = btnp(6)
+    game_state.last_update = game_state.cur_update
 end
 
 function restart()
     cls()
-    --music(0)
-    local mouse = entity:new({
-        type='other'
-    })
-    add_position(mouse)
-
-    state = {
-        last_update = time(),
-        last_draw = time(),
-        mouse = mouse,
-        camera = cam:new(),
-        -- better to keep these in seperate lists. easier to optimize loops
-        -- map = {
-        --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
-        --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
-        --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
-        --     { terrain:new() }, { terrain:new() }, { terrain:new() }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), },
-        --     { terrain:new() }, { terrain:new() }, { terrain:new() }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), },
-        --     { terrain:new() }, { terrain:new() }, { terrain:new() }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), },
-        --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
-        --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
-        --     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
-        -- }
-        map_data = nil,
-        units = {},
-        projectiles = {},
-        particles = {},
-        menus={},
-        -- contains current state of controls being pressed, moved, pos, etc.
-        controls = {},
-    }
-end
-
-function load_map()
-
+    game_state=state:new()
 end
 
 :: main.lua
---[[pod_format="raw",created="2024-12-30 18:09:39",modified="2025-01-13 17:05:55",revision=1157]]
-include("loop.lua")
+--[[pod_format="raw",created="2024-12-30 18:09:39",modified="2025-01-14 06:02:14",revision=1613]]
 include("entity.lua")
-include("gui.lua")
 include("/appdata/utils/dump.lua")
 include("/appdata/utils/array.lua")
 include("/appdata/utils/camera.lua")
+include("state.lua")
+include("loop.lua")
+include("gui.lua")
 include("menu.lua")
+include("hud.lua")
 
 :: menu.lua
---[[pod_format="raw",created="2025-01-09 16:03:03",modified="2025-01-09 16:06:29",revision=8]]
-menuItem = {
-    text='update this with new text',
-    -- top, left
-    padding={2, 2},
-    onSelect = function ()
-        return
-    end
+--[[pod_format="raw",created="2025-01-09 16:03:03",modified="2025-01-14 06:02:14",revision=438]]
+local itemHeight = 14
+
+local function traverse_path(menu_tree, path)
+	local val = menu_tree
+	for item in all(path) do
+		val = val[item]
+	end
+	return val
+end
+
+-- attaches a menu gui object to the specified root element. 
+local function attach_menu(root_el, menu_tree, path)
+	local path = path or {}
+
+	remove_all_children(root_el)
+	local menu = traverse_path(menu_tree, path)
+	printh(dump(menu))
+	
+	local select_item = function(key)
+		printh(key.." selected")
+		local type = menu[key].type
+		if (type == "menu") then
+			path[#path+1] = key
+			attach_menu(root_el, menu_tree, path)
+		elseif (type == "function") then
+			menu[key].call(root_el, menu_tree)
+		end
+	end
+	
+	local menu_container = root_el:attach{
+		x=wWidth/2-50, y=wHeight/2-(#menu.items+1)*itemHeight,
+		width=100, height=(#menu.items+1)*itemHeight,
+		hover=1,
+		draw=function(self)
+			bgFill(self)
+		end,
+		update=function(self)
+			if (game_state.controls.down_p) then
+				self.hover = self.hover < #menu.items and self.hover+1 or 1
+			end
+			if (game_state.controls.up_p) then
+				self.hover = self.hover > 1 and self.hover-1 or #menu.items
+			end
+			if (game_state.controls.primary_p) then
+				select_item(menu.items[self.hover])
+			end
+		end
+	}
+
+	local title = menu_container:attach{
+		x=0, y=0,
+		width=menu_container.width, height=12,
+		draw=function(self)
+			print("Main Menu", 2, 2, 1)
+		end
+	}
+	
+	for i=1,#menu.items+1 do
+		local item = menu[menu.items[i]]
+		menu_container:attach{
+			x=0, y=itemHeight*i,
+			width=menu_container.width, height=itemHeight,
+			clicked=false,
+			draw=function(self)
+				bgFill(self, self.clicked and 5 or menu_container.hover==i and 22 or 7)
+				border(self)
+				print(menu.items[i], 3, 3, 1)
+			end,
+			click=function(self) self.clicked=true end,
+			release=function(self) self.clicked=false end,
+			tap=function(self) 
+				select_item(menu.items[i])
+			end
+		}
+	end
+end
+
+--[[ a map of all the menus. Every instance should have a type of either
+	- menu
+	- function
+	menu must have a list of item names, and an entry that corresponds to each of those
+	function must have a call entry, which executes when selected
+]]--
+local main_menu_tree={
+	type="menu",
+	items={"Level Select", "Close"},
+	["Level Select"]={
+		type="menu",
+		items={"Test", "Back"},
+		["Test"]={
+			type="function",
+			call=function(menu, menu_tree) 
+				game_state:load_map_data("map/test.map")
+				menu:toggle()
+			end,
+		},
+		["Back"]={
+			type="function",
+			call=function(menu, menu_tree) attach_menu(menu, menu_tree, { }) end,
+		}
+	},
+	["Close"]={
+		type="function",
+		call=function(menu, menu_tree)
+			menu:toggle()
+		end,
+	}
 }
 
-function menuItem:new(o)
-    local o = o or {}
-    setmetatable(o, self)
-    self.__index = self
-    -- need to set in constructor so it creates a new table object each time
-    return o
-end
+local main_menu = gui:attach({
+	x=0, y=0, width=wWidth, height=wHeight,
+	paused=false,
+	toggle=function(self)
+		if (self.paused) then
+			self.paused = false
+			remove_all_children(self)
+		else
+			self.paused=true
+			attach_menu(self, main_menu_tree, {})
+		end
+	end,
+	update=function (self)
+		if (game_state.controls.pause_p) then 
+			self:toggle()
+		end
+	end
+})
 
-menu = {
-    type = 'menu',
-    title = nil,
-    backgroundCol = 0,
-    highlightCol = 6,
-    outlineCol = nil,
-    textCol=0,
-    -- width, height
-    dimensions=nil,
-    lineHeight=12,
-    -- position
-    position={0, 0},
-    hover=1,
-    -- if no mouse movement and keyboard used, then ignore mouse for selection
-    last_mouse_pos=nil,
-    -- if menu should register key presses and clicks
-    active=true,
-    -- color of line seperator
-    seperate=false,
-    seperateCol=0,
-
-    items = {
-        menuItem:new({
-            text='update this menu with new items',
-            onSelect = function ()
-            end
-        })
-    }
+:: state.lua
+--[[pod_format="raw",created="2025-01-13 19:40:16",modified="2025-01-14 06:02:14",revision=344]]
+state = {
+	cur_update = nil,
+	last_update = time(),
+	last_draw = time(),
+	camera = cam:new(),
+	map_data = nil,
+	units = {},
+	projectiles = {},
+	particles = {},
+	menus={},
+	-- contains current state of controls being pressed, moved, pos, etc.
+	controls = {},
 }
 
-function menu:new(o)
-    local o = o or {}
-    if (o.dimensions == nil) then
-        local height = 0
-        if (o.title != nil) then
-            height += self.lineHeight
-        end
-        height += #o.items * self.lineHeight
-        o.dimensions = {
-            100,
-            height
-        }
-    end
-    setmetatable(o, self)
-    self.__index = self
-    -- need to set in constructor so it creates a new table object each time
-    return o
+function state:new(o)
+	local o = o or {}
+	setmetatable(o, self)
+	self.__index = self
+	return o
 end
 
-function menu:draw()
-    local y = self.position[1]
-    rectfill(self.position[1], self.position[2], self.position[1]+self.dimensions[1], self.position[2]+self.dimensions[2], self.backgroundCol)
-    if (self.outlineCol != nil) then
-        rect(self.position[1]-1, self.position[2]-1, self.position[1]+self.dimensions[1]+1, self.position[2]+self.dimensions[2]+1, self.outlineCol)
-    end
-    if (self.title != nil) then
-        -- give title 2 pix padding
-        y += 2
-        print(self.title, self.position[1] + 2, y, self.textCol)
-        y += self.lineHeight - 2
-        line(self.position[1], y, self.position[1]+self.dimensions[1], y, 0)
-        y += 1
-    end
-    for i=1,#self.items do
-        local item = self.items[i]
-        if (self.hover == i) then
-            rectfill(self.position[1], y, self.position[1]+self.dimensions[1], y+self.lineHeight, self.highlightCol)
-        end
-        y += item.padding[1]
-        print(item.text, self.position[1] + item.padding[2], y, self.textCol)
-        y += self.lineHeight - item.padding[1]
-        if (self.seperate and i != #self.items) then
-            line(self.position[1], y, self.position[1]+self.dimensions[1], y, self.seperateCol)
-            y += 1
-        end
-    end
+function state:load_map_data(path)
+	self.map_data = fetch(path)
+   printh("Map Data: "..dump(self.map_data))
+   printh("Layer 1 BMP data: "..dump(self.map_data[1].bmp))
+   local ud = self.map_data[1].bmp
+   for i=0,(ud:height()-1) do
+       for j=0,(ud:width()-1) do
+           printh(dump(ud:get(i,j,1)))
+       end
+   end
+   self.camera:move(0, 0)
 end
-
-function menu:update(up, down, mouse_pos, select)
-    if (
-        mouse_pos[1] > self.position[1] and mouse_pos[1] < self.position[1] + self.dimensions[1] and 
-        mouse_pos[2] > self.position[2] and mouse_pos[2] < self.position[2] + self.dimensions[2]
-    ) then
-        if (
-            self.last_mouse_pos[1] != mouse_pos[1] or
-            self.last_mouse_pos[2] != mouse_pos[2]
-        ) then
-            local seperator = 0
-            if (self.seperator) then
-                seperator = 1
-            end
-            self.hover = flr((mouse_pos[2] - self.position[2]) / (self.lineHeight + seperator))
-        end
-    end
-    if (up) then
-        if (self.hover == 1) then
-            self.hover = #self.items
-        end
-        self.hover -= 1
-    end
-    if (down) then
-        if (self.hover == #self.items) then
-            self.hover = 1
-        end
-        self.hover += 1
-    end
-    self.last_mouse_pos = mouse_pos
-    if (select) then
-        self.items[self.hover].onSelect()
-    end
+	-- better to keep these in seperate lists. easier to optimize loops
+	-- map = {
+	--     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
+	--     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
+	--     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
+	--     { terrain:new() }, { terrain:new() }, { terrain:new() }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), },
+	--     { terrain:new() }, { terrain:new() }, { terrain:new() }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), },
+	--     { terrain:new() }, { terrain:new() }, { terrain:new() }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), }, { terrain:new(), },
+	--     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
+	--     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
+	--     nil, nil, { terrain:new() }, { terrain:new(), }, {terrain:new(), }, nil, nil,
+	-- }
+	
+function state:update_controls()
+    local mouse_x, mouse_y, mouse_b, wheel_x, wheel_y = mouse()
+    self.controls.last_mouse_pos = self.controls.mouse_pos
+    self.controls.mouse_pos = {mouse_x, mouse_y}
+    self.controls.mouse_b_l = (mouse_b & 0b0001) == 1
+    self.controls.mouse_b_r = (mouse_b & 0b0010) == 2
+    self.controls.mouse_b_m = (mouse_b & 0b0100) == 4
+    self.controls.mouse_wheel_x = wheel_x
+    self.controls.mouse_wheel_y = wheel_y
+    self.controls.up = btn(2) or btn(10)
+    self.controls.up_p = btnp(2) or btnp(10)
+    self.controls.right = btn(1) or btn(9)
+    self.controls.right_p = btnp(1) or btnp(9)
+    self.controls.down = btn(3) or btn(11)
+    self.controls.down_p = btnp(3) or btnp(11)
+    self.controls.left = btn(0) or btn(8)
+    self.controls.left_p = btnp(0) or btnp(8)
+    self.controls.primary = btn(4)
+    self.controls.primary_p = btnp(4)
+    self.controls.secondary = btn(5)
+    self.controls.secondary_p = btnp(5)
+    self.controls.pause = btn(6)
+    self.controls.pause_p = btnp(6)
 end
-
 :: .info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-MS0xMyAxNzowNTo1NiIscnVudGltZT0xMix3b3Jrc3BhY2VzPXt7bG9jYXRpb249Imd1aS5sdWEj
-NTgiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249Im1haW4ubHVhIzEiLHdvcmtzcGFjZV9p
-bmRleD0xfSx7bG9jYXRpb249Imxvb3AubHVhIzIwIix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0
-aW9uPSJlbnRpdHkubHVhIzE1NiIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2NhdGlvbj0iZ2Z4LzAu
-Z2Z4Iix3b3Jrc3BhY2VfaW5kZXg9Mn0se2xvY2F0aW9uPSJtYXAvdGVzdC5tYXAiLHdvcmtzcGFj
-ZV9pbmRleD0zfSx7bG9jYXRpb249InNmeC8wLnNmeCIsd29ya3NwYWNlX2luZGV4PTR9fV1d
+MS0xNCAwNjowMjoxNCIscnVudGltZT0xMix3b3Jrc3BhY2VzPXt7bG9jYXRpb249Imd1aS5sdWEj
+MTQiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249Im1lbnUubHVhIzExNiIsd29ya3NwYWNl
+X2luZGV4PTF9LHtsb2NhdGlvbj0iaHVkLmx1YSMyMCIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2Nh
+dGlvbj0ibWFpbi5sdWEjOSIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2NhdGlvbj0ibG9vcC5sdWEj
+MTciLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249InN0YXRlLmx1YSM0Iix3b3Jrc3BhY2Vf
+aW5kZXg9MX0se2xvY2F0aW9uPSJnZngvMC5nZngiLHdvcmtzcGFjZV9pbmRleD0yfSx7bG9jYXRp
+b249Im1hcC90ZXN0Lm1hcCIsd29ya3NwYWNlX2luZGV4PTN9LHtsb2NhdGlvbj0ic2Z4LzAuc2Z4
+Iix3b3Jrc3BhY2VfaW5kZXg9NH19XV0=
 :: [eoc]
