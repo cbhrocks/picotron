@@ -2,28 +2,26 @@
 cam = entity:new({
     last_mouse_pos=nil,
     width=wWidth, height=wHeight,
-    handle_controls = function(self, game_state)
-        time_elapsed = game_state.cur_update - game_state.last_update
-        controls = game_state.controls
+    handle_controls = function(self, controls)
         if (controls.mouse_b_m and controls.last_mouse_pos != nil) then
-            self.x -= controls.mouse_pos[1] - controls.last_mouse_pos[1]
-            self.y -= controls.mouse_pos[2] - controls.last_mouse_pos[2]
+            self.x -= controls.mouse_pos.x - controls.last_mouse_pos.x
+            self.y -= controls.mouse_pos.y - controls.last_mouse_pos.y
         else
-            if (controls.left) then 
+            if (controls.left) then
                 self.dx = -100
-            elseif (controls.right) then 
+            elseif (controls.right) then
                 self.dx = 100
             else
                 self.dx = 0
             end
-            if (controls.up) then 
+            if (controls.up) then
                 self.dy = -100
-            elseif (controls.down) then 
+            elseif (controls.down) then
                 self.dy = 100
             else
                 self.dy = 0
             end
-        end 
+        end
         self.last_mouse_pos = controls.mouse_pos
     end
 }):add_position():add_movement(20, 100, 100)

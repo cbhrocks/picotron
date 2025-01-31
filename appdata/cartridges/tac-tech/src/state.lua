@@ -36,9 +36,12 @@ function state:update_controls()
     self.controls.last_mouse_pos = self.controls.mouse_pos
     self.controls.mouse_pos = vec(mouse_x, mouse_y)
     -- mouse release
-    self.controls.mouse_r_l = self.controls.mouse_b_l and not (mouse_b & 0b0001) == 1
-    self.controls.mouse_r_r = self.controls.mouse_b_r and not (mouse_b & 0b0010) == 2
-    self.controls.mouse_r_m = self.controls.mouse_b_m and not (mouse_b & 0b0100) == 4
+    self.controls.mouse_r_l = not self.controls.mouse_r_l and
+        self.controls.mouse_b_l and (mouse_b & 0b0001) != 1
+    self.controls.mouse_r_r = not self.controls.mouse_r_l and
+        self.controls.mouse_b_r and (mouse_b & 0b0010) != 2
+    self.controls.mouse_r_m = not self.controls.mouse_r_l and
+        self.controls.mouse_b_m and (mouse_b & 0b0100) != 4
     -- mouse press
     self.controls.mouse_b_l = (mouse_b & 0b0001) == 1
     self.controls.mouse_b_r = (mouse_b & 0b0010) == 2
@@ -81,7 +84,6 @@ function state.load_pal(self, path)
 end
 
 function state.get_world_pos(self, pos)
-    printh("camera ", dump(self.camera))
     return vec(self.camera.x, self.camera.y) + pos
 end
 
@@ -89,52 +91,3 @@ function state.get_mouse_world_pos(self)
     return self:get_world_pos(self.controls.mouse_pos)
 end
 
--- function state.load_map(self, file_path)
---     self:log_msg("loading map data from: "..file_path)
---     data = fetch(file_path)
---     if (data == nil) then
---         self:log_msg("Error - Map File "..file_path.." not found")
---         return
---     else
---         self.map_data = data
---     end
---     printh("loaded map with num layers: "..#self.map_data)
---     for layer=1,#self.map_data do
---         local layer_info = self.map_data[layer]
---         printh("loading map layer "..layer..": "..dump(layer_info))
---         local ud = layer_info.bmp
---         -- i and j start at 0 because ud is indexed by 0
---         for i=0,(ud:width()-1) do
---             if (layer == 1) then
---                 self.current_map.locations[i+1] = { }
---             end
---             for j=0,(ud:height()-1) do
---                 --printh(dump(ud:get(i,j,1)))
---                 local sprite_index = ud:get(i,j,1)
---                 -- local sp = get_spr(ud:get(i,j,1))
---                 if (layer == 1) then -- units
---                     -- initialize locations matrix
---                     self.current_map.locations[i+1][j+1] = { }
--- 
---                     if sprite_index != 0 then
---                         local unit = units[sprite_index](layer_info.tile_w*i, layer_info.tile_h*j)
---                         self.current_map.locations[i+1][j+1].unit = unit
---                         table.insert(self.current_map.units, unit)
---                     end
---                 elseif (layer == 2) then -- objects
---                     if sprite_index != 0 then
---                         local object = objects[sprite_index](layer_info.tile_w*i, layer_info.tile_h*j)
---                         self.current_map.locations[i+1][j+1].object = object
---                         table.insert(self.current_map.objects, object)
---                     end
---                 elseif (layer == 3) then -- structure
---                     local structure = structures[sprite_index](layer_info.tile_w*i, layer_info.tile_h*j)
---                     self.current_map.locations[i+1][j+1].structure = structure
---                     table.insert(self.current_map.structure, structure)
---                 end
---             end
---         end
---     end
---     -- printh("map loaded: "..dump(self.current_map))
---     self.camera:move(0, 0)
--- end

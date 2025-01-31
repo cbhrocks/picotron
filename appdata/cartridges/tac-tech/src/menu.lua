@@ -13,33 +13,34 @@ end
 
 
 --[[ a map of all the menus. Every instance should have a type of either
-    - menu
-    - function
-    menu must have a list of item names, and an entry that corresponds to each of those
-    function must have a call entry, which executes when selected
+- menu
+- function
+menu must have a list of item names, and an entry that corresponds to each of those
+function must have a call entry, which executes when selected
 ]]--
 
-function create_menu(tree, path, toggle_check, on_select)
+function create_menu(name, tree, path)
     local path = path or {}
-    
+
     local menu_container = game_state.gui:attach{
         x=wWidth/2-50, y=wHeight/2,
         width=100, height=0, -- start at 0 then increase as built.
         hover=1, tree=tree, path=path or {},
-        update=function(self)
+        name=name,
+        handle_controls=function(self, controls)
             local cur_loc = traverse_path(self.tree, self.path)
-            if (game_state.controls.down_p) then
+            if (controls.down_p) then
                 self.hover = self.hover < #cur_loc.items and self.hover+1 or 1
             end
-            if (game_state.controls.up_p) then
+            if (controls.up_p) then
                 self.hover = self.hover > 1 and self.hover-1 or #cur_loc.items
             end
-            if (game_state.controls.primary_p) then
+            if (controls.primary_p) then
                 self:select_item(cur_loc.items[self.hover])
             end
-        end
+        end,
     }
-    
+
     menu_container.set_path=function(self, path)
         if (path != self.path) then
             self.path = path
@@ -47,13 +48,10 @@ function create_menu(tree, path, toggle_check, on_select)
             self:build_menu()
         end
     end
-    
+
     menu_container.select_item=function(self, key)
         local cur_loc = traverse_path(self.tree, self.path)
         local type = cur_loc[key].type
-        if (self.on_select != nil) then
-            self.on_select(key)
-        end
         if (type == "menu") then
             self.path[#self.path+1] = key
             self.hover = 1
@@ -64,7 +62,7 @@ function create_menu(tree, path, toggle_check, on_select)
             cur_loc[key].call(self)
         end
     end
-    
+
     function menu_container.build_menu(self)
         remove_all_children(self)
         self.height = 0
@@ -126,9 +124,9 @@ function create_menu(tree, path, toggle_check, on_select)
             self.y -= itemHeight/2
         end
     end
-    
+
     menu_container:build_menu()
-    
+
     return menu_container
 end
 

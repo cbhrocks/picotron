@@ -6,11 +6,13 @@ function create_hud(game_state)
         log_display_state="open", -- can be open, minimized
         cpu_display=nil,
         controls_display=nil,
-        tap=function(self)
-            game_state:dispatch_event({name="mouse_tap"})
-        end
+        hover=function(self)
+            handle_mouse(game_state)
+        end,
+        --tap=function(self)
+        --    game_state:dispatch_event({name="mouse_tap"})
+        --end
     }
-
 
     hud.attach_log_button = function(self)
         self.log_display = hud:attach{
@@ -142,7 +144,7 @@ function create_hud(game_state)
             update=function(self)
                 self.to_print = {}
                 for key, val in pairs(game_state.controls) do
-                    if (val == true) table.insert(self.to_print, key)
+                    if (val == true) then table.insert(self.to_print, key) end
                 end
                 self.height = #self.to_print * self.line_height
             end,
@@ -159,8 +161,83 @@ function create_hud(game_state)
         self:detach(self.controls_display)
     end
 
-    if (game_state.settings.show_log) hud:attach_log_display()
-    if (game_state.settings.show_cpu_usage) hud:attach_cpu_display()
-    if (game_state.settings.show_controls) hud:attach_controls_display()
+    hud.attach_select_display = function(self)
+        local select_display = hud:attach({
+            x=50, y=hud.height - 50,
+            width = hud.width - 100, height = 50,
+            draw = function(self)
+                local selection = game_state.map:get_selected_tile()
+                bgFill(self)
+                if (selection.unit != nil) then
+                    print(selection.unit.type.." - "..selection.unit.name.." - "..selection.unit.owner, 2, 2, 0)
+                end
+            end
+        })
+
+        local action_container = select_display:attach({
+            x=select_display.width/2, y=select_display.height-28, width = 0, height = 28,
+            active=1
+        })
+
+        local num_buttons = 0
+        local attach_button = function(sid, action)
+            local hk = action_container:attach({
+                x=num_buttons*20, y=0, width=18, height=8,
+                hotkey=num_buttons+1,
+                draw=function(bt)
+                    print(bt.hotkey, 7, 0, action_container.active == bt.hotkey and 12 or 0)
+                end
+            })
+            action_container:attach({
+                x=num_buttons*20, y=8, width=18, height=18,
+                draw=function(mb)
+                    rect(0, 0, mb.width-1, mb.height-1, 0)
+                    spr(sid, 1, 1)
+
+                    if action_container.active == hk.hotkey then
+                        draw_with_pattern(
+                            function()
+                                bgFill(mb, 12)
+                            end,
+                            "highlight"
+                        )
+                    end
+                end,
+                update=function(mb)
+                end,
+                tap=function(mb)
+                    game_state:dispatch_event({name="unit_action", action=action})
+                    return true
+                end
+            })
+            num_buttons += 1
+            action_container.width += num_buttons*20
+            action_container.x -= 10
+        end
+
+        -- this needs to be moved to update, and read in available actions from entity that is clicked on
+        local selection = game_state.map:get_selected_tile()
+        if (selection.unit != nil and selection.unit.owner == game_state.map.current_turn.owner) then
+            attach_button(56, "move")
+            attach_button(57, "attack")
+            attach_button(58, "cover")
+        end
+
+        -- local button_container = self.select_display:attach({
+        --     x=
+        -- })
+
+        self.select_display = select_display
+    end
+
+    hud.detach_select_display = function(self)
+        self.detach(self.select_display)
+        game_state.select_display = nil
+    end
+
+    if (game_state.settings.show_log) then hud:attach_log_display() end
+    if (game_state.settings.show_cpu_usage) then hud:attach_cpu_display() end
+    if (game_state.settings.show_controls) then hud:attach_controls_display() end
+    if (game_state.map.selection != nil) then hud:attach_select_display() end
     game_state.hud = hud
 end

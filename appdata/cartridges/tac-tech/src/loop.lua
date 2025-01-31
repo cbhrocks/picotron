@@ -8,34 +8,17 @@ screen_width = 480
 screen_height = 270
 
 function _init()
-    -- enable mouse
-    --poke(0x5f2d, 1)
     restart()
 end
 
 function _draw()
     cls()
-    local update_time = time()
+    local draw_time = time()
 
     game_state.map:draw()
-
-    for p in all(game_state.projectiles) do
-        p:draw()
-    end
     game_state.gui:draw_all()
-    buttonsPressed = ""
-    if (game_state.controls.mouse_b_l) then buttonsPressed = buttonsPressed.."m_b_l, " end
-    if (game_state.controls.mouse_b_r) then buttonsPressed = buttonsPressed.."m_b_r, " end
-    if (game_state.controls.mouse_b_m) then buttonsPressed = buttonsPressed.."m_b_m, " end
-    if (game_state.controls.up) then buttonsPressed = buttonsPressed.."up, " end
-    if (game_state.controls.right) then buttonsPressed = buttonsPressed.."right, " end
-    if (game_state.controls.down) then buttonsPressed = buttonsPressed.."down, " end
-    if (game_state.controls.left) then buttonsPressed = buttonsPressed.."left, " end
-    if (game_state.controls.primary) then buttonsPressed = buttonsPressed.."primary, " end
-    if (game_state.controls.secondary) then buttonsPressed = buttonsPressed.."secondary, " end
-    --print(string.format("cpu: %.3f \ncontrols: %s", stat(1), buttonsPressed), game_state.camera.x, game_state.camera.y, 13)
-    --?""
-    game_state.last_draw = update_time
+
+    game_state.last_draw = draw_time
 end
 
 function _update()
@@ -45,7 +28,5 @@ end
 function restart()
     cls()
     game_state=state:new()
-    -- printh("loading pal from path "..pwd().."/src/pal/base.pal")
-    -- game_state:load_pal(pwd().."/src/pal/base.pal")
     create_hud(game_state)
 end

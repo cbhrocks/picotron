@@ -3,15 +3,15 @@ wWidth = get_display():width()
 wHeight = get_display():height()
 
 function remove_all_children(el)
-	for child in all(el.child) do
-		el:detach(child)
-	end
+    for child in all(el.child) do
+        el:detach(child)
+    end
 end
 
 function bgFill(self, col)
-	rectfill(0, 0, self.width, self.height, col or 6)
+    rectfill(0, 0, self.width, self.height, col or 6)
 end
 
 function border(self, col)
-	rect(0, 0, self.width-1, self.height-1, col or 5)
+    rect(0, 0, self.width-1, self.height-1, col or 5)
 end

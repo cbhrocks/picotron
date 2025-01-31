@@ -1,16 +1,17 @@
 --[[pod_format="raw",created="2025-01-17 23:56:35",modified="2025-01-23 07:07:01",revision=207]]
 local function toggle_pause_menu(game_state)
-    if (game_state.menus.pause_menu == nil) then
+    pause_menu = find_first(game_state.menus, function(menu) return menu.name == "pause_menu" end)
+    if (pause_menu == nil) then
         printh("creating pause menu")
-        game_state.menus.pause_menu = create_menu(
-            pause_menu,
-            {}, 
-            function() return game_state.controls.pause_p end, 
-            function(key) game_state:log_msg(key.." selected.") end
-        )
+        -- TODO: This needs to be a list, not a dict. that way can determine menu focus priority
+        table.insert(game_state.menus, create_menu(
+            "pause_menu",
+            Menus.pause_menu,
+            {}
+        ))
     else
-        game_state.gui:detach(game_state.menus.pause_menu)
-        game_state.menus.pause_menu = nil
+        game_state.gui:detach(pause_menu)
+        del(game_state.menus, pause_menu)
     end
 end
 
@@ -41,16 +42,27 @@ local function toggle_log_display(game_state)
     game_state.settings.show_log = not game_state.settings.show_log
 end
 
-local function handle_controls(game_state)
-    if (game_state.controls.pause_p) then game_state:dispatch_event({name="toggle_pause_menu"}) end
+local function handle_unit_action(game_state, action)
+    if (action == "move") then
+        game_state.map.show_movement = true
+    end
 end
 
-local function handle_mouse_tap(game_state)
-    if (game_state.menus.pause_menu != nil) then return end
-    if (game_state.map.loaded) then
-        local tile_clicked = game_state.map:get_loc_by_coord(game_state:get_mouse_world_pos())
-        game_state:log_msg("Tile "..tile_clicked.x..", "..tile_clicked.y.." clicked")
-        game_state.map:set_selected_tile(tile_clicked)
+-- there are certain controls that will always do things, otherwise handle_controls should determine what has highest
+-- priority, then pass the control state to that things handle_controls function.
+local function handle_controls(game_state)
+    if (game_state.controls.pause_p) then game_state:dispatch_event({name="toggle_pause_menu"}) end
+    if (#game_state.menus > 0) then
+        game_state.menus[1]:handle_controls(game_state.controls)
+    elseif (game_state.map.loaded) then
+        game_state.map:handle_controls(game_state)
+        game_state.camera:handle_controls(game_state.controls)
+    end
+end
+
+local function handle_tile_selected(game_state)
+    if (game_state.hud.select_display == nil) then
+        game_state.hud:attach_select_display()
     end
 end
 
@@ -61,8 +73,9 @@ local function handle_events(game_state)
         if (event.name == "toggle_controls_display") then toggle_controls_display(game_state) end
         if (event.name == "toggle_cpu_usage_display") then toggle_cpu_usage_display(game_state) end
         if (event.name == "toggle_log_display") then toggle_log_display(game_state) end
+        if (event.name == "unit_action") then handle_unit_action(game_state, event.action) end
         if (event.name == "load_map") then game_state.map:load(event.data) end
-        if (event.name == "mouse_tap") then handle_mouse_tap(game_state) end
+        if (event.name == "tile_selected") then handle_tile_selected(game_state) end
     end
     game_state.events = {}
 end
@@ -74,7 +87,7 @@ function update(game_state)
     handle_controls(game_state)
     handle_events(game_state)
     game_state.camera:update(game_state)
-    
+
     game_state.gui:update_all()
 
     -- loop through all particles, removing them when dead and all child particles are gone

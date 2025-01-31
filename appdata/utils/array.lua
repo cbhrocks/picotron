@@ -17,6 +17,32 @@ function ArrayRemove(t, fnKeep)
     return t;
 end
 
+function find_first(array, fn)
+    for i=1,#array do
+        if fn(array[i]) then
+            return array[i]
+        end
+    end
+    return nil
+end
+
+function find_first_index(array, fn)
+    for i=1,#array do
+        if fn(array[i]) then
+            return i
+        end
+    end
+    return nil
+end
+
+function remove_first(array, fn)
+    index = find_first_index(array, fn)
+    if index then
+        deli(array, index)
+    end
+    
+end
+
 -- array must have at least 2 objects
 function getClosest(obj, array)
     -- i: closest

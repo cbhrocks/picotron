@@ -2,6 +2,8 @@
 --[[pod_format="raw",created="2025-01-06 21:02:01",modified="2025-01-06 21:02:01",revision=0]]
 entity = {
     type = 'entity',
+    name = "",
+    owner = "enemy",
 }
 
 function entity:new(o)
@@ -31,7 +33,7 @@ end
 function entity:update(game_state)
     local time_elapsed = game_state.cur_update - game_state.last_update
     if not self.dead then
-        if (self.handle_controls != nil) self:handle_controls(game_state)
+        -- if (self.handle_controls != nil) self:handle_controls(game_state) this should be called by update
         if (self.update_duration != nil) self:update_duration(game_state)
         if (self.update_position != nil) self:update_position(game_state)
     end
@@ -123,18 +125,16 @@ entity.add_terrain = function(self)
 end
 
 entity.add_stats = function(self)
-    self.owner="player"
-    
     -- health
     self.maxHealth = 20
     self.health = 20
     -- armor
     self.maxArmor = 5
     self.armor = 5
-    
+
     -- attributes
     -- controls how fast the unit moves and can get shots off on visible enemies
-    self.speed = 5
+    self.speed = 10
     -- controls how fast the unit can react. i.e. shooting at enemies peaking from behind cover, moving between cover
     self.reflexes = 5
     -- controls melee damage and how much the unit can carry
@@ -143,6 +143,18 @@ entity.add_stats = function(self)
     self.constitution = 5
     -- controls how accurate the unit is with their attacks
     self.accuracy = 5
+
+    function self.get_move_distance(self)
+        return self.speed\2
+    end
+
+    -- stats used when taking turn. these get refreshed at the beginning of each turn
+    function self.refresh_turn(self)
+        self.remaining_moves = 1
+        self.remaining_actions = 1
+    end
+    self:refresh_turn()
+
     return self
 end
 
