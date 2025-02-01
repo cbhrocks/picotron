@@ -7,7 +7,8 @@ function create_hud(game_state)
         cpu_display=nil,
         controls_display=nil,
         hover=function(self)
-            handle_mouse(game_state)
+            game_state:set_mouse_focus("map")
+            return true
         end,
         --tap=function(self)
         --    game_state:dispatch_event({name="mouse_tap"})
@@ -39,6 +40,10 @@ function create_hud(game_state)
             end,
             tap=function(lb)
                 self:toggle_log_state()
+            end,
+            hover=function(lb)
+                game_state:set_mouse_focus("log")
+                return true
             end
         }
     end
@@ -47,6 +52,10 @@ function create_hud(game_state)
         local log_container = self:attach{
             x=self.width-200, y=0,
             width=200, height=150,
+            hover=function(lc)
+                game_state:set_mouse_focus("log")
+                return true
+            end
         }
 
         local title_bar = log_container:attach{
@@ -165,67 +174,74 @@ function create_hud(game_state)
         local select_display = hud:attach({
             x=50, y=hud.height - 50,
             width = hud.width - 100, height = 50,
+            selection=game_state.map:get_selected_tile(),
             draw = function(self)
-                local selection = game_state.map:get_selected_tile()
                 bgFill(self)
-                if (selection.unit != nil) then
-                    print(selection.unit.type.." - "..selection.unit.name.." - "..selection.unit.owner, 2, 2, 0)
+                if (self.selection.unit != nil) then
+                    print(self.selection.unit.type.." - "..self.selection.unit.name.." - "..self.selection.unit.owner, 2, 2, 0)
+                end
+            end,
+            hover=function(sd)
+                game_state:set_mouse_focus("selection_hud")
+                return true
+            end,
+            update_selection=function(sd)
+                if (sd.action_container) then
+                    sd:detach(sd.action_container)
+                end
+                sd.selection = game_state.map:get_selected_tile()
+                sd:create_action_buttons()
+            end,
+            create_action_buttons=function(sd)
+                if (sd.selection.unit == nil or sd.selection.unit.owner != game_state.map.current_turn.owner) then return end
+                sd.action_container = sd:attach({
+                    x=sd.width/2, y=sd.height-28, width = 0, height = 28,
+                    active=1
+                })
+
+                local num_buttons = 0
+                for action in all(sd.selection.unit.actions) do
+                    local hk = sd.action_container:attach({
+                        x=num_buttons*20, y=0, width=18, height=8,
+                        hotkey=num_buttons+1,
+                        update=function(hk)
+                            if (keyp(""..hk.hotkey)) then
+                                game_state:dispatch_event({name="load_action", action=action})
+                            end
+                        end,
+                        draw=function(hk)
+                            print(hk.hotkey, 7, 0, sd.action_container.active == hk.hotkey and 12 or 0)
+                        end
+                    })
+                    sd.action_container:attach({
+                        x=num_buttons*20, y=8, width=18, height=18,
+                        draw=function(mb)
+                            rect(0, 0, mb.width-1, mb.height-1, 0)
+                            spr(action.sid, 1, 1)
+
+                            if sd.action_container.active == hk.hotkey then
+                                draw_with_pattern(
+                                    function()
+                                        bgFill(mb, 12)
+                                    end,
+                                    "highlight"
+                                )
+                            end
+                        end,
+                        update=function(mb)
+                        end,
+                        tap=function(mb)
+                            game_state:dispatch_event({name="load_action", action=action})
+                            return true
+                        end
+                    })
+                    num_buttons += 1
+                    sd.action_container.width += num_buttons*20
+                    sd.action_container.x -= 10
                 end
             end
         })
-
-        local action_container = select_display:attach({
-            x=select_display.width/2, y=select_display.height-28, width = 0, height = 28,
-            active=1
-        })
-
-        local num_buttons = 0
-        local attach_button = function(sid, action)
-            local hk = action_container:attach({
-                x=num_buttons*20, y=0, width=18, height=8,
-                hotkey=num_buttons+1,
-                draw=function(bt)
-                    print(bt.hotkey, 7, 0, action_container.active == bt.hotkey and 12 or 0)
-                end
-            })
-            action_container:attach({
-                x=num_buttons*20, y=8, width=18, height=18,
-                draw=function(mb)
-                    rect(0, 0, mb.width-1, mb.height-1, 0)
-                    spr(sid, 1, 1)
-
-                    if action_container.active == hk.hotkey then
-                        draw_with_pattern(
-                            function()
-                                bgFill(mb, 12)
-                            end,
-                            "highlight"
-                        )
-                    end
-                end,
-                update=function(mb)
-                end,
-                tap=function(mb)
-                    game_state:dispatch_event({name="unit_action", action=action})
-                    return true
-                end
-            })
-            num_buttons += 1
-            action_container.width += num_buttons*20
-            action_container.x -= 10
-        end
-
-        -- this needs to be moved to update, and read in available actions from entity that is clicked on
-        local selection = game_state.map:get_selected_tile()
-        if (selection.unit != nil and selection.unit.owner == game_state.map.current_turn.owner) then
-            attach_button(56, "move")
-            attach_button(57, "attack")
-            attach_button(58, "cover")
-        end
-
-        -- local button_container = self.select_display:attach({
-        --     x=
-        -- })
+        select_display:create_action_buttons()
 
         self.select_display = select_display
     end

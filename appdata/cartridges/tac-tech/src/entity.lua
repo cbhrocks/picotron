@@ -155,6 +155,12 @@ entity.add_stats = function(self)
     end
     self:refresh_turn()
 
+    self.actions = {
+        Actions.move,
+        Actions.attack,
+        Actions.cover
+    }
+
     return self
 end
 

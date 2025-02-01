@@ -11,6 +11,8 @@ state = {
     particles = {},
     -- contains current state of controls being pressed, moved, pos, etc.
     controls = {},
+    -- used to determine what should handle mouse state
+    mouse_focus=nil,
     log = {""},
     events = {
     },
@@ -20,6 +22,8 @@ state = {
         show_controls=true,
     },
     menus={},
+    current_action=nil,
+    action_path={},
     gui = create_gui()
 }
 
@@ -89,5 +93,9 @@ end
 
 function state.get_mouse_world_pos(self)
     return self:get_world_pos(self.controls.mouse_pos)
+end
+
+function state.set_mouse_focus(self, name)
+    self.mouse_focus = name
 end
 

@@ -61,21 +61,34 @@ local function handle_controls(game_state)
 end
 
 local function handle_tile_selected(game_state)
+    game_state.map:select_hovered_tile()
     if (game_state.hud.select_display == nil) then
         game_state.hud:attach_select_display()
+    else
+        game_state.hud.select_display:update_selection()
     end
+end
+
+local function handle_load_action(game_state, action)
+    game_state.current_action = action
+    game_state.action_path = {}
+    action:call_transition(game_state)
 end
 
 local function handle_events(game_state)
     for event in all(game_state.events) do
         game_state:log_msg("Handling event: "..event.name)
-        if (event.name == "toggle_pause_menu") then toggle_pause_menu(game_state) end
-        if (event.name == "toggle_controls_display") then toggle_controls_display(game_state) end
-        if (event.name == "toggle_cpu_usage_display") then toggle_cpu_usage_display(game_state) end
-        if (event.name == "toggle_log_display") then toggle_log_display(game_state) end
-        if (event.name == "unit_action") then handle_unit_action(game_state, event.action) end
-        if (event.name == "load_map") then game_state.map:load(event.data) end
-        if (event.name == "tile_selected") then handle_tile_selected(game_state) end
+        if (game_state.current_action != nil) then
+            game_state.current_action:handle_event(event, game_state)
+        end
+        if (not event.handled and event.name == "toggle_pause_menu") then toggle_pause_menu(game_state) end
+        if (not event.handled and event.name == "toggle_controls_display") then toggle_controls_display(game_state) end
+        if (not event.handled and event.name == "toggle_cpu_usage_display") then toggle_cpu_usage_display(game_state) end
+        if (not event.handled and event.name == "toggle_log_display") then toggle_log_display(game_state) end
+        -- if (event.name == "unit_action") then handle_unit_action(game_state, event.action) end
+        if (not event.handled and event.name == "load_map") then game_state.map:load(event.data) end
+        if (not event.handled and event.name == "tile_selected") then handle_tile_selected(game_state) end
+        if (not event.handled and event.name == "load_action") then handle_load_action(game_state, event.action) end
     end
     game_state.events = {}
 end

@@ -97,23 +97,26 @@ function game_map.get_adjacent_indices(self, index)
 end
 
 function game_map.handle_controls(self, game_state)
-end
-
-function game_map.handle_mouse(self, game_state)
-    if (game_state.controls.mouse_pos ~= game_state.controls.last_mouse_pos) then
-        local tile_hovered = self:get_grid_vec(game_state:get_mouse_world_pos())
-        self:set_hovered_vec(tile_hovered)
-    end
-    if (game_state.controls.mouse_b_l) then
-        self.tile_mouse_down = self:get_grid_vec(game_state:get_mouse_world_pos())
+    if (game_state.mouse_focus == 'map') then
+        printh('mouse_focus: '..game_state.mouse_focus)
+        if (game_state.controls.mouse_pos ~= game_state.controls.last_mouse_pos) then
+            local tile_hovered = self:get_grid_vec(game_state:get_mouse_world_pos())
+            self:set_hovered_vec(tile_hovered)
+        end
+        if (game_state.controls.mouse_b_l) then
+            self.tile_mouse_down = self:get_grid_vec(game_state:get_mouse_world_pos())
+        end
     end
     if (game_state.controls.mouse_r_l) then
-        local tile_mouse_up = self:get_grid_vec(game_state:get_mouse_world_pos())
-        -- if the tile released is the same pressed, count as a select
-        if (vec_eq(self.tile_mouse_down, tile_mouse_up)) then
-            local tile_selected = self:select_hovered_tile()
-            game_state:dispatch_event({name="tile_selected"})
+        if (game_state.mouse_focus == 'map') then
+            local tile_mouse_up = self:get_grid_vec(game_state:get_mouse_world_pos())
+            -- if the tile released is the same pressed, count as a select
+            if (vec_eq(self.tile_mouse_down, tile_mouse_up)) then
+                -- TODO: should change this name to somethign that makes more sense. tile_clicked?
+                game_state:dispatch_event({name="tile_selected"})
+            end
         end
+        self.tile_mouse_down = nil
     end
 end
 
