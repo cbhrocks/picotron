@@ -55,7 +55,8 @@ local function handle_controls(game_state)
 end
 
 local function handle_tile_clicked(game_state)
-    local selected_tile = game_state.map:select_hovered_tile()
+    -- always set selected tile to 1st index when clicked from default state
+    local selected_tile = game_state.map:select_hovered_tile(1)
     local unit = selected_tile.unit
     local display_config = {}
     if unit then

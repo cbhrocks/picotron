@@ -1,9 +1,11 @@
-local action = {
+ActionTree = {
     sid=nil,
-    action_tree={},
+    transition=function(self)
+    end,
+    events={}
 }
 
-function action:new(o)
+function ActionTree:new(o)
     local o = o or {}
     setmetatable(o, self)
     self.__index = self
@@ -11,19 +13,19 @@ function action:new(o)
     return o
 end
 
-function action:traverse_tree(path)
-    local val = self.action_tree
+function ActionTree:traverse_tree(path)
+    local val = self
     for item in all(path) do
         val = val[item]
     end
     return val
 end
 
-function action:call_transition(game_state)
+function ActionTree:call_transition(game_state)
     self:traverse_tree(game_state.action_path).transition(game_state)
 end
 
-function action:handle_event(event, game_state)
+function ActionTree:handle_event(event, game_state)
     local cur_path = self:traverse_tree(game_state.action_path)
     if (cur_path[event.name]) then
         table.insert(game_state.action_path, event.name)
@@ -32,69 +34,68 @@ function action:handle_event(event, game_state)
     event.handled=true
 end
 
-local move = action:new({
+local move = ActionTree:new({
     sid=56,
-    action_tree={
+    transition = function(game_state)
+        game_state.map.show_movement=true
+    end,
+    events={"tile_selected", "cancel"},
+    tile_selected = {
         transition = function(game_state)
-            game_state.map.show_movement=true
+            game_state:log_msg("tile selected handled by move action")
+            game_state.current_action = nil
+            game_state.action_path = {'tile_selected'}
         end,
-        events={"tile_selected", "cancel"},
-        tile_selected = {
+        events={"confirm", "cancel"},
+        confirm = {
             transition = function(game_state)
-                game_state:log_msg("tile selected handled by move action")
-            end,
-            events={"confirm", "cancel"},
-            confirm = {
-                transition = function(game_state)
-                end
-            },
-            cancel = {
-                transition = function(game_state)
-                end
-            }
-
+                game_state.current_action = nil
+                game_state.action_path = {}
+                game_state.map:get_selected_tile().unit.move()
+            end
         },
         cancel = {
             transition = function(game_state)
             end
         }
+
     },
+    cancel = {
+        transition = function(game_state)
+        end
+    }
 })
 
-local attack = action:new({
+local attack = ActionTree:new({
     sid=57,
-    action_tree={
+    transition = function(game_state)
+    end,
+    events={"select_target", "next_target", "cancel"},
+    select_target = {
         transition = function(game_state)
-        end,
-        events={"select_target", "next_target", "cancel"},
-        select_target = {
-            transition = function(game_state)
-            end
-        },
-        next_target = {
-            transition = function(game_state)
-            end
-        },
-        cancel = {
-            transition = function(game_state)
-            end
-        }
-    },
-})
-
-local cover = action:new({
-    sid=58,
-    action_tree={
-        transition = function(game_state)
-        end,
-        events={"confirm"},
-        confirm=function(game_state)
-            -- tell hud to confirm the selection.
         end
     },
+    next_target = {
+        transition = function(game_state)
+        end
+    },
+    cancel = {
+        transition = function(game_state)
+        end
+    }
 })
 
-Actions = {
+local cover = ActionTree:new({
+    sid=58,
+    transition = function(game_state)
+    end,
+    events={"confirm"},
+    confirm=function(game_state)
+        -- tell hud to confirm the selection.
+    end
+})
+
+ActionTrees = {
     move=move,
     attack=attack,
     cover=cover,

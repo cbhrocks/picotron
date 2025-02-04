@@ -7,7 +7,7 @@ game_map = {
     objects={}, -- the obstacles,
     tiles={}, -- the base tiles,
     grid={}, -- stores the data by location in a grid
-    selected=nil, -- index selected
+    selected={}, -- index of selected tiles, last is latest
     hovered=nil, -- index with mouse hovered over
     current_action=nil,
     turn_order={"player", "enemy"},
@@ -59,22 +59,35 @@ function game_map.set_hovered_vec(self, pos)
     return nil
 end
 
-function game_map.set_selected_vec(self, pos)
+function game_map.add_selected_vec(self, pos)
     if (self:validate_grid_vec(pos))  then
-        self.selected = self:vec_to_index(pos)
+        table.insert(self.selected, self:vec_to_index(pos))
         return self:get_selected_tile()
     end
     return nil
 end
 
-function game_map.get_selected_tile(self)
-    if self.selected == nil then return nil end
-    return self.grid[self.selected]
+function game_map.set_selected_vecs(self, positions)
+    for pos in all(positions) do
+        if (not self:validate_grid_vec(pos))  then
+            return nil
+        end
+        self.selected = self:vec_to_index(pos)
+    end
+    return self:get_selected_tile()
 end
 
-function game_map.select_hovered_tile(self)
+function game_map.get_selected_tile(self, index)
+    local index = index or #self.selected
+    if self.selected[index] == nil then return nil end
+    local selected_index = self.selected[index]
+    return self.grid[selected_index]
+end
+
+function game_map.select_hovered_tile(self, index)
+    local index = index or #self.selected + 1
     if (self.hovered != nil) then
-        self.selected = self.hovered
+        self.selected[index] = self.hovered
         return self:get_selected_tile()
     end
     return nil
@@ -173,8 +186,8 @@ function game_map.draw_hovered(self)
 end
 
 function game_map.draw_selected(self)
-    if (self.selected != nil) then
-        self:draw_highlight_loc(self:index_to_vec(self.selected), 12)
+    for selected_tile in all(self.selected) do
+        self:draw_highlight_loc(self:index_to_vec(selected_tile), 12)
     end
 end
 

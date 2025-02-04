@@ -6,7 +6,7 @@ function action_display:new(config)
     self.width=20*#config.actions
     self.height = 28
     self.selection=nil
-    self.actions=config.actions
+    self.action_tree=config.actions
     return self
 end
 
@@ -15,17 +15,21 @@ action_display.hover=function()
     return true
 end
 
-action_display.create_action_button=function(self, action, hotkey, index)
-    printh("creating action button "..index)
+action_display.create_action_button=function(self, event, hotkey, index)
+    printh("creating action button for "..event.." with hotkey "..hotkey)
+    local action = self.action_tree[event]
+
     local button = self:attach({
         x=(index-1)*20, y=8, width=18, height=18,
         draw=function(button)
             bgFill(button, 0)
             rect(0, 0, button.width-1, button.height-1, 0)
-            spr(action.sid, 1, 1)
+            if action.sid then
+                spr(action.sid, 1, 1)
+            end
         end,
         tap=function()
-            game_state:dispatch_event({name="load_action", action=action})
+            game_state:dispatch_event({name=event})
             return true
         end
     })
@@ -35,7 +39,7 @@ action_display.create_action_button=function(self, action, hotkey, index)
         hotkey=hotkey,
         update=function()
             if (keyp(""..hotkey)) then
-                game_state:dispatch_event({name="load_action", action=action})
+                game_state:dispatch_event({name="event"})
             end
         end,
         draw=function()
@@ -45,8 +49,9 @@ action_display.create_action_button=function(self, action, hotkey, index)
 end
 
 action_display.create_action_buttons = function(self)
-    printh("creating action buttons: "..dump(self.actions))
-    for i=1,#self.actions do
-        self:create_action_button(self.actions[i], ""..i, i)
+    printh("creating action buttons: "..dump(self.action_tree.events))
+    local events = self.action_tree.events
+    for i=1,#events do
+        self:create_action_button(events[i], ""..i, i)
     end
 end

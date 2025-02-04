@@ -155,11 +155,12 @@ entity.add_stats = function(self)
     end
     self:refresh_turn()
 
-    self.actions = {
-        Actions.move,
-        Actions.attack,
-        Actions.cover
-    }
+    self.actions = ActionTree:new({
+        events={"move", "attack", "cover"},
+        move=ActionTrees.move,
+        attack=ActionTrees.attack,
+        cover=ActionTrees.cover
+    })
 
     return self
 end
