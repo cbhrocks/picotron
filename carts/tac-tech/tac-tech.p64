@@ -4,7 +4,7 @@ version 2
 :: gfx/
 :: gfx/0.gfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-Mi0wMSAwNTo1MDowMiIscmV2aXNpb249MzA3Ml1dbHo0ACoCAABvMwAA8yF7WzBdPXtibXA9cHh1
+Mi0wMyAwMzowMToxOCIscmV2aXNpb249MzA3OF1dbHo0ACoCAABvMwAA8yF7WzBdPXtibXA9cHh1
 AEMgEBAE8FYHEAfAF9AXwAcQB-BWLGZsYWdzPTAscGFuX3gIAMp5PTAsem9vbT04fSw_AC-x8DEA
 HO-wAz8UMD4gDj8VDhAOPQQABnAgPjA_8AI_KgAGFQAPKQAGExOFAB8xhQAUU-8UARQOAgASHggA
 NQ8VBAwAABYAIg0ECQAJFQAPCgArA1MALwQNIAABI-4BxAAfM8QAFB7wegEPMQCeP-8V8LoBHX8W
@@ -17,7 +17,7 @@ Hw8eTxMtJQ0fD08bHxM9Hw8NDJ8bDSwNmzwFm0wNmxw9gQEeDzEA------------------------
 -------------------------7JQbT04fX0=
 :: gfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-Mi0wMSAwNTo1MDowMiJdXQ==
+Mi0wMyAwMzowMToxOCJdXQ==
 :: map/
 :: map/0.map
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI1LTAxLTA3IDAzOjQ2OjQ4Iixtb2RpZmllZD0iMjAyNS0w
@@ -45,7 +45,7 @@ QAANDyAAEQREBg8ABxsPgAYwDNQGDwAHDQD0Bg4EAA8ABf_fDkgEDwQANx9jgAAFDwQAVQ_AAP8B
 DWAEDwQAWB44ZhBQPTIzfX0=
 :: map/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-Mi0wMSAwNTo1MDowMiJdXQ==
+Mi0wMyAwMzowMToxOCJdXQ==
 :: pal/
 :: pal/0.pal
 b64$LS1bW3BvZCxyZXZpc2lvbj0zMSxibGFja2VzdF9jb2xvcj0wLGljb249dXNlcmRhdGEoInU4
@@ -86,17 +86,17 @@ NzQyZjI5MDA0OTJkMziYAPAFZmZhY2M1MDBjMzAwNGMwMGViNmJGAFA5MGVjNMkA8AIwYjI1MTAw
 NjRkZmY2MDBiZIkAAJYAQDBkYWJAAF84NTZkMAEAbgRYAQ8BAGBQMDAwIik=
 :: pal/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI1LTAxLTIzIDE5OjA1OjAyIixtb2RpZmllZD0iMjAyNS0w
-Mi0wMSAwNTo1MDowMiJdXQ==
+Mi0wMyAwMzowMToxOCJdXQ==
 :: sfx/
 :: sfx/0.sfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-Mi0wMSAwNTo1MDowMiIscmV2aXNpb249MzAzMV1dbHo0AKUAAAAoCgAA-zBweHUAAygAAAQABA9A
+Mi0wMyAwMzowMToxOCIscmV2aXNpb249MzAzN11dbHo0AKUAAAAoCgAA-zBweHUAAygAAAQABA9A
 EAIOAAGgASACoA4ADxAADfDKAQIDQA8PkAQFBgdADJAICQoLQAyQDwwPDQ8ODEAM8P8BAOv-J6oB
 EAYPIBABIAEgAfAAAhACDhABIA8hIAEwD0Dwww8oD--wxg-4Cg--D4AP9w8NAfAJARAGDjAA----
 --_9H-8BAKzPyA9AAA8QQP--sPBwCwANH-8BAP-mUP----9N
 :: sfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-Mi0wMSAwNTo1MDowMiJdXQ==
+Mi0wMyAwMzowMToxOCJdXQ==
 :: entity.lua
 --[[pod_format="raw",created="2025-01-09 16:01:30",modified="2025-01-14 00:53:59",revision=854]]
 --[[pod_format="raw",created="2025-01-06 21:02:01",modified="2025-01-06 21:02:01",revision=0]]
@@ -512,17 +512,17 @@ function restart()
 end
 
 :: main.lua
---[[pod_format="raw",created="2024-12-30 18:09:39",modified="2025-02-01 05:50:02",revision=2990]]
-cd("/appdata/cartridges/tac-tech")
+--[[pod_format="raw",created="2024-12-30 18:09:39",modified="2025-02-03 03:01:18",revision=2998]]
+cd("/carts/tac-tech")
 printh(pwd().."/src/pal/main.pal")
 poke4(get(fetch(pwd().."/src/pal/main.pal")))
 include("src/actions.lua")
 include("src/entity.lua")
-include("/appdata/utils/draw.lua")
-include("/appdata/utils/dump.lua")
-include("/appdata/utils/array.lua")
-include("/appdata/utils/vector.lua")
-include("/appdata/utils/camera.lua")
+include("/carts/utils/draw.lua")
+include("/carts/utils/dump.lua")
+include("/carts/utils/array.lua")
+include("/carts/utils/vector.lua")
+include("/carts/utils/camera.lua")
 include("src/game_map.lua")
 include("src/state.lua")
 include("src/menus.lua")
@@ -531,6 +531,7 @@ include("src/update.lua")
 include("src/loop.lua")
 include("src/gui.lua")
 include("src/menu.lua")
+include("src/action_display.lua")
 include("src/hud.lua")
 
 :: menu.lua
@@ -799,7 +800,7 @@ end
 
 
 :: update.lua
---[[pod_format="raw",created="2025-01-17 23:56:35",modified="2025-02-01 05:50:02",revision=535]]
+--[[pod_format="raw",created="2025-01-17 23:56:35",modified="2025-02-03 03:01:18",revision=545]]
 local function update_pause_menu_state(game_state)
 	if (game_state.pause_menu_open and game_state.menus.pause_menu == nil) then
 		printh("createing pause menu")
@@ -850,8 +851,8 @@ end
 
 :: .info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-Mi0wMSAwNTo1MDowMiIscnVudGltZT0xMix3b3Jrc3BhY2VzPXt7bG9jYXRpb249Im1haW4ubHVh
-IzQiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249InVwZGF0ZS5sdWEjMTEiLHdvcmtzcGFj
+Mi0wMyAwMzowMToxOCIscnVudGltZT0xMix3b3Jrc3BhY2VzPXt7bG9jYXRpb249Im1haW4ubHVh
+IzE5Iix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0aW9uPSJ1cGRhdGUubHVhIzEiLHdvcmtzcGFj
 ZV9pbmRleD0xfSx7bG9jYXRpb249ImdmeC8wLmdmeCIsd29ya3NwYWNlX2luZGV4PTJ9LHtsb2Nh
 dGlvbj0ic2Z4LzAuc2Z4Iix3b3Jrc3BhY2VfaW5kZXg9NH19XV0=
 :: [eoc]

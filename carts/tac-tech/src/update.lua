@@ -42,12 +42,6 @@ local function toggle_log_display(game_state)
     game_state.settings.show_log = not game_state.settings.show_log
 end
 
-local function handle_unit_action(game_state, action)
-    if (action == "move") then
-        game_state.map.show_movement = true
-    end
-end
-
 -- there are certain controls that will always do things, otherwise handle_controls should determine what has highest
 -- priority, then pass the control state to that things handle_controls function.
 local function handle_controls(game_state)
@@ -60,13 +54,21 @@ local function handle_controls(game_state)
     end
 end
 
-local function handle_tile_selected(game_state)
-    game_state.map:select_hovered_tile()
-    if (game_state.hud.select_display == nil) then
-        game_state.hud:attach_select_display()
-    else
-        game_state.hud.select_display:update_selection()
+local function handle_tile_clicked(game_state)
+    local selected_tile = game_state.map:select_hovered_tile()
+    local unit = selected_tile.unit
+    local display_config = {}
+    if unit then
+        printh('unit selected')
+        if unit.owner == game_state.map.current_turn.owner then
+            printh('unit matches current owner: '..game_state.map.current_turn.owner)
+            display_config.action_display = {
+                actions=unit.actions
+            }
+        end
     end
+    printh('created display config: '..dump(display_config))
+    game_state.hud:load_display(display_config)
 end
 
 local function handle_load_action(game_state, action)
@@ -87,7 +89,7 @@ local function handle_events(game_state)
         if (not event.handled and event.name == "toggle_log_display") then toggle_log_display(game_state) end
         -- if (event.name == "unit_action") then handle_unit_action(game_state, event.action) end
         if (not event.handled and event.name == "load_map") then game_state.map:load(event.data) end
-        if (not event.handled and event.name == "tile_selected") then handle_tile_selected(game_state) end
+        if (not event.handled and event.name == "tile_clicked") then handle_tile_clicked(game_state) end
         if (not event.handled and event.name == "load_action") then handle_load_action(game_state, event.action) end
     end
     game_state.events = {}
