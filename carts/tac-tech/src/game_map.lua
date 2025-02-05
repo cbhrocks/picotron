@@ -1,7 +1,10 @@
 --[[pod_format="raw",created="2025-01-27 21:34:47",modified="2025-01-27 21:34:47",revision=0]]
 game_map = {
     loaded=false,
-    show_movement=false,
+    -- the selected index to use when showing movement
+    show_movement=0,
+    -- selection_index
+    selection_index=1,
     data=nil,
     units={}, -- the units,
     objects={}, -- the obstacles,
@@ -62,35 +65,44 @@ end
 function game_map.add_selected_vec(self, pos)
     if (self:validate_grid_vec(pos))  then
         table.insert(self.selected, self:vec_to_index(pos))
-        return self:get_selected_tile()
     end
-    return nil
 end
 
 function game_map.set_selected_vecs(self, positions)
+    local selected_tiles = {}
     for pos in all(positions) do
         if (not self:validate_grid_vec(pos))  then
             return nil
         end
-        self.selected = self:vec_to_index(pos)
+        table.insert(selected_tiles, self:vec_to_index(pos))
     end
-    return self:get_selected_tile()
+    self.selected = selected_tiles
 end
 
 function game_map.get_selected_tile(self, index)
-    local index = index or #self.selected
-    if self.selected[index] == nil then return nil end
-    local selected_index = self.selected[index]
-    return self.grid[selected_index]
+    local grid_index = self.selected[index]
+    return self.grid[grid_index]
 end
 
-function game_map.select_hovered_tile(self, index)
-    local index = index or #self.selected + 1
-    if (self.hovered != nil) then
-        self.selected[index] = self.hovered
-        return self:get_selected_tile()
+function game_map.get_selected_tiles(self)
+    local selected_tiles = {}
+    for i=1,#self.selected do
+        local grid_index = self.selected[index]
+        selected_tiles[i] = self.grid[grid_index]
     end
-    return nil
+    return selected_tiles
+end
+
+function game_map.select_hovered_tile(self)
+    if (self.hovered != nil) then
+        self.selected[self.selection_index] = self.hovered
+        dispatch_event({
+            name="tile_selected",
+            selected_tile = self.grid[self.hovered]
+        })
+    else
+        printh("WARNING: nil tile selected from hover")
+    end
 end
 
 -- returns the world coordinate based on grid coord passed in
@@ -143,7 +155,7 @@ function game_map.draw(self)
         map(self:get_tile_data().bmp)
     end
     if self.show_movement then
-        self:draw_movement()
+        self:draw_movement(self.show_movement)
     end
     self:draw_selected()
     self:draw_hovered()
@@ -194,13 +206,13 @@ end
 -- draw the movement highlights for the selected unit
 -- this will draw blue boxes for locations that can be moved to in standard movement, and 
 -- orange boxes for locations that require 2 moves.
--- TODO: only show orange box if selected unit hasn't used any movement points.
-function game_map.draw_movement(self)
-    local tile = self:get_selected_tile()
+-- s_index determines what selected tile to draw from
+function game_map.draw_movement(self, s_index)
+    local tile = self:get_selected_tile(s_index)
     if (tile != nil and tile.unit != nil) then
         local move_distance = tile.unit:get_move_distance()
         local display_distance = tile.unit.remaining_moves * move_distance + tile.unit.remaining_actions * move_distance
-        local movement_locs = self:get_tiles_by_distance(self.selected, display_distance) -- multiply by 2 because units can move twice.
+        local movement_locs = self:get_tiles_by_distance(self.selected[s_index], display_distance)
         for k,v in pairs(movement_locs) do
             if v <= move_distance then
                 self:draw_highlight_loc(self:index_to_vec(k), tile.unit.remaining_moves > 0 and 28 or 9)

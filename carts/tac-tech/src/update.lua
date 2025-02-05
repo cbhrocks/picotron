@@ -54,34 +54,31 @@ local function handle_controls(game_state)
     end
 end
 
-local function handle_tile_clicked(game_state)
+local function handle_tile_clicked(game_state, event)
     -- always set selected tile to 1st index when clicked from default state
-    local selected_tile = game_state.map:select_hovered_tile(1)
-    local unit = selected_tile.unit
-    local display_config = {}
-    if unit then
-        printh('unit selected')
-        if unit.owner == game_state.map.current_turn.owner then
-            printh('unit matches current owner: '..game_state.map.current_turn.owner)
-            display_config.action_display = {
-                actions=unit.actions
-            }
-        end
-    end
-    printh('created display config: '..dump(display_config))
-    game_state.hud:load_display(display_config)
+    printh("handling tile clicked")
+    game_state.map:select_hovered_tile()
 end
 
-local function handle_load_action(game_state, action)
-    game_state.current_action = action
-    game_state.action_path = {}
-    action:call_transition(game_state)
+local function handle_tile_selected(game_state, event)
+    if event.selected_tile.unit then
+        if event.selected_tile.unit.owner == game_state.map.current_turn.owner then
+            dispatch_event({
+                name="load_action_tree",
+                action_tree=event.selected_tile.unit.actions
+            })
+        end
+    end
+end
+
+local function handle_load_action_tree(game_state, event)
+    game_state:load_action_tree(event.action_tree)
 end
 
 local function handle_events(game_state)
     for event in all(game_state.events) do
         game_state:log_msg("Handling event: "..event.name)
-        if (game_state.current_action != nil) then
+        if (game_state.current_action) then
             game_state.current_action:handle_event(event, game_state)
         end
         if (not event.handled and event.name == "toggle_pause_menu") then toggle_pause_menu(game_state) end
@@ -90,8 +87,9 @@ local function handle_events(game_state)
         if (not event.handled and event.name == "toggle_log_display") then toggle_log_display(game_state) end
         -- if (event.name == "unit_action") then handle_unit_action(game_state, event.action) end
         if (not event.handled and event.name == "load_map") then game_state.map:load(event.data) end
-        if (not event.handled and event.name == "tile_clicked") then handle_tile_clicked(game_state) end
-        if (not event.handled and event.name == "load_action") then handle_load_action(game_state, event.action) end
+        if (not event.handled and event.name == "tile_clicked") then handle_tile_clicked(game_state, event) end
+        if (not event.handled and event.name == "tile_selected") then handle_tile_selected(game_state, event) end
+        if (not event.handled and event.name == "load_action_tree") then handle_load_action_tree(game_state, event) end
     end
     game_state.events = {}
 end
@@ -108,7 +106,7 @@ function update(game_state)
 
     -- loop through all particles, removing them when dead and all child particles are gone
     ArrayRemove(
-        game_state.projectiles, 
+        game_state.projectiles,
         function(t, i, j)
             local v = t[i]
             v:update(game_state)

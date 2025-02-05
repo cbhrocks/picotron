@@ -1,14 +1,18 @@
 action_display = {}
 -- cant be a class, since this will be passed to gui constructor
 function action_display:new(config)
-    self.x=screen_width/2-10*#config.actions
+    self.x=screen_width/2-10*#config.action_tree.events
     self.y=screen_height - 28
-    self.width=20*#config.actions
+    self.width=20*#config.action_tree.events
     self.height = 28
     self.selection=nil
-    self.action_tree=config.actions
+    self.action_tree=config.action_tree
     return self
 end
+
+-- action_display.draw=function(self)
+--     bgFill(self, 7)
+-- end
 
 action_display.hover=function()
     game_state:set_mouse_focus("action_display")
@@ -39,7 +43,7 @@ action_display.create_action_button=function(self, event, hotkey, index)
         hotkey=hotkey,
         update=function()
             if (keyp(""..hotkey)) then
-                game_state:dispatch_event({name="event"})
+                game_state:dispatch_event({name=event})
             end
         end,
         draw=function()

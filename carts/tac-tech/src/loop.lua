@@ -30,3 +30,7 @@ function restart()
     game_state=state:new()
     create_hud(game_state)
 end
+
+function dispatch_event(event)
+    game_state:dispatch_event(event)
+end

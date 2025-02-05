@@ -99,3 +99,9 @@ function state.set_mouse_focus(self, name)
     self.mouse_focus = name
 end
 
+function state.load_action_tree(self, action_tree)
+    self.current_action = action_tree
+    self.action_path = {}
+    action_tree:call_transition(self)
+end
+

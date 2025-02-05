@@ -156,6 +156,13 @@ entity.add_stats = function(self)
     self:refresh_turn()
 
     self.actions = ActionTree:new({
+        transition=function(self, game_state)
+            game_state.hud:load_display({
+                action_display={
+                    action_tree=self,
+                }
+            })
+        end,
         events={"move", "attack", "cover"},
         move=ActionTrees.move,
         attack=ActionTrees.attack,
@@ -213,7 +220,7 @@ entity.add_movement = function(self, max_velocity, pdx, pdy)
         self:calculate_velocity(time_elapsed)
         self:calculate_position(time_elapsed)
     end
-    
+
    return self
 end
 
