@@ -44,7 +44,7 @@ entity.add_circle = function(self, radius, col)
     self.radius = radius
     self.col = col
     self.draw_circle = function(self)
-        circ(self.x, self.y, self.radius, self.col)
+        circ(self.pos.x, self.pos.y, self.radius, self.col)
     end
     return self
 end
@@ -54,7 +54,7 @@ entity.add_sprite = function(self, s_id, width, height)
     self.width = width
     self.height = height
     self.draw_sprite = function(self)
-        spr(self.s_id, self.x, self.y)
+        spr(self.s_id, self.pos.x, self.pos.y)
     end
     return self
 end
@@ -96,6 +96,7 @@ entity.add_particles = function(self)
     return self
 end
 
+-- TODO: change to use vectors
 entity.add_hitbox = function(self, type)
     -- hit box
     self.hb = {
@@ -150,34 +151,62 @@ entity.add_stats = function(self)
 
     -- stats used when taking turn. these get refreshed at the beginning of each turn
     function self.refresh_turn(self)
-        self.remaining_moves = 1
+        self.movement_tiles = nil
+        self.remaining_moves = 2
         self.remaining_actions = 1
     end
     self:refresh_turn()
 
     self.actions = ActionTree:new({
-        transition=function(self, game_state)
-            game_state.hud:load_display({
-                action_display={
-                    action_tree=self,
+        display_config={
+            action_display={
+                buttons={
+                    {
+                        sid=56,
+                        hotkey='1',
+                        event={
+                            name='move',
+                        }
+                    },
+                    {
+                        sid=57,
+                        hotkey='2',
+                        event={
+                            name='attack',
+                        }
+                    },
+                    {
+                        sid=58,
+                        hotkey='3',
+                        event={
+                            name='cover',
+                        }
+                    },
                 }
-            })
+            }
+        },
+        handle=function(self, event, game_state)
+            game_state.hud:load_display(self:traverse_tree().display_config)
         end,
         events={"move", "attack", "cover"},
         move=ActionTrees.move,
         attack=ActionTrees.attack,
         cover=ActionTrees.cover
     })
+    -- self.actions:add_tree(ActionTrees.move, {}, 'move')
+    -- self.actions:add_tree(ActionTrees.attack, {}, 'attack')
+    -- self.actions:add_tree(ActionTrees.cover, {}, 'cover')
 
     return self
 end
 
-entity.add_position = function(self, x, y)
-    self.x = x or 0
-    self.y = y or 0
-    self.move = function(self, new_x, new_y)
-        self.x = new_x
-        self.y = new_y
+-- adds functions and fields related with positioning to entity
+-- @param pos {vec | nil} the initial location of the entity. defaults to 0,0
+-- @return self
+entity.add_position = function(self, pos)
+    self.pos = pos or vec(0,0)
+    self.move = function(self, new_pos)
+        self.pos = new_pos
     end
     return self
 end
@@ -212,8 +241,7 @@ entity.add_movement = function(self, max_velocity, pdx, pdy)
         end
     end
     self.calculate_position = function(self, time_elapsed)
-        self.x += self.vx
-        self.y += self.vy
+        self.pos += vec(self.vx, self.vy)
     end
     self.update_position = function(self, game_state)
         local time_elapsed = game_state.cur_update - game_state.last_update

@@ -172,12 +172,14 @@ function create_hud(game_state)
 
     hud.load_display=function(self, config)
         self:load_action_display(config.action_display)
+        self:load_unit_display(config.unit_display)
     end
 
     hud.load_action_display=function(self, config)
-        if self.action_display then
+        if self.action_display and config == false then
             self:detach(self.action_display)
             remove_all_children(self.action_display)
+            self.action_display = nil
         end
         if config then
             self.action_display=self:attach(action_display:new(config))
@@ -185,9 +187,20 @@ function create_hud(game_state)
         end
     end
 
+    hud.load_unit_display=function(self, config)
+        if self.unit_display and config == false then
+            self:detach(self.unit_display)
+            remove_all_children(self.unit_display)
+            self.unit_display = nil
+        end
+        if config then
+            self.unit_display=self:attach(unit_display:new(config))
+            self.unit_display:create_display()
+        end
+    end
+
     if (game_state.settings.show_log) then hud:attach_log_display() end
     if (game_state.settings.show_cpu_usage) then hud:attach_cpu_display() end
     if (game_state.settings.show_controls) then hud:attach_controls_display() end
-    if (game_state.map.selection != nil) then hud:attach_action_display() end
     game_state.hud = hud
 end

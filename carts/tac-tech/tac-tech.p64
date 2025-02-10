@@ -4,7 +4,7 @@ version 2
 :: gfx/
 :: gfx/0.gfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-Mi0wMyAwMzowMToxOCIscmV2aXNpb249MzA3OF1dbHo0ACoCAABvMwAA8yF7WzBdPXtibXA9cHh1
+Mi0xMCAwNjowOToxOSIscmV2aXNpb249MzE4NF1dbHo0AIkCAADDMwAA8yF7WzBdPXtibXA9cHh1
 AEMgEBAE8FYHEAfAF9AXwAcQB-BWLGZsYWdzPTAscGFuX3gIAMp5PTAsem9vbT04fSw_AC-x8DEA
 HO-wAz8UMD4gDj8VDhAOPQQABnAgPjA_8AI_KgAGFQAPKQAGExOFAB8xhQAUU-8UARQOAgASHggA
 NQ8VBAwAABYAIg0ECQAJFQAPCgArA1MALwQNIAABI-4BxAAfM8QAFB7wegEPMQCeP-8V8LoBHX8W
@@ -13,11 +13,13 @@ d-8bIhXgFeAVDw-ADjUecC4-ExVgHgA9FQ5AHh8bPRweMDw9LA4wrHBvFPAkiwAeDzEA-0TwBEIV
 AA8VPxYPFQAVMBUODxY1DQ4JAJAdFR0OFTAFnQUEAG9QLhAu8ESLAB4PMQD------99hQGWAZXB1
 AgD-FDUANXAlADVQNRAlYDUgFUA1QCUgNWAVEDVwhXA1ACVwJfARjgAd-w8lNUAKYBVQCQrVDxkJ
 JRAFEDUQCQoFMAVwCkAV8GpOAB3-NQIJIAlgCQA-FgkuIAkA-iP-FBIvD08TDxQVPS8PDk8THRUt
-Hw8eTxMtJQ0fD08bHxM9Hw8NDJ8bDSwNmzwFm0wNmxw9gQEeDzEA------------------------
--------------------------7JQbT04fX0=
+Hw8eTxMtJQ0fD08bHxM9Hw8NDJ8bDSwNmzwFm0wNmxw9dAAdgA8PG9AewC6wAgAQPgQA-wSgPjAu
+QC5QPhA_cG6AbqA_wC5gVAAc-yQYsEiQKAAocCggKFAoQCgwKGAoECiAWKA4sDigWIAoEChgKDAo
+QChQKCAocCgAKJBIsBg3Ah4PMQD-------------------------------------------------
+UFBtPTh9fQ==
 :: gfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-Mi0wMyAwMzowMToxOCJdXQ==
+Mi0xMCAwNjowOToxOSJdXQ==
 :: map/
 :: map/0.map
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI1LTAxLTA3IDAzOjQ2OjQ4Iixtb2RpZmllZD0iMjAyNS0w
@@ -45,7 +47,7 @@ QAANDyAAEQREBg8ABxsPgAYwDNQGDwAHDQD0Bg4EAA8ABf_fDkgEDwQANx9jgAAFDwQAVQ_AAP8B
 DWAEDwQAWB44ZhBQPTIzfX0=
 :: map/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-Mi0wMyAwMzowMToxOCJdXQ==
+Mi0xMCAwNjowOToxOSJdXQ==
 :: pal/
 :: pal/0.pal
 b64$LS1bW3BvZCxyZXZpc2lvbj0zMSxibGFja2VzdF9jb2xvcj0wLGljb249dXNlcmRhdGEoInU4
@@ -86,17 +88,17 @@ NzQyZjI5MDA0OTJkMziYAPAFZmZhY2M1MDBjMzAwNGMwMGViNmJGAFA5MGVjNMkA8AIwYjI1MTAw
 NjRkZmY2MDBiZIkAAJYAQDBkYWJAAF84NTZkMAEAbgRYAQ8BAGBQMDAwIik=
 :: pal/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI1LTAxLTIzIDE5OjA1OjAyIixtb2RpZmllZD0iMjAyNS0w
-Mi0wMyAwMzowMToxOCJdXQ==
+Mi0xMCAwNjowOToxOSJdXQ==
 :: sfx/
 :: sfx/0.sfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjM5Iixtb2RpZmllZD0iMjAyNS0w
-Mi0wMyAwMzowMToxOCIscmV2aXNpb249MzAzN11dbHo0AKUAAAAoCgAA-zBweHUAAygAAAQABA9A
+Mi0xMCAwNjowOToxOSIscmV2aXNpb249MzE0Ml1dbHo0AKUAAAAoCgAA-zBweHUAAygAAAQABA9A
 EAIOAAGgASACoA4ADxAADfDKAQIDQA8PkAQFBgdADJAICQoLQAyQDwwPDQ8ODEAM8P8BAOv-J6oB
 EAYPIBABIAEgAfAAAhACDhABIA8hIAEwD0Dwww8oD--wxg-4Cg--D4AP9w8NAfAJARAGDjAA----
 --_9H-8BAKzPyA9AAA8QQP--sPBwCwANH-8BAP-mUP----9N
 :: sfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-Mi0wMyAwMzowMToxOCJdXQ==
+Mi0xMCAwNjowOToxOSJdXQ==
 :: entity.lua
 --[[pod_format="raw",created="2025-01-09 16:01:30",modified="2025-01-14 00:53:59",revision=854]]
 --[[pod_format="raw",created="2025-01-06 21:02:01",modified="2025-01-06 21:02:01",revision=0]]
@@ -512,7 +514,7 @@ function restart()
 end
 
 :: main.lua
---[[pod_format="raw",created="2024-12-30 18:09:39",modified="2025-02-03 03:01:18",revision=2998]]
+--[[pod_format="raw",created="2024-12-30 18:09:39",modified="2025-02-10 06:09:19",revision=3109]]
 cd("/carts/tac-tech")
 printh(pwd().."/src/pal/main.pal")
 poke4(get(fetch(pwd().."/src/pal/main.pal")))
@@ -532,6 +534,7 @@ include("src/loop.lua")
 include("src/gui.lua")
 include("src/menu.lua")
 include("src/action_display.lua")
+include("src/unit_display.lua")
 include("src/hud.lua")
 
 :: menu.lua
@@ -800,7 +803,7 @@ end
 
 
 :: update.lua
---[[pod_format="raw",created="2025-01-17 23:56:35",modified="2025-02-03 03:01:18",revision=545]]
+--[[pod_format="raw",created="2025-01-17 23:56:35",modified="2025-02-10 06:09:19",revision=652]]
 local function update_pause_menu_state(game_state)
 	if (game_state.pause_menu_open and game_state.menus.pause_menu == nil) then
 		printh("createing pause menu")
@@ -851,8 +854,8 @@ end
 
 :: .info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTEyLTMwIDE4OjA5OjU5Iixtb2RpZmllZD0iMjAyNS0w
-Mi0wMyAwMzowMToxOCIscnVudGltZT0xMix3b3Jrc3BhY2VzPXt7bG9jYXRpb249Im1haW4ubHVh
-IzE5Iix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0aW9uPSJ1cGRhdGUubHVhIzEiLHdvcmtzcGFj
+Mi0xMCAwNjowOToxOSIscnVudGltZT0xMix3b3Jrc3BhY2VzPXt7bG9jYXRpb249Im1haW4ubHVh
+IzIwIix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0aW9uPSJ1cGRhdGUubHVhIzEiLHdvcmtzcGFj
 ZV9pbmRleD0xfSx7bG9jYXRpb249ImdmeC8wLmdmeCIsd29ya3NwYWNlX2luZGV4PTJ9LHtsb2Nh
 dGlvbj0ic2Z4LzAuc2Z4Iix3b3Jrc3BhY2VfaW5kZXg9NH19XV0=
 :: [eoc]

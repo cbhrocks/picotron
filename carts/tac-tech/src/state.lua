@@ -23,7 +23,6 @@ state = {
     },
     menus={},
     current_action=nil,
-    action_path={},
     gui = create_gui()
 }
 
@@ -88,7 +87,7 @@ function state.load_pal(self, path)
 end
 
 function state.get_world_pos(self, pos)
-    return vec(self.camera.x, self.camera.y) + pos
+    return self.camera.pos + pos
 end
 
 function state.get_mouse_world_pos(self)
@@ -101,7 +100,6 @@ end
 
 function state.load_action_tree(self, action_tree)
     self.current_action = action_tree
-    self.action_path = {}
-    action_tree:call_transition(self)
+    action_tree:handle(nil, self)
 end
 

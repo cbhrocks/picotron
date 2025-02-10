@@ -65,10 +65,19 @@ local function handle_tile_selected(game_state, event)
         if event.selected_tile.unit.owner == game_state.map.current_turn.owner then
             dispatch_event({
                 name="load_action_tree",
-                action_tree=event.selected_tile.unit.actions
+                action_tree=event.selected_tile.unit.actions,
             })
+            game_state.hud:load_display({
+                unit_display={
+                    unit=event.selected_tile.unit
+                }
+            })
+            return
         end
     end
+    game_state.hud:load_display({
+        action_display=false
+    })
 end
 
 local function handle_load_action_tree(game_state, event)
@@ -117,7 +126,7 @@ function update(game_state)
 
     -- remove enemies if dead, otherwise update
     ArrayRemove(
-        game_state.units, 
+        game_state.units,
         function(t, i, j)
             local v = t[i]
             if (v.dead) then return false end
@@ -128,7 +137,7 @@ function update(game_state)
     )
 
     -- set camera to the camera state location
-    camera(game_state.camera.x, game_state.camera.y)
+    camera(game_state.camera.pos.x, game_state.camera.pos.y)
 
     game_state.last_update = game_state.cur_update
 end

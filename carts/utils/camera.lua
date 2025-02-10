@@ -4,8 +4,7 @@ cam = entity:new({
     width=wWidth, height=wHeight,
     handle_controls = function(self, controls)
         if (controls.mouse_b_m and controls.last_mouse_pos != nil) then
-            self.x -= controls.mouse_pos.x - controls.last_mouse_pos.x
-            self.y -= controls.mouse_pos.y - controls.last_mouse_pos.y
+            self.pos -= controls.mouse_pos - controls.last_mouse_pos
         else
             if (controls.left) then
                 self.dx = -100

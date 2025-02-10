@@ -11,61 +11,61 @@ end
 
 -- these tables are used to create entities based on sprites loaded form maps.
 
-function load_ground (x_pos, y_pos)
+function load_ground (pos)
     return entity:new({
         type="structure",
         name="ground",
     })
-    :add_position(x_pos, y_pos)
+    :add_position(pos)
     :add_sprite(1, 16, 16)
     :add_terrain()
 end
 
-function load_wall (x_pos, y_pos)
+function load_wall (pos)
     return entity:new({
         type="structure",
         name="wall"})
-        :add_position(x_pos, y_pos)
+        :add_position(pos)
         :add_sprite(8, 16, 16) 
 end
 
-function load_marine(x_pos, y_pos, owner) return
+function load_marine(pos, owner) return
     entity:new({
         type="unit",
         name=use_name(),
         owner=owner or "neutral"
     })
     :add_stats()
-    :add_position(x_pos, y_pos)
+    :add_position(pos)
     :add_sprite(16, 16, 16)
 end
 
-function load_mech(x_pos, y_pos, owner) return
+function load_mech(pos, owner) return
     entity:new({
         type="unit",
         name="Mech",
         owner=owner or "neutral"
     })
     :add_stats()
-    :add_position(x_pos, y_pos)
+    :add_position(pos)
     :add_sprite(24, 16, 16)
 end
 
-function load_barrel (x_pos, y_pos) return
+function load_barrel (pos) return
     entity:new({
         type="object",
         name="barrel"
     })
-    :add_position(x_pos, y_pos)
+    :add_position(pos)
     :add_sprite(2, 16, 16)
 end
 
-function load_crate (x_pos, y_pos) return
+function load_crate (pos) return
     entity:new({
         type="object",
         name="crate"
     })
-    :add_position(x_pos, y_pos)
+    :add_position(pos)
     :add_sprite(3, 16, 16)
 end
 

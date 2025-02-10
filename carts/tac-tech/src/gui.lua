@@ -1,4 +1,4 @@
---[[pod_format="raw",created="2025-01-08 17:33:11",modified="2025-01-18 05:03:48",revision=3036]]
+--[[pod_format="raw",created="2025-01-08 17:33:11",modified="2025-02-10 06:26:47",revision=3037]]
 wWidth = get_display():width()
 wHeight = get_display():height()
 

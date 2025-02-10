@@ -36,11 +36,10 @@ function find_first_index(array, fn)
 end
 
 function remove_first(array, fn)
-    index = find_first_index(array, fn)
+    local index = find_first_index(array, fn)
     if index then
         deli(array, index)
     end
-    
 end
 
 -- array must have at least 2 objects

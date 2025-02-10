@@ -143,6 +143,17 @@ function game_map.handle_controls(self, game_state)
     end
 end
 
+-- moves a unit to a given location on the grid
+-- @param unit {entity} An unit entity that is currently on the board.
+-- @param pos {vec} A vector representing x,y grid coordinates to move the unit to.
+function game_map:move_unit(unit, pos)
+    local start_pos_i = self:vec_to_index(self:get_grid_vec(unit.pos))
+    local end_pos_i = self:vec_to_index(pos)
+    self.grid[end_pos_i].unit = unit
+    self.grid[start_pos_i].unit = nil
+    unit.pos = self:get_world_vec(pos)
+end
+
 local unit_owner_mask = {
     [1] = "player",
     [2] = "enemy",
@@ -212,8 +223,10 @@ function game_map.draw_movement(self, s_index)
     if (tile != nil and tile.unit != nil) then
         local move_distance = tile.unit:get_move_distance()
         local display_distance = tile.unit.remaining_moves * move_distance + tile.unit.remaining_actions * move_distance
-        local movement_locs = self:get_tiles_by_distance(self.selected[s_index], display_distance)
-        for k,v in pairs(movement_locs) do
+        if tile.unit.movement_tiles == nil then
+            tile.unit.movement_tiles = self:get_tiles_by_distance(self.selected[s_index], display_distance)
+        end
+        for k,v in pairs(tile.unit.movement_tiles) do
             if v <= move_distance then
                 self:draw_highlight_loc(self:index_to_vec(k), tile.unit.remaining_moves > 0 and 28 or 9)
             else
@@ -242,23 +255,29 @@ function game_map.load(self, file_path)
             for j=0,(ud:height()-1) do
                 local sprite_index = ud:get(i,j,1)
                 local grid_index = j*ud:width()+i+1
-                if self.grid[grid_index] == nil then self.grid[grid_index] = {} end
+                local grid_vec = self:index_to_vec(grid_index)
+                if self.grid[grid_index] == nil then 
+                    self.grid[grid_index] = {
+                        pos=grid_vec
+                    }
+                end
+                local world_pos = self:get_world_vec(grid_vec)
                 if (layer == 1 or layer == 2) then -- units
                     if sprite_index != 0 then
                         -- local flag = fget(sprite_index) dont need flags for this.
                         printh("loading sprite: "..sprite_index)
-                        local unit = units[sprite_index](layer_info.tile_w*i, layer_info.tile_h*j, layer == 1 and "player" or "enemy")
+                        local unit = units[sprite_index](world_pos, layer == 1 and "player" or "enemy")
                         self.grid[grid_index].unit = unit
                         table.insert(self.units, unit)
                     end
                 elseif (layer == 3) then -- objects
                     if sprite_index != 0 then
-                        local object = objects[sprite_index](layer_info.tile_w*i, layer_info.tile_h*j)
+                        local object = objects[sprite_index](world_pos)
                         self.grid[grid_index].object = object
                         table.insert(self.objects, object)
                     end
                 elseif (layer == 4) then -- tiles
-                    local tile = structures[sprite_index](layer_info.tile_w*i, layer_info.tile_h*j)
+                    local tile = structures[sprite_index](world_pos)
                     self.grid[grid_index].tile = tile
                     table.insert(self.tiles, tile)
                 end
@@ -269,6 +288,8 @@ function game_map.load(self, file_path)
     self:next_turn()
 end
 
+-- get a table of grid indices to number values where all the indices are within a certain distance from a starting
+-- index location based on 
 function game_map.get_tiles_by_distance(self, index, distance)
     local visited = {[index]=0}
     local last_visit = {[index]=0}
